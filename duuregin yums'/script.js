@@ -14,7 +14,7 @@ lightBulb.addEventListener("click", () => {
     backGround.style.backgroundColor = "rgb( 40, 40, 40)";
     LightOn = false;
     lightBulb.src = "lightoff.png";
-    hiddenDiv.style.left = "60%";
+    hiddenDiv.style.left = "50%";
     box.style.top = "780px";
     hiddenDiv2.style.right = "57%";
   } else {
