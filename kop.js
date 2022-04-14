@@ -1,4 +1,9 @@
 const items = document.getElementsByClassName('item');
+const topBar = document.getElementById('top-bar');
+
+topBar.addEventListener('animationstart', () => {
+    topBar.classList.remove('hidden');
+});
 
 Array.from(items).forEach(item => {
     item.addEventListener('animationstart', () => {
@@ -6,9 +11,10 @@ Array.from(items).forEach(item => {
     })
 });
 
+
 function growBox1() {
-    document.getElementById("first").style.width = 400 + 'px';
-    document.getElementById("first").style.height = 600 + 'px';
+    document.getElementById("first").style.width = 370 + 'px';
+    document.getElementById("first").style.height = 570 + 'px';
 }
 
 function noGrowBox1() {
@@ -17,8 +23,8 @@ function noGrowBox1() {
 }
 
 function growBox2() {
-    document.getElementById("second").style.width = 400 + 'px';
-    document.getElementById("second").style.height = 600 + 'px';
+    document.getElementById("second").style.width = 370 + 'px';
+    document.getElementById("second").style.height = 570 + 'px';
 }
 
 function noGrowBox2() {
@@ -27,8 +33,8 @@ function noGrowBox2() {
 }
 
 function growBox3() {
-    document.getElementById("third").style.width = 400 + 'px';
-    document.getElementById("third").style.height = 600 + 'px';
+    document.getElementById("third").style.width = 370 + 'px';
+    document.getElementById("third").style.height = 570 + 'px';
 }
 
 function noGrowBox3() {
@@ -37,8 +43,8 @@ function noGrowBox3() {
 }
 
 function growBox4() {
-    document.getElementById("fourth").style.width = 400 + 'px';
-    document.getElementById("fourth").style.height = 600 + 'px';
+    document.getElementById("fourth").style.width = 370 + 'px';
+    document.getElementById("fourth").style.height = 570 + 'px';
 }
 
 function noGrowBox4() {
