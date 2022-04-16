@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    width: 83%;
+    width: 87%;
     background-color: #927973;
     height: fit-content;
     min-height: 300px;
@@ -32,6 +32,11 @@ body {
     margin-top: 10px;
     width: 50%;
     height: 35vw;
+}
+.gra {
+    margin-top: 5%;
+    width: 40%;
+    height: 20%;
 }
 
 .info {
@@ -53,11 +58,11 @@ body {
 }
 
 .woods {
-    width: 44%;
-    margin-left: 3%;
-    margin-right: 3%;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
     height: 24vw;
-    margin-top: 7vw;
+    margin-top: 5vw;
 }
 
 .ground {
@@ -68,7 +73,7 @@ body {
     font-size: 10px;
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 780px) {
     /* For mobile phones: */
     .top {
         flex-direction: column;
@@ -76,8 +81,13 @@ body {
     .top2 {
         flex-direction: column-reverse;
     }
-    .axe {
+    .axe{
         width: 62%;
+    }
+    .gra{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .info {
         width: 100%;
@@ -85,11 +95,12 @@ body {
         padding-top: 5px;
     }
     .woods {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
     .title {
-        margin-left: 5vw;
+        margin-left: 2%;
+        margin-right: 8%;
     }
 }
