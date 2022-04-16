@@ -1,0 +1,95 @@
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 4px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+
+.container {
+    width: 83%;
+    background-color: #927973;
+    height: fit-content;
+    min-height: 300px;
+    margin-bottom: 100px;
+}
+
+.title {
+    color: white;
+    margin: 15px;
+    margin-left: 23px;
+    font-size: 6vw;
+}
+
+.axe {
+    margin-top: 10px;
+    width: 50%;
+    height: 35vw;
+}
+
+.info {
+    width: 50%;
+    color: white;
+    padding: 8%;
+    padding-top: 5%;
+    font-size: 2vw;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+}
+
+.top2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.woods {
+    width: 44%;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 24vw;
+    margin-top: 7vw;
+}
+
+.ground {
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    background-color: antiquewhite;
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .top {
+        flex-direction: column;
+    }
+    .top2 {
+        flex-direction: column-reverse;
+    }
+    .axe {
+        width: 62%;
+    }
+    .info {
+        width: 100%;
+        font-size: 2.6vw;
+        padding-top: 5px;
+    }
+    .woods {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .title {
+        margin-left: 5vw;
+    }
+}
