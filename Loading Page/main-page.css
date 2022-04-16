@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    transition: 1500ms;
+    background-image: url('watercolor.jpg');
+    background-size: 100% 100%;
+    cursor: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    cursor: none;
+}
+
+.kolor {
+    transition: 1000ms;
+    color: black;
+}
+
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 1;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.top-bar {
+    display: flex;
+    width: 60%;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    animation: slide-up 3s;
+    animation-delay: 3500ms;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.mini-text {
+    flex-grow: 1;
+    font-family: "Nunito";
+    font-size: 25px;
+    text-align: center;
+}
+
+.mini-text:hover .mini-text {
+    text-decoration: dashed;
+}
+
+.name {
+    flex-grow: 8;
+    font-size: 50px;
+    font-family: "Nunito";
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerContainer {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px;
+    /* overflow: hidden; */
+}
+
+.item {
+    width: 250px;
+    height: 400px;
+    animation: appear 2000ms ease-in-out;
+    transition: 0.5s;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.s1 {
+    animation-delay: 500ms;
+}
+
+.s2 {
+    animation-delay: 1000ms;
+}
+
+.s3 {
+    animation-delay: 1500ms;
+}
+
+.s4 {
+    animation-delay: 2000ms;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(100vw);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 1px solid goldenrod;
+    border-radius: 50%;
+    transition: .1s;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+}
+
+.cursor2 {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: goldenrod;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-bar {
+    display: flex;
+    animation: slide-up 3s;
+    animation-delay: 3500ms;
+    margin-top: 50px;
+    height: 50px;
+    width: 60%;
+}
+
+.mode-bar {
+    flex-basis: 12%;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.light-mode {
+    position: relative;
+    color: black;
+    font-family: "Nunito";
+    font-size: 23px;
+    text-align: start;
+    transition: 1000ms;
+}
+
+.light-mode:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 1;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.light-mode:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.dark-mode {
+    position: relative;
+    display: none;
+    color: white;
+    font-family: "Nunito";
+    font-size: 23px;
+    text-align: start;
+    transition: 1000ms;
+}
+
+.dark-mode:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 1;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.dark-mode:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+@media only screen and (max-width: 949px) {
+    .item {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .item {
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+}
