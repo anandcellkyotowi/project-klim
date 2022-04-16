@@ -11,6 +11,12 @@ Array.from(items).forEach(item => {
     })
 });
 
+var cursor = document.querySelector('.cursor');
+var cursor2 = document.querySelector('.cursor2');
+document.addEventListener('mousemove', function(e){
+    cursor.style.cssText = cursor2.style.cssText = 'left: ' + e.clientX + 'px; top: ' + e.clientY + 'px;';
+})
+
 
 function growBox1() {
     document.getElementById("first").style.width = 280 + 'px';
@@ -51,3 +57,5 @@ function noGrowBox4() {
     document.getElementById("fourth").style.width = 250 + 'px';
     document.getElementById("fourth").style.height = 400 + 'px';
 }
+
+
