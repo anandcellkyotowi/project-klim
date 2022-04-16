@@ -46,12 +46,20 @@ img {
 }
 
 .top-bar {
+    border: 1px solid black;
     display: flex;
     width: 60%;
     align-items: flex-end;
     margin-bottom: 40px;
     animation: slide-up 3s;
     animation-delay: 3500ms;
+}
+
+.buttons {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    gap: 20px;
 }
 
 @keyframes slide-up {
@@ -75,7 +83,7 @@ img {
 }
 
 .name {
-    flex-grow: 8;
+    flex-grow: 1;
     font-size: 50px;
     font-family: "Nunito";
     text-align: center;
@@ -180,18 +188,15 @@ img {
 }
 
 .mode-bar {
-    flex-basis: 12%;
-    align-items: flex-end;
-    margin-left: auto;
-    margin-right: auto;
+    flex-grow: 1;
 }
 
 .light-mode {
     position: relative;
     color: black;
     font-family: "Nunito";
-    font-size: 23px;
-    text-align: start;
+    font-size: 25px;
+    text-align: center;
     transition: 1000ms;
 }
 
@@ -218,8 +223,8 @@ img {
     display: none;
     color: white;
     font-family: "Nunito";
-    font-size: 23px;
-    text-align: start;
+    font-size: 25px;
+    text-align: center;
     transition: 1000ms;
 }
 
@@ -241,7 +246,48 @@ img {
     left: 0;
 }
 
-@media only screen and (max-width: 949px) {
+.menu-bar {
+    flex-grow: 1;
+    border: 1px solid black;
+    display: none;
+    font-family: "Nunito";
+    font-size: 25px;
+    text-align: center;
+    align-self: center;
+}
+
+@media only screen and (max-width: 1230px) {
+    .buttons {
+        display: none;
+    }
+    .name {
+        align-self: center;
+        font-size: 25px;
+    }
+    .menu-bar {
+        display: block;
+    }
+    .item {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .top-bar {
+        width: 70%;
+    }
+    .buttons {
+        display: none;
+    }
+    .name {
+        align-self: center;
+        font-size: 30px;
+    }
+    .menu-bar {
+        display: block;
+        font-size: 30px;
+    }
     .item {
         margin-right: 40px;
         margin-left: 40px;
@@ -249,8 +295,44 @@ img {
 }
 
 @media only screen and (max-width: 725px) {
+    .top-bar {
+        width: 70%;
+    }
+    .name {
+        align-self: center;
+        font-size: 25px;
+    }
+    .menu-bar {
+        display: block;
+        font-size: 25px;
+    }
     .item {
         margin-right: 60px;
         margin-left: 60px;
+    }
+}
+
+.test {
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 420px) {
+    .top-bar {
+        width: 70%;
+    }
+    .buttons {
+        display: none;
+    }
+    .name {
+        align-self: center;
+        font-size: 23px;
+    }
+    .menu-bar {
+        display: block;
+        font-size: 23px;
+    }
+    .item {
+        margin-right: 40px;
+        margin-left: 40px;
     }
 }

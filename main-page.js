@@ -1,13 +1,8 @@
 const items = document.getElementsByClassName('item');
 const topBar = document.getElementById('top-bar');
-const botBar = document.getElementById('bottom-bar');
 
 topBar.addEventListener('animationstart', () => {
     topBar.classList.remove('hidden');
-});
-
-botBar.addEventListener('animationstart', () => {
-    botBar.classList.remove('hidden');
 });
 
 Array.from(items).forEach(item => {
