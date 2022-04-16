@@ -46,7 +46,6 @@ img {
 }
 
 .top-bar {
-    border: 1px solid black;
     display: flex;
     width: 60%;
     align-items: flex-end;
@@ -56,6 +55,7 @@ img {
 }
 
 .buttons {
+    flex-grow: 1;
     display: flex;
     height: 100%;
     align-items: flex-end;
@@ -248,7 +248,6 @@ img {
 
 .menu-bar {
     flex-grow: 1;
-    border: 1px solid black;
     display: none;
     font-family: "Nunito";
     font-size: 25px;
@@ -313,7 +312,7 @@ img {
 }
 
 .test {
-    border: 1px solid black;
+    border: 0px solid black;
 }
 
 @media only screen and (max-width: 420px) {
