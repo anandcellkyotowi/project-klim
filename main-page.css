@@ -240,3 +240,17 @@ img {
     width: 100%;
     left: 0;
 }
+
+@media only screen and (max-width: 949px) {
+    .item {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .item {
+        margin-right: 60px;
+        margin-left: 60px;
+    }
+}
