@@ -4,6 +4,7 @@
 }
 
 body {
+    transition: 1500ms;
     background-image: url('watercolor.jpg');
     background-size: 100% 100%;
     cursor: none;
@@ -11,10 +12,14 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
     display: inline-block;
     position: relative;
     cursor: none;
+}
+
+.kolor {
+    transition: 1000ms;
+    color: black;
 }
 
 a:after {
@@ -102,6 +107,7 @@ img {
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 20px;
+    background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
 }
@@ -141,7 +147,7 @@ img {
     position: fixed;
     width: 40px;
     height: 40px;
-    border: 1px solid black;
+    border: 1px solid goldenrod;
     border-radius: 50%;
     transition: .1s;
     left: 0;
@@ -155,7 +161,7 @@ img {
     position: fixed;
     width: 8px;
     height: 8px;
-    background-color: black;
+    background-color: goldenrod;
     border-radius: 50%;
     left: 0;
     top: 0;
@@ -165,8 +171,72 @@ img {
 }
 
 .bottom-bar {
+    display: flex;
+    animation: slide-up 3s;
+    animation-delay: 3500ms;
     margin-top: 50px;
     height: 50px;
     width: 60%;
-    background-color: black;
+}
+
+.mode-bar {
+    flex-basis: 12%;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.light-mode {
+    position: relative;
+    color: black;
+    font-family: "Nunito";
+    font-size: 23px;
+    text-align: start;
+    transition: 1000ms;
+}
+
+.light-mode:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 1;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.light-mode:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.dark-mode {
+    position: relative;
+    display: none;
+    color: white;
+    font-family: "Nunito";
+    font-size: 23px;
+    text-align: start;
+    transition: 1000ms;
+}
+
+.dark-mode:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 1;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.dark-mode:hover:after {
+    width: 100%;
+    left: 0;
 }

@@ -14,25 +14,30 @@
 
     <div class="container">
         <div class="top-bar hidden" id="top-bar">
-            <a href="main-page.html" class="mini-text">HOME</a>
-            <div class="name">PROJECT CARBON</div>
-            <a href="team.html" class="mini-text">TEAM</a>
+            <a href="main-page.html" class="mini-text kolor">HOME</a>
+            <div class="name kolor">PROJECT CARBON</div>
+            <a href="team.html" class="mini-text kolor">TEAM</a>
         </div>
         <div class="innerContainer">
             <div class="item s1 hidden" onmouseover="growBox1()" onmouseleave="noGrowBox1()" id="first">
-                <img src="ok.jpeg" alt="">
+                <!-- <img src="ok.jpeg" alt=""> -->
             </div>
             <div class="item s2 hidden" onmouseover="growBox2()" onmouseleave="noGrowBox2()" id="second">
-                <img src="ok.jpeg" alt="">
+                <!-- <img src="ok.jpeg" alt=""> -->
             </div>
             <div class="item s3 hidden" onmouseover="growBox3()" onmouseleave="noGrowBox3()" id="third">
-                <img src="ok.jpeg" alt="">
+                <!-- <img src="ok.jpeg" alt=""> -->
             </div>
             <div class="item s4 hidden" onmouseover="growBox4()" onmouseleave="noGrowBox4()" id="fourth">
-                <img src="ok.jpeg" alt="">
+                <!-- <img src="ok.jpeg" alt=""> -->
             </div>
         </div>
-        <div class="bottom-bar"></div>
+        <div class="bottom-bar hidden" id="bottom-bar">
+            <div class="mode-bar">
+                <div class="light-mode" onclick="changeColorDark()" id="light-mode">LIGHT MODE</div>
+                <div class="dark-mode" onclick="changeColorLight()" id="dark-mode">DARK MODE</div>
+            </div>
+        </div>
     </div>
     <div class="cursor"></div>
     <div class="cursor2"></div>
