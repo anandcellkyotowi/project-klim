@@ -1,0 +1,123 @@
+body{
+    background-image: url('watercolor.jpg');
+    background-size: 100%;
+    cursor: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.return-button{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    cursor: none;
+}
+
+h1{
+    margin-left: 50px;
+}
+.text{
+    font-size: 30px;
+    margin-left: 50px;
+}
+.about-us{
+    flex-grow: 1;
+}
+.developers{
+    flex-grow: 1;
+}
+.designers{
+    flex-grow: 1;
+}
+.items{
+    animation: appear 1500ms ease-in-out;
+    transition: 0.5s;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.s2{
+    animation-delay: 1000ms
+}
+.s3{
+    animation-delay: 1500ms;
+}
+.s4{
+    animation-delay: 2000ms
+}
+.s5{
+    animation-delay: 2500ms;
+}
+.s5{
+    animation-delay: 3000ms
+}
+.s6{
+    animation-delay: 3500ms;
+}
+.hidden{
+    visibility: hidden;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+.return-button{
+    align-self: flex-end;
+    margin-right: 50px;
+}
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 1px solid goldenrod;
+    border-radius: 50%;
+    transition: .1s;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+}
+
+.cursor2 {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: goldenrod;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    cursor: none;
+}
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 1;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
