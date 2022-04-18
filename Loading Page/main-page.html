@@ -14,9 +14,19 @@
 
     <div class="container">
         <div class="top-bar hidden" id="top-bar">
-            <a href="main-page.html" class="mini-text kolor">HOME</a>
-            <div class="name kolor">PROJECT CARBON</div>
-            <a href="team.html" class="mini-text kolor">TEAM</a>
+            <div class="name kolor test">PROJECT CARBON</div>
+            <div class="buttons">
+                <a href="main-page.html" class="mini-text kolor test" id="home">HOME</a>
+                <a href="team.html" class="mini-text kolor test" id="team">TEAM</a>
+                <div class="mode-bar" id="theme">
+                    <div class="light-mode test" onclick="changeColorDark()" id="light-mode">LIGHT</div>
+                    <div class="dark-mode test" onclick="changeColorLight()" id="dark-mode">DARK</div>
+                </div>
+            </div>
+            <div class="menu-bar kolor">
+                ☰
+            </div>
+
         </div>
         <div class="innerContainer">
             <div class="item s1 hidden" onmouseover="growBox1()" onmouseleave="noGrowBox1()" id="first">
@@ -30,12 +40,6 @@
             </div>
             <div class="item s4 hidden" onmouseover="growBox4()" onmouseleave="noGrowBox4()" id="fourth">
                 <!-- <img src="ok.jpeg" alt=""> -->
-            </div>
-        </div>
-        <div class="bottom-bar hidden" id="bottom-bar">
-            <div class="mode-bar">
-                <div class="light-mode" onclick="changeColorDark()" id="light-mode">LIGHT MODE</div>
-                <div class="dark-mode" onclick="changeColorLight()" id="dark-mode">DARK MODE</div>
             </div>
         </div>
     </div>
