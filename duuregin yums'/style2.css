@@ -24,7 +24,7 @@ body {
 }
 #on {
   width: 32vw;
-  max-width: 350px;
+  max-width: 280px;
 }
 .hidden1 {
   width: 33%;
@@ -34,7 +34,7 @@ body {
   font-size: 2vh;
   font-weight: 100;
   position: absolute;
-  /* transition: 500ms; */
+  transition: 500ms;
 }
 .hidden2 {
   width: 33%;
@@ -44,7 +44,7 @@ body {
   font-size: 2vh;
   font-weight: 100;
   position: absolute;
-  /* transition: 500ms; */
+  transition: 500ms;
 }
 .box1 {
   display: flex;
@@ -73,7 +73,7 @@ body {
   left: 3%;
   font-size: 8vh;
   font-weight: 300;
-  /* transition: 500ms; */
+  transition: 500ms;
 }
 .hidden3 {
   width: 33%;
@@ -83,7 +83,7 @@ body {
   font-size: 2vh;
   font-weight: 100;
   position: absolute;
-  /* transition: 500ms; */
+  transition: 500ms;
 }
 .hidden4 {
   width: 33%;
@@ -93,7 +93,7 @@ body {
   font-size: 2vh;
   font-weight: 100;
   position: absolute;
-  /* transition: 500ms; */
+  transition: 500ms;
 }
 .diagram {
   position: absolute;
@@ -101,7 +101,7 @@ body {
   color: azure;
   display: flex;
   top: 1100px;
-  /* transition: 500ms; */
+  transition: 500ms;
   left: 13%;
   width: 30%;
   height: 700px;
