@@ -1,7 +1,5 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -10,8 +8,7 @@ body {
 
 .page {
   height: 2200px;
-  /*heregtei height eere hiigere thde width n 80% shuu*/
-  background-color: rgb(57, 69, 131);
+  background-color: rgb(0, 86, 92);
   width: 80%;
   margin: auto;
   position: relative;
@@ -19,24 +16,25 @@ body {
 .back {
   position: absolute;
   top: 70px;
-  width: 200px;
+  width: 20%;
   height: 50px;
   display: grid;
   place-items: center;
   background-color: transparent;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
+  max-width: 200px;
 }
 .backz {
   height: 40px;
-  width: 130px;
+  width: 80%;
   opacity: 50%;
 }
 .hooloi {
   position: absolute;
-  width: 200px;
-  height: 130px;
-  top: 190px;
+  width: 20%;
+  height: 15vw;
+  bottom: 30%;
 }
 section {
   position: absolute;
@@ -118,4 +116,130 @@ section .wave.wave4 {
   100% {
     background-position-x: 1000px;
   }
+}
+.wfz {
+  width: 30%;
+  height: 37%;
+  position: absolute;
+  left: 20%;
+  bottom: 0%;
+  animation: wfz 3s linear infinite;
+  background-size: 1000px 100px;
+}
+.drops {
+  position: absolute;
+  width: 40%;
+  margin-top: 100px;
+  height: 95.4%;
+  left: 75%;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.drop {
+  width: 20px;
+  height: 30px;
+  background-color: #4fc2ec;
+  border-radius: 500%;
+  position: absolute;
+  left: 11%;
+  animation: 5s drop linear infinite;
+}
+@keyframes drop {
+  0% {
+    transform: scale(0.7) translateY(950%);
+    opacity: 0.5;
+  }
+  20% {
+    transform: scale(0.7) translateY(1100%);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.7) translateY(1500%);
+  }
+  100% {
+    transform: scale(0.7) translateY(20000%);
+  }
+}
+.drop:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.drop:nth-child(3) {
+  animation-delay: 0.8s;
+}
+.drop:nth-child(4) {
+  animation-delay: 0.13s;
+}
+.button {
+  position: absolute;
+  right: 3%;
+  width: 15%;
+  top: 5%;
+}
+@media only screen and (max-width: 1800px) {
+  .wfz {
+    width: 25%;
+    height: 36%;
+    position: absolute;
+    left: 20%;
+    bottom: 0%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .wfz {
+    width: 30%;
+    height: 34%;
+    position: absolute;
+    left: 20%;
+    bottom: 0%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .wfz {
+    width: 30%;
+    height: 34%;
+    position: absolute;
+    left: 20%;
+    bottom: 0%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .wfz {
+    width: 30%;
+    height: 33%;
+    position: absolute;
+    left: 20%;
+    bottom: 0%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .wfz {
+    width: 25%;
+    height: 32.5%;
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+  }
+}
+.sda {
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  border: 1px solid black;
+}
+.zail {
+  position: absolute;
+  width: 15vw;
+  height: 40px;
+  right: 19%;
+  margin-top: 160px;
+}
+.ug1 {
+  border: 2px solid black;
+  width: 25%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  color: white;
 }

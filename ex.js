@@ -1,12 +1,7 @@
-function removeClass(){
-  var water = document.getElementById('water');
-  water.classList.remove("waterdrop");
-
-  document.getElementById('content').style.display="block"
-  document.getElementById('show').style.display="none"
+let lol = [];
+function myFunction() {
+  for (let i = 0; i < 4; i++) {
+    let lol = document.getElementsByClassName("drop")[0];
+    lol.classList.remove("drop");
+  }
 }
-
-
-addEventListener('click',(e)=>{
-  console.log(e.x)
-})
