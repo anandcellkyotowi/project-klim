@@ -247,19 +247,22 @@ img {
 }
 
 .menu-bar {
-    flex-grow: 1;
+    flex-basis: 5%;
     display: none;
     font-family: "Nunito";
     font-size: 25px;
     text-align: center;
     align-self: center;
+    border: 1px solid black;
+    position: relative;
 }
 
-@media only screen and (max-width: 1230px) {
+@media only screen and (max-width: 1260px) {
     .buttons {
         display: none;
     }
     .name {
+        flex-basis: 80%;
         align-self: center;
         font-size: 25px;
     }
@@ -267,8 +270,8 @@ img {
         display: block;
     }
     .item {
-        margin-right: 40px;
-        margin-left: 40px;
+        margin-right: 80px;
+        margin-left: 80px;
     }
 }
 
@@ -280,6 +283,7 @@ img {
         display: none;
     }
     .name {
+        flex-basis: 80%;
         align-self: center;
         font-size: 30px;
     }
@@ -288,8 +292,8 @@ img {
         font-size: 30px;
     }
     .item {
-        margin-right: 40px;
-        margin-left: 40px;
+        margin-right: 80px;
+        margin-left: 80px;
     }
 }
 
@@ -298,6 +302,7 @@ img {
         width: 70%;
     }
     .name {
+        flex-basis: 80%;
         align-self: center;
         font-size: 25px;
     }
