@@ -51,6 +51,7 @@ img {
     align-items: flex-end;
     margin-bottom: 40px;
     animation: slide-up 3s;
+    position: relative;
     animation-delay: 3500ms;
 }
 
@@ -60,6 +61,31 @@ img {
     height: 100%;
     align-items: flex-end;
     gap: 20px;
+}
+
+#menu {
+    width: 15vw;
+    position: absolute;
+    bottom: -15vw;
+    right: -6vw;
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Nunito";
+    display: none;
+    opacity: 0%;
+}
+
+.men {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.menu-thing {
+    display: flex;
+    flex-direction: column;
 }
 
 @keyframes slide-up {
@@ -253,11 +279,14 @@ img {
     font-size: 25px;
     text-align: center;
     align-self: center;
-    border: 1px solid black;
     position: relative;
 }
 
 @media only screen and (max-width: 1260px) {
+    #menu {
+        display: flex;
+        transition: 800ms;
+    }
     .buttons {
         display: none;
     }
@@ -272,6 +301,9 @@ img {
     .item {
         margin-right: 80px;
         margin-left: 80px;
+    }
+    .mini-text {
+        font-size: 20px;
     }
 }
 
@@ -294,6 +326,9 @@ img {
     .item {
         margin-right: 80px;
         margin-left: 80px;
+    }
+    .mini-text {
+        font-size: 20px;
     }
 }
 
@@ -338,5 +373,8 @@ img {
     .item {
         margin-right: 40px;
         margin-left: 40px;
+    }
+    .mini-text {
+        font-size: 10px;
     }
 }

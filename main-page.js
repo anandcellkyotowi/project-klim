@@ -1,5 +1,8 @@
 const items = document.getElementsByClassName('item');
 const topBar = document.getElementById('top-bar');
+const menuButton = document.querySelector('.menu-bar')
+const menu = document.querySelector('#menu')
+var menuActive = true
 
 topBar.addEventListener('animationstart', () => {
     topBar.classList.remove('hidden');
@@ -83,16 +86,12 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
+menuButton.addEventListener('click', () => {
+    if (menuActive) {
+        menuActive = false
+        menu.style.opacity = '0%'
+    } else if (!menuActive) {
+        menuActive = true
+        menu.style.opacity = '100%'
     }
-}
+})
