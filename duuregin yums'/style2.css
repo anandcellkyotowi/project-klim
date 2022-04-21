@@ -24,17 +24,11 @@ body {
 }
 
 #on {
-<<<<<<< HEAD
   width: 32vw;
   max-width: 280px;
-=======
-    width: 32vw;
-    max-width: 350px;
->>>>>>> 1313e808fe18bed8813fcc65afb8adfb3497560d
 }
 
 .hidden1 {
-<<<<<<< HEAD
   width: 33%;
   color: rgb(255, 255, 255);
   top: 10vh;
@@ -43,20 +37,9 @@ body {
   font-weight: 100;
   position: absolute;
   transition: 500ms;
-=======
-    width: 33%;
-    color: rgb(255, 255, 255);
-    top: 10vh;
-    right: -50%;
-    font-size: 2vh;
-    font-weight: 100;
-    position: absolute;
-    transition: 500ms;
->>>>>>> 1313e808fe18bed8813fcc65afb8adfb3497560d
 }
 
 .hidden2 {
-<<<<<<< HEAD
   width: 33%;
   color: rgb(255, 255, 255);
   top: 45vh;
@@ -65,16 +48,6 @@ body {
   font-weight: 100;
   position: absolute;
   transition: 500ms;
-=======
-    width: 33%;
-    color: rgb(255, 255, 255);
-    top: 45vh;
-    left: -50%;
-    font-size: 2vh;
-    font-weight: 100;
-    position: absolute;
-    transition: 500ms;
->>>>>>> 1313e808fe18bed8813fcc65afb8adfb3497560d
 }
 
 .box1 {
@@ -93,7 +66,6 @@ body {
 }
 
 .box2 {
-<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,25 +79,9 @@ body {
   font-size: 8vh;
   font-weight: 300;
   transition: 500ms;
-=======
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45%;
-    height: 10%;
-    position: absolute;
-    background-color: black;
-    color: white;
-    top: 46vh;
-    left: 3%;
-    font-size: 8vh;
-    font-weight: 300;
-    transition: 500ms;
->>>>>>> 1313e808fe18bed8813fcc65afb8adfb3497560d
 }
 
 .hidden3 {
-<<<<<<< HEAD
   width: 33%;
   color: rgb(255, 255, 255);
   top: 75vh;
@@ -134,20 +90,9 @@ body {
   font-weight: 100;
   position: absolute;
   transition: 500ms;
-=======
-    width: 33%;
-    color: rgb(255, 255, 255);
-    top: 75vh;
-    left: 10%;
-    font-size: 2vh;
-    font-weight: 100;
-    position: absolute;
-    transition: 500ms;
->>>>>>> 1313e808fe18bed8813fcc65afb8adfb3497560d
 }
 
 .hidden4 {
-<<<<<<< HEAD
   width: 33%;
   color: rgb(255, 255, 255);
   top: 75vh;
@@ -156,20 +101,9 @@ body {
   font-weight: 100;
   position: absolute;
   transition: 500ms;
-=======
-    width: 33%;
-    color: rgb(255, 255, 255);
-    top: 75vh;
-    right: 10%;
-    font-size: 2vh;
-    font-weight: 100;
-    position: absolute;
-    transition: 500ms;
->>>>>>> 1313e808fe18bed8813fcc65afb8adfb3497560d
 }
 
 .diagram {
-<<<<<<< HEAD
   position: absolute;
   padding: 20px;
   color: azure;
@@ -179,17 +113,6 @@ body {
   left: 13%;
   width: 30%;
   height: 700px;
-=======
-    position: absolute;
-    padding: 20px;
-    color: azure;
-    display: flex;
-    top: 1100px;
-    transition: 500ms;
-    left: 13%;
-    width: 30%;
-    height: 700px;
->>>>>>> 1313e808fe18bed8813fcc65afb8adfb3497560d
 }
 
 .containerr {
