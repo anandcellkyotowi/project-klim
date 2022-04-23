@@ -6,7 +6,7 @@
   font-weight: 4px;
 }
 div {
-  transition: 500ms;
+  transition: 250ms;
 }
 body {
   background-color: black;
@@ -95,13 +95,29 @@ body {
 }
 
 .faya {
-  width: 40%;
   margin-left: 5%;
   margin-right: 5%;
-  height: 24vw;
   margin-top: 5vw;
   border-radius: 15px;
   opacity: 0;
+  width: 40%;
+  background-image: url("fire2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid white;
+  animation: ani3 0.75s ease-out 0.8s forwards;
+}
+
+.faya2 {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5vw;
+  border-radius: 15px;
+  opacity: 0;
+  width: 40%;
+  background-image: url("fire1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 1px solid white;
   animation: ani3 0.75s ease-out 0.8s forwards;
 }
@@ -112,14 +128,6 @@ body {
   margin-top: 100px;
   background-color: antiquewhite;
   font-size: 10px;
-}
-
-.cigarette {
-  width: 40%;
-  height: 50px;
-  background: white;
-  margin-top: 20vh;
-  animation: redu linear 5s infinite;
 }
 
 .mo-fire {
@@ -217,6 +225,14 @@ body {
   }
 }
 
+.cigarette {
+  width: 40%;
+  height: 50px;
+  background: white;
+  margin-top: 20vh;
+  animation: redu linear 5s infinite;
+}
+
 @keyframes redu {
   0% {
     border-right: 10px solid rgb(185, 31, 31);
@@ -290,12 +306,12 @@ body {
     margin-left: 2vw;
   }
   .cigarette {
-    width: 55%;
+    width: 50%;
   }
   .vapour {
     position: absolute;
     top: 77%;
-    left: 56%;
+    left: 50%;
   }
 }
 
@@ -306,7 +322,7 @@ body {
     margin-left: 2vw;
   }
   .cigarette {
-    width: 65%;
+    width: 50%;
   }
   .vapour {
     position: absolute;
@@ -322,7 +338,7 @@ body {
     margin-left: 2vw;
   }
   .cigarette {
-    width: 70%;
+    width: 50%;
   }
   .vapour {
     position: absolute;
@@ -352,6 +368,7 @@ body {
     width: 90%;
   }
   .info {
+    margin-top: 40px;
     width: 100%;
     font-size: 2.6vw;
     padding-top: 5px;
@@ -382,5 +399,14 @@ body {
     position: absolute;
     top: 77%;
     left: 76%;
+  }
+  .faya {
+    background-image: url("fire3.jpeg");
+    height: 25vh;
+  }
+  .faya2 {
+    background-image: url("fire3.jpeg");
+    width: 80vw;
+    height: 30vh;
   }
 }
