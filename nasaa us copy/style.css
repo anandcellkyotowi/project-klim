@@ -14,6 +14,16 @@ body {
 }
 
 .container {
+<<<<<<< HEAD
+  width: 87%;
+  background-color: #2d394b;
+  height: fit-content;
+  position: relative;
+  min-height: 300px;
+  margin-bottom: 100px;
+  overflow: hidden;
+  padding-bottom: 10vh;
+=======
     width: 87%;
     background-color: #2d394b;
     height: fit-content;
@@ -22,6 +32,7 @@ body {
     margin-bottom: 100px;
     padding-bottom: 10vh;
     overflow: hidden;
+>>>>>>> refs/remotes/origin/main
 }
 
 .title {
@@ -40,6 +51,14 @@ body {
     /* border: 1px solid black; */
     overflow: hidden;
 }
+<<<<<<< HEAD
+.crnt {
+  margin-top: 10px;
+  width: 50%;
+  margin-left: 0%;
+  height: 30vw;
+  z-index: 1000;
+=======
 
 .axe {
     margin-top: 10px;
@@ -47,6 +66,7 @@ body {
     margin-left: 0%;
     height: 30vw;
     z-index: 1000;
+>>>>>>> refs/remotes/origin/main
 }
 
 .gra {
@@ -73,12 +93,21 @@ body {
     flex-direction: row;
 }
 
+<<<<<<< HEAD
+.waters {
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 24vw;
+  margin-top: 5vw;
+=======
 .woods {
     width: 40%;
     margin-left: 5%;
     margin-right: 5%;
     height: 24vw;
     margin-top: 5vw;
+>>>>>>> refs/remotes/origin/main
 }
 
 .ground {
@@ -90,6 +119,46 @@ body {
 }
 
 @media only screen and (max-width: 780px) {
+<<<<<<< HEAD
+  .top {
+    flex-direction: column;
+  }
+  .top2 {
+    flex-direction: column-reverse;
+  }
+  .crnt {
+    width: 62%;
+  }
+  .gra {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .info {
+    width: 100%;
+    font-size: 2.6vw;
+    padding-top: 5px;
+  }
+  .waters {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .title {
+    margin-left: 2%;
+    margin-right: 8%;
+  }
+
+  .drops {
+    position: absolute;
+    width: 40%;
+    height: 95.4%;
+    right: 17vw;
+    top: 19vw;
+    /* border: 1px solid black; */
+    overflow: hidden;
+  }
+=======
     .top {
         flex-direction: column;
     }
@@ -127,6 +196,7 @@ body {
         /* border: 1px solid black; */
         overflow: hidden;
     }
+>>>>>>> refs/remotes/origin/main
 }
 
 section {
@@ -176,6 +246,15 @@ section .wave.wave2 {
 }
 
 .drop {
+<<<<<<< HEAD
+  width: 1.7vw;
+  height: 3vw;
+  background-color: #4fc2ec;
+  border-radius: 500%;
+  position: absolute;
+  left: 11%;
+  animation: 3s drop linear infinite;
+=======
     width: 1.7vw;
     height: 3vw;
     background-color: #4fc2ec;
@@ -183,9 +262,26 @@ section .wave.wave2 {
     position: absolute;
     left: 11%;
     animation: 5s drop linear infinite;
+>>>>>>> refs/remotes/origin/main
 }
 
 @keyframes drop {
+<<<<<<< HEAD
+  0% {
+    transform: scale(0.7) translateY(950%);
+    opacity: 0.5;
+  }
+  20% {
+    transform: scale(0.7) translateY(980%);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.7) translateY(1040%);
+  }
+  100% {
+    transform: scale(0.7) translateY(6000%);
+  }
+=======
     0% {
         transform: scale(0.7) translateY(950%);
         opacity: 0.5;
@@ -200,6 +296,7 @@ section .wave.wave2 {
     100% {
         transform: scale(0.7) translateY(20000%);
     }
+>>>>>>> refs/remotes/origin/main
 }
 
 @keyframes animate2 {
