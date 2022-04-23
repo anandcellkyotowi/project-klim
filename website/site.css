@@ -2,19 +2,24 @@
   margin: 0%;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Nunito";
+  font-family: "Montserrat", sans-serif;
   font-weight: 4px;
 }
-div{
-  transition: 5ms;
+div {
+  transition: 500ms;
 }
 body {
   background-color: black;
 }
 .page {
-  min-height: 100%;
+  height: 100%;
   width: 80%;
-  background-color: #a44a3f;
+  background: rgb(164, 74, 63);
+  background: linear-gradient(
+    0deg,
+    rgba(164, 74, 63, 1) 11%,
+    rgba(245, 157, 0, 1) 100%
+  );
   position: relative;
   margin: auto;
 }
@@ -28,14 +33,18 @@ body {
 }
 .gra {
   margin-top: 5px;
-  margin: 8%;
-  width: 40%;
-  height: 20%;
+  margin: 2%;
+  width: 33vw;
+  height: 25vw;
+  border-radius: 10px;
+  opacity: 0;
+  border: 1px solid white;
+  animation: ani4 0.75s ease-out 0.8s forwards;
 }
 
 .sizeCi {
   margin-top: 100px;
-  width: 50%;
+  width: 35%;
   height: 15vh;
 }
 
@@ -53,28 +62,34 @@ body {
   padding: 8%;
   padding-top: 5%;
   font-size: 2vw;
+  opacity: 0;
+  animation: ani 0.75s ease-out 1.2s forwards;
 }
 
 .info2 {
   width: 50%;
   color: white;
   padding: 8%;
-  padding-top: 10%;
+  padding-top: 1%;
   font-size: 2vw;
+  opacity: 0;
+  animation: ani2 0.75s ease-out 1.2s forwards;
 }
 
-#pushdashit{
+#pushdashit {
   text-align: center;
   margin-bottom: 50vh;
   margin-left: 2vw;
 }
 
 .top {
+  position: relative;
   display: flex;
   flex-direction: row;
 }
 
 .top2 {
+  position: relative;
   display: flex;
   flex-direction: row;
 }
@@ -85,6 +100,10 @@ body {
   margin-right: 5%;
   height: 24vw;
   margin-top: 5vw;
+  border-radius: 15px;
+  opacity: 0;
+  border: 1px solid white;
+  animation: ani3 0.75s ease-out 0.8s forwards;
 }
 
 .ground {
@@ -96,7 +115,7 @@ body {
 }
 
 @media only screen and (max-width: 1880px) {
-  #pushdashit{
+  #pushdashit {
     text-align: center;
     margin-bottom: 45vh;
     margin-left: 2vw;
@@ -104,7 +123,7 @@ body {
 }
 
 @media only screen and (max-width: 1530px) {
-  #pushdashit{
+  #pushdashit {
     text-align: center;
     margin-bottom: 34vh;
     margin-left: 2vw;
@@ -112,7 +131,7 @@ body {
 }
 
 @media only screen and (max-width: 1030px) {
-  #pushdashit{
+  #pushdashit {
     text-align: center;
     margin-bottom: 25vh;
     margin-left: 2vw;
@@ -127,9 +146,9 @@ body {
     flex-direction: column-reverse;
   }
   .sizeCi {
-    margin-top: 80px;
-    width: 100%;
-    height: 30vw;
+    padding-top: 5%;
+    width: 60%;
+    height: 20vw;
   }
   .gra {
     width: 80%;
@@ -160,7 +179,7 @@ body {
     text-align: center;
     font-size: 6vw;
   }
-  #pushdashit{
+  #pushdashit {
     margin-bottom: 17vh;
   }
 }
@@ -236,5 +255,26 @@ body {
   100% {
     transform: translate(-10px, -40px) rotate(180deg);
     opacity: 0;
+  }
+}
+
+@keyframes ani {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes ani2 {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes ani3 {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes ani4 {
+  100% {
+    opacity: 1;
   }
 }

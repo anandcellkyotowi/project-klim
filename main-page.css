@@ -5,39 +5,15 @@
 
 body {
     transition: 1500ms;
-    background-image: url('watercolor.jpg');
+    background-image: url('background.jpg');
     background-size: 100% 100%;
     cursor: none;
+    background-color: white;
 }
 
 a {
     text-decoration: none;
-    display: inline-block;
-    position: relative;
     cursor: none;
-}
-
-.kolor {
-    transition: 1000ms;
-    color: black;
-}
-
-a:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 1;
-    content: "";
-    display: block;
-    height: 3px;
-    left: 50%;
-    position: absolute;
-    background: #fff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-a:hover:after {
-    width: 100%;
-    left: 0;
 }
 
 img {
@@ -55,39 +31,6 @@ img {
     animation-delay: 3500ms;
 }
 
-.buttons {
-    flex-grow: 1;
-    display: flex;
-    height: 100%;
-    align-items: flex-end;
-    gap: 20px;
-}
-
-#menu {
-    width: 15vw;
-    position: absolute;
-    bottom: -15vw;
-    right: -6vw;
-    height: 15vw;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    font-family: "Nunito";
-    display: none;
-    opacity: 0%;
-}
-
-.men {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.menu-thing {
-    display: flex;
-    flex-direction: column;
-}
-
 @keyframes slide-up {
     from {
         opacity: 0;
@@ -97,22 +40,12 @@ img {
     }
 }
 
-.mini-text {
-    flex-grow: 1;
-    font-family: "Nunito";
-    font-size: 25px;
-    text-align: center;
-}
-
-.mini-text:hover .mini-text {
-    text-decoration: dashed;
-}
-
 .name {
     flex-grow: 1;
     font-size: 50px;
     font-family: "Nunito";
     text-align: center;
+    border: 1px solid black;
 }
 
 .container {
@@ -123,6 +56,23 @@ img {
     align-items: center;
 }
 
+.team-container {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    border: 1px solid black;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.about-us {
+    font-size: 25px;
+    font-family: "Nunito";
+    border: 1px solid black;
+}
+
 .innerContainer {
     height: 500px;
     display: flex;
@@ -130,7 +80,6 @@ img {
     align-items: center;
     justify-content: space-around;
     padding: 16px;
-    /* overflow: hidden; */
 }
 
 .item {
@@ -141,9 +90,9 @@ img {
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 20px;
+    margin-bottom: 50px;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
 }
 
 .hidden {
@@ -181,7 +130,7 @@ img {
     position: fixed;
     width: 40px;
     height: 40px;
-    border: 1px solid goldenrod;
+    border: 1px solid rgb(18, 69, 41);
     border-radius: 50%;
     transition: .1s;
     left: 0;
@@ -195,91 +144,13 @@ img {
     position: fixed;
     width: 8px;
     height: 8px;
-    background-color: goldenrod;
+    background-color: rgb(18, 69, 41);
     border-radius: 50%;
     left: 0;
     top: 0;
     pointer-events: none;
     z-index: 999;
     transform: translate(-50%, -50%);
-}
-
-.bottom-bar {
-    display: flex;
-    animation: slide-up 3s;
-    animation-delay: 3500ms;
-    margin-top: 50px;
-    height: 50px;
-    width: 60%;
-}
-
-.mode-bar {
-    flex-grow: 1;
-}
-
-.light-mode {
-    position: relative;
-    color: black;
-    font-family: "Nunito";
-    font-size: 25px;
-    text-align: center;
-    transition: 1000ms;
-}
-
-.light-mode:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 1;
-    content: "";
-    display: block;
-    height: 3px;
-    left: 50%;
-    position: absolute;
-    background: #fff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-.light-mode:hover:after {
-    width: 100%;
-    left: 0;
-}
-
-.dark-mode {
-    position: relative;
-    display: none;
-    color: white;
-    font-family: "Nunito";
-    font-size: 25px;
-    text-align: center;
-    transition: 1000ms;
-}
-
-.dark-mode:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 1;
-    content: "";
-    display: block;
-    height: 3px;
-    left: 50%;
-    position: absolute;
-    background: #fff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-.dark-mode:hover:after {
-    width: 100%;
-    left: 0;
-}
-
-.menu-bar {
-    flex-basis: 5%;
-    display: none;
-    font-family: "Nunito";
-    font-size: 25px;
-    text-align: center;
-    align-self: center;
-    position: relative;
 }
 
 @media only screen and (max-width: 1260px) {
@@ -299,8 +170,8 @@ img {
         display: block;
     }
     .item {
-        margin-right: 80px;
-        margin-left: 80px;
+        margin-right: 90px;
+        margin-left: 90px;
     }
     .mini-text {
         font-size: 20px;
@@ -324,8 +195,8 @@ img {
         font-size: 30px;
     }
     .item {
-        margin-right: 80px;
-        margin-left: 80px;
+        margin-right: 90px;
+        margin-left: 90px;
     }
     .mini-text {
         font-size: 20px;
@@ -346,13 +217,9 @@ img {
         font-size: 25px;
     }
     .item {
-        margin-right: 60px;
-        margin-left: 60px;
+        margin-right: 120px;
+        margin-left: 120px;
     }
-}
-
-.test {
-    border: 0px solid black;
 }
 
 @media only screen and (max-width: 420px) {

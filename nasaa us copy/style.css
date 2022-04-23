@@ -1,19 +1,20 @@
 * {
-  margin: 0%;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 4px;
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 4px;
 }
 
 body {
-  height: 100vh;
-  display: flex;
-  padding: 5px;
-  justify-content: center;
+    height: 100vh;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
 }
 
 .container {
+<<<<<<< HEAD
   width: 87%;
   background-color: #2d394b;
   height: fit-content;
@@ -22,71 +23,103 @@ body {
   margin-bottom: 100px;
   overflow: hidden;
   padding-bottom: 10vh;
+=======
+    width: 87%;
+    background-color: #2d394b;
+    height: fit-content;
+    position: relative;
+    min-height: 300px;
+    margin-bottom: 100px;
+    padding-bottom: 10vh;
+    overflow: hidden;
+>>>>>>> refs/remotes/origin/main
 }
 
 .title {
-  color: white;
-  margin: 15px;
-  margin-left: 23px;
-  font-size: 6vw;
+    color: white;
+    margin: 15px;
+    margin-left: 23px;
+    font-size: 6vw;
 }
+
 .drops {
-  position: absolute;
-  width: 40%;
-  height: 95.4%;
-  right: 25vw;
-  top: 15.7vw;
-  /* border: 1px solid black; */
-  overflow: hidden;
+    position: absolute;
+    width: 40%;
+    height: 95.4%;
+    right: 25vw;
+    top: 15.7vw;
+    /* border: 1px solid black; */
+    overflow: hidden;
 }
+<<<<<<< HEAD
 .crnt {
   margin-top: 10px;
   width: 50%;
   margin-left: 0%;
   height: 30vw;
   z-index: 1000;
+=======
+
+.axe {
+    margin-top: 10px;
+    width: 50%;
+    margin-left: 0%;
+    height: 30vw;
+    z-index: 1000;
+>>>>>>> refs/remotes/origin/main
 }
+
 .gra {
-  margin-top: 5%;
-  width: 40%;
-  height: 20%;
+    margin-top: 5%;
+    width: 40%;
+    height: 20%;
 }
 
 .info {
-  width: 50%;
-  color: white;
-  padding: 8%;
-  padding-top: 5%;
-  font-size: 2vw;
+    width: 50%;
+    color: white;
+    padding: 8%;
+    padding-top: 5%;
+    font-size: 2vw;
 }
 
 .top {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .top2 {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
+<<<<<<< HEAD
 .waters {
   width: 40%;
   margin-left: 5%;
   margin-right: 5%;
   height: 24vw;
   margin-top: 5vw;
+=======
+.woods {
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 24vw;
+    margin-top: 5vw;
+>>>>>>> refs/remotes/origin/main
 }
 
 .ground {
-  width: 100%;
-  height: 100px;
-  margin-top: 100px;
-  background-color: antiquewhite;
-  font-size: 10px;
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    background-color: antiquewhite;
+    font-size: 10px;
 }
 
 @media only screen and (max-width: 780px) {
+<<<<<<< HEAD
   .top {
     flex-direction: column;
   }
@@ -125,50 +158,95 @@ body {
     /* border: 1px solid black; */
     overflow: hidden;
   }
+=======
+    .top {
+        flex-direction: column;
+    }
+    .top2 {
+        flex-direction: column-reverse;
+    }
+    .axe {
+        width: 62%;
+    }
+    .gra {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .info {
+        width: 100%;
+        font-size: 2.6vw;
+        padding-top: 5px;
+    }
+    .woods {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .title {
+        margin-left: 2%;
+        margin-right: 8%;
+    }
+    .drops {
+        position: absolute;
+        width: 40%;
+        height: 95.4%;
+        right: 17vw;
+        top: 19vw;
+        /* border: 1px solid black; */
+        overflow: hidden;
+    }
+>>>>>>> refs/remotes/origin/main
 }
+
 section {
-  position: absolute;
-  width: 100%;
-  height: 20vh;
-  overflow: hidden;
-  bottom: 0;
-  left: 0;
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
 }
+
 section .wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: url(../wave.svg);
-  background-size: 1000px 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../wave.svg);
+    background-size: 1000px 100px;
 }
+
 section .wave.wave1 {
-  animation: animate 30s linear infinite;
-  z-index: 1000;
-  opacity: 1;
-  animation-delay: 0;
-  bottom: 0;
-  -webkit-animation: animate 30s linear infinite;
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0;
+    bottom: 0;
+    -webkit-animation: animate 30s linear infinite;
 }
+
 @keyframes animate {
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: 1000px;
-  }
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
 }
+
 section .wave.wave2 {
-  animation: animate2 15s linear infinite;
-  z-index: 999;
-  opacity: 0.5;
-  animation-delay: -5s;
-  bottom: 10px;
-  -webkit-animation: animate 15s linear infinite;
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+    -webkit-animation: animate 15s linear infinite;
 }
 
 .drop {
+<<<<<<< HEAD
   width: 1.7vw;
   height: 3vw;
   background-color: #4fc2ec;
@@ -176,8 +254,19 @@ section .wave.wave2 {
   position: absolute;
   left: 11%;
   animation: 3s drop linear infinite;
+=======
+    width: 1.7vw;
+    height: 3vw;
+    background-color: #4fc2ec;
+    border-radius: 500%;
+    position: absolute;
+    left: 11%;
+    animation: 5s drop linear infinite;
+>>>>>>> refs/remotes/origin/main
 }
+
 @keyframes drop {
+<<<<<<< HEAD
   0% {
     transform: scale(0.7) translateY(950%);
     opacity: 0.5;
@@ -192,44 +281,65 @@ section .wave.wave2 {
   100% {
     transform: scale(0.7) translateY(6000%);
   }
+=======
+    0% {
+        transform: scale(0.7) translateY(950%);
+        opacity: 0.5;
+    }
+    20% {
+        transform: scale(0.7) translateY(1000%);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.7) translateY(1050%);
+    }
+    100% {
+        transform: scale(0.7) translateY(20000%);
+    }
+>>>>>>> refs/remotes/origin/main
 }
+
 @keyframes animate2 {
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: 1000px;
-  }
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
 }
+
 section .wave.wave3 {
-  animation: animate2 5s linear infinite;
-  z-index: 998;
-  opacity: 0.2;
-  animation-delay: -5s;
-  bottom: 15px;
-  -webkit-animation: animate 5s linear infinite;
+    animation: animate2 5s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -5s;
+    bottom: 15px;
+    -webkit-animation: animate 5s linear infinite;
 }
+
 @keyframes animate3 {
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: 1000px;
-  }
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
 }
+
 section .wave.wave4 {
-  animation: animate4 15s linear infinite;
-  z-index: 997;
-  opacity: 0.7;
-  animation-delay: -5s;
-  bottom: 20px;
-  -webkit-animation: animate 15s linear infinite;
+    animation: animate4 15s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+    -webkit-animation: animate 15s linear infinite;
 }
+
 @keyframes animate4 {
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: 1000px;
-  }
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
 }
