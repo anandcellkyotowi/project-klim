@@ -20,6 +20,7 @@ body {
   position: relative;
   min-height: 300px;
   margin-bottom: 100px;
+  overflow: hidden;
   padding-bottom: 10vh;
 }
 
@@ -38,7 +39,7 @@ body {
   /* border: 1px solid black; */
   overflow: hidden;
 }
-.axe {
+.crnt {
   margin-top: 10px;
   width: 50%;
   margin-left: 0%;
@@ -69,7 +70,7 @@ body {
   flex-direction: row;
 }
 
-.woods {
+.waters {
   width: 40%;
   margin-left: 5%;
   margin-right: 5%;
@@ -92,7 +93,7 @@ body {
   .top2 {
     flex-direction: column-reverse;
   }
-  .axe {
+  .crnt {
     width: 62%;
   }
   .gra {
@@ -105,7 +106,7 @@ body {
     font-size: 2.6vw;
     padding-top: 5px;
   }
-  .woods {
+  .waters {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
@@ -174,7 +175,7 @@ section .wave.wave2 {
   border-radius: 500%;
   position: absolute;
   left: 11%;
-  animation: 5s drop linear infinite;
+  animation: 3s drop linear infinite;
 }
 @keyframes drop {
   0% {
@@ -182,14 +183,14 @@ section .wave.wave2 {
     opacity: 0.5;
   }
   20% {
-    transform: scale(0.7) translateY(1000%);
+    transform: scale(0.7) translateY(980%);
     opacity: 1;
   }
   50% {
-    transform: scale(0.7) translateY(1050%);
+    transform: scale(0.7) translateY(1040%);
   }
   100% {
-    transform: scale(0.7) translateY(20000%);
+    transform: scale(0.7) translateY(6000%);
   }
 }
 @keyframes animate2 {
