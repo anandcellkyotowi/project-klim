@@ -258,4 +258,10 @@ img {
         margin-right: 40px;
         margin-left: 40px;
     }
+    .cursor {
+        display: none;
+    }
+    .cursor2 {
+        display: none;
+    }
 }

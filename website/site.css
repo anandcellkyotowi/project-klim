@@ -114,14 +114,6 @@ body {
   font-size: 10px;
 }
 
-.cigarette {
-  width: 40%;
-  height: 50px;
-  background: white;
-  margin-top: 20vh;
-  animation: redu linear 5s infinite;
-}
-
 .mo-fire {
   left: 0px;
   bottom: 0px;
@@ -217,6 +209,14 @@ body {
   }
 }
 
+.cigarette {
+  width: 40%;
+  height: 50px;
+  background: white;
+  margin-top: 20vh;
+  animation: redu linear 5s infinite;
+}
+
 @keyframes redu {
   0% {
     border-right: 10px solid rgb(185, 31, 31);
@@ -290,12 +290,12 @@ body {
     margin-left: 2vw;
   }
   .cigarette {
-    width: 55%;
+    width: 50%;
   }
   .vapour {
     position: absolute;
     top: 77%;
-    left: 56%;
+    left: 50%;
   }
 }
 
@@ -306,7 +306,7 @@ body {
     margin-left: 2vw;
   }
   .cigarette {
-    width: 65%;
+    width: 50%;
   }
   .vapour {
     position: absolute;
@@ -322,7 +322,7 @@ body {
     margin-left: 2vw;
   }
   .cigarette {
-    width: 70%;
+    width: 50%;
   }
   .vapour {
     position: absolute;
