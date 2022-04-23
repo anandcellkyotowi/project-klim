@@ -15,7 +15,13 @@ body {
 
 .container {
   width: 87%;
-  background-color: #2d394b;
+  background: rgb(4, 18, 20);
+  background: linear-gradient(
+    0deg,
+    rgba(4, 18, 20, 1) 0%,
+    rgba(33, 84, 157, 1) 58%,
+    rgba(12, 143, 199, 1) 100%
+  );
   height: fit-content;
   position: relative;
   min-height: 300px;
@@ -53,6 +59,13 @@ body {
   margin-top: 5%;
   width: 40%;
   height: 20%;
+  opacity: 0;
+  animation: title3 0.75s ease-out 0.8s forwards;
+}
+@keyframes title3 {
+  100% {
+    opacity: 1;
+  }
 }
 
 .info {
@@ -61,6 +74,14 @@ body {
   padding: 8%;
   padding-top: 5%;
   font-size: 2vw;
+  opacity: 0;
+  animation: title 0.75s ease-out 1.2s forwards;
+}
+
+@keyframes title {
+  100% {
+    opacity: 1;
+  }
 }
 
 .top {
@@ -79,6 +100,15 @@ body {
   margin-right: 5%;
   height: 24vw;
   margin-top: 5vw;
+  border-radius: 5%;
+  opacity: 0;
+  animation: title2 0.75s ease-out 0.8s forwards;
+}
+
+@keyframes title2 {
+  100% {
+    opacity: 1;
+  }
 }
 
 .ground {
@@ -126,6 +156,9 @@ body {
     top: 19vw;
     /* border: 1px solid black; */
     overflow: hidden;
+  }
+  .waters {
+    width: 90%;
   }
 }
 
@@ -245,4 +278,9 @@ section .wave.wave4 {
   100% {
     background-position-x: 1000px;
   }
+}
+.red {
+  background-color: red;
+  width: 50px;
+  height: 50px;
 }
