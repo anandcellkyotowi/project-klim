@@ -114,74 +114,12 @@ body {
   font-size: 10px;
 }
 
-@media only screen and (max-width: 1880px) {
-  #pushdashit {
-    text-align: center;
-    margin-bottom: 45vh;
-    margin-left: 2vw;
-  }
-}
-
-@media only screen and (max-width: 1530px) {
-  #pushdashit {
-    text-align: center;
-    margin-bottom: 34vh;
-    margin-left: 2vw;
-  }
-}
-
-@media only screen and (max-width: 1030px) {
-  #pushdashit {
-    text-align: center;
-    margin-bottom: 25vh;
-    margin-left: 2vw;
-  }
-}
-@media only screen and (max-width: 780px) {
-  /* For mobile phones: */
-  .top {
-    flex-direction: column;
-  }
-  .top2 {
-    flex-direction: column-reverse;
-  }
-  .sizeCi {
-    padding-top: 5%;
-    width: 60%;
-    height: 20vw;
-  }
-  .gra {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-  .page {
-    width: 90%;
-  }
-  .info {
-    width: 100%;
-    font-size: 2.6vw;
-    padding-top: 5px;
-    text-align: center;
-  }
-  .info2 {
-    width: 100%;
-    font-size: 2.5vw;
-    padding-top: 5px;
-    text-align: center;
-  }
-  .faya {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-  .title {
-    text-align: center;
-    font-size: 6vw;
-  }
-  #pushdashit {
-    margin-bottom: 17vh;
-  }
+.cigarette {
+  width: 40%;
+  height: 50px;
+  background: white;
+  margin-top: 20vh;
+  animation: redu linear 5s infinite;
 }
 
 .mo-fire {
@@ -276,5 +214,173 @@ body {
 @keyframes ani4 {
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes redu {
+  0% {
+    border-right: 10px solid rgb(185, 31, 31);
+  }
+  20% {
+    border-right: 10px solid rgb(178, 55, 55);
+  }
+  40% {
+    border-right: 10px solid rgb(142, 59, 59);
+  }
+  60% {
+    border-right: 10px solid rgb(209, 19, 19);
+  }
+  80% {
+    border-right: 10px solid rgb(144, 29, 29);
+  }
+  100% {
+    border-right: 10px solid rgb(113, 22, 22);
+  }
+}
+.bottom {
+  width: 25%;
+  height: 100%;
+  background: rgb(180, 80, 13);
+  border-right: 7px solid grey;
+}
+.vapour {
+  position: absolute;
+  top: 77%;
+  left: 39%;
+  display: flex;
+  z-index: 1;
+}
+.vapour span {
+  position: relative;
+  bottom: 40px;
+  display: block;
+  margin-top: 20vh;
+  margin: 0 2px 50px;
+  min-width: 4px;
+  height: 80px;
+  border-right: 2px solid rgb(40, 40, 40);
+  border-radius: 50%;
+  animation: animate 5s linear infinite;
+  filter: blur(5px);
+  animation-delay: calc(var(--i) * -0.4s);
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+  }
+  15% {
+    opacity: 2;
+  }
+  50% {
+    transform: translateY(-150px) scaleX(5);
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-300px) scaleX(10);
+  }
+}
+
+@media only screen and (max-width: 1880px) {
+  #pushdashit {
+    text-align: center;
+    margin-bottom: 45vh;
+    margin-left: 2vw;
+  }
+  .cigarette {
+    width: 55%;
+  }
+  .vapour {
+    position: absolute;
+    top: 77%;
+    left: 56%;
+  }
+}
+
+@media only screen and (max-width: 1530px) {
+  #pushdashit {
+    text-align: center;
+    margin-bottom: 34vh;
+    margin-left: 2vw;
+  }
+  .cigarette {
+    width: 65%;
+  }
+  .vapour {
+    position: absolute;
+    top: 77%;
+    left: 65%;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  #pushdashit {
+    text-align: center;
+    margin-bottom: 25vh;
+    margin-left: 2vw;
+  }
+  .cigarette {
+    width: 70%;
+  }
+  .vapour {
+    position: absolute;
+    top: 77%;
+    left: 67%;
+  }
+}
+@media only screen and (max-width: 780px) {
+  /* For mobile phones: */
+  .top {
+    flex-direction: column;
+  }
+  .top2 {
+    flex-direction: column-reverse;
+  }
+  .sizeCi {
+    padding-top: 5%;
+    width: 60%;
+    height: 20vw;
+  }
+  .gra {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .page {
+    width: 90%;
+  }
+  .info {
+    width: 100%;
+    font-size: 2.6vw;
+    padding-top: 5px;
+    text-align: center;
+  }
+  .info2 {
+    width: 100%;
+    font-size: 2.5vw;
+    padding-top: 5px;
+    text-align: center;
+  }
+  .faya {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .title {
+    text-align: center;
+    font-size: 6vw;
+  }
+  #pushdashit {
+    margin-bottom: 17vh;
+  }
+  .cigarette {
+    width: 80%;
+  }
+  .vapour {
+    position: absolute;
+    top: 77%;
+    left: 76%;
   }
 }
