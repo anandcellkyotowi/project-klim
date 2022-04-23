@@ -1,7 +1,5 @@
 const items = document.getElementsByClassName('item');
 const topBar = document.getElementById('top-bar');
-const menuButton = document.querySelector('.menu-bar')
-const menu = document.querySelector('#menu')
 
 topBar.addEventListener('animationstart', () => {
     topBar.classList.remove('hidden');
@@ -22,6 +20,7 @@ document.addEventListener('mousemove', function(e) {
 function growBox1() {
     document.getElementById("first").style.width = 330 + 'px';
     document.getElementById("first").style.height = 330 + 'px';
+    document.getElementById('first1').src = './Main Page img/air-hover.png';
 }
 
 function noGrowBox1() {
