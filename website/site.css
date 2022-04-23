@@ -12,6 +12,7 @@ body {
   background-color: black;
 }
 .page {
+  overflow: hidden;
   height: 100%;
   width: 80%;
   background: rgb(164, 74, 63);
@@ -30,6 +31,7 @@ body {
   top: 20px;
   left: 50px;
   font-size: 36px;
+  font-weight: 400;
 }
 .gra {
   margin-top: 5px;
@@ -226,11 +228,13 @@ body {
 }
 
 .cigarette {
-  width: 40%;
+  position: relative;
+  width: 30%;
   height: 50px;
-  background: white;
-  margin-top: 20vh;
-  animation: redu linear 5s infinite;
+  background: rgb(255, 255, 255);
+  border-right: 10px solid rgb(185, 31, 31);
+  margin-top: 10vh;
+  animation: redu linear 3s infinite;
 }
 
 @keyframes redu {
@@ -253,6 +257,7 @@ body {
     border-right: 10px solid rgb(113, 22, 22);
   }
 }
+
 .bottom {
   width: 25%;
   height: 100%;
@@ -262,9 +267,8 @@ body {
 .vapour {
   position: absolute;
   top: 77%;
-  left: 39%;
+  left: 100%;
   display: flex;
-  z-index: 1;
 }
 .vapour span {
   position: relative;
@@ -308,11 +312,6 @@ body {
   .cigarette {
     width: 50%;
   }
-  .vapour {
-    position: absolute;
-    top: 77%;
-    left: 50%;
-  }
 }
 
 @media only screen and (max-width: 1530px) {
@@ -324,11 +323,6 @@ body {
   .cigarette {
     width: 50%;
   }
-  .vapour {
-    position: absolute;
-    top: 77%;
-    left: 65%;
-  }
 }
 
 @media only screen and (max-width: 1030px) {
@@ -339,11 +333,6 @@ body {
   }
   .cigarette {
     width: 50%;
-  }
-  .vapour {
-    position: absolute;
-    top: 77%;
-    left: 67%;
   }
 }
 @media only screen and (max-width: 780px) {
@@ -395,11 +384,7 @@ body {
   .cigarette {
     width: 80%;
   }
-  .vapour {
-    position: absolute;
-    top: 77%;
-    left: 76%;
-  }
+
   .faya {
     background-image: url("fire3.jpeg");
     height: 25vh;
