@@ -76,7 +76,7 @@ body {
   position: absolute;
   background-color: black;
   color: white;
-  top: 46vh;
+  top: 100vh;
   left: 3%;
   font-size: 8vh;
   font-weight: 300;
@@ -294,36 +294,38 @@ body {
   align-content: flex-end;
 }
 @media only screen and (max-width: 1300px) {
-    .hidden1 {
-        width: 80%;
-        top: 40vh;
-    }
-    .hidden2 {
-        width: 82%;
-        top: 90vh;
-      }
-    .box1 {
-        width: 80%;
-        top: 60vh;
-        margin-right: 7%;
-    }
-    .hidden3 {
-        width: 80%;
-        top: 190vh;
-        margin-right: 30%;
-    }
-    .hidden4 {
-        width: 80%;
-        top: 140vh;
-    }
-    .box2 {
-        width: 80%;
-        margin-left: 7%;
-        top: 110vh;
-    }
-    .diagram {
-        width: 60%;
-        margin-left: 15%;
-        top: 140vh;
-    }
+  element.style {
+    top: 0vh;
+  }
+  .hidden1 {
+    width: 80%;
+    top: 40vh;
+  }
+  .hidden2 {
+    width: 82%;
+    top: 90vh;
+  }
+  .box1 {
+    width: 80%;
+    top: 60vh;
+    margin-right: 7%;
+  }
+  .hidden3 {
+    width: 80%;
+    top: 210vh;
+  }
+  .hidden4 {
+    width: 80%;
+    top: 140vh;
+  }
+  .box2 {
+    width: 80%;
+    margin-left: 7%;
+    top: 110vh;
+  }
+  .diagram {
+    width: 60%;
+    margin-left: 15%;
+    top: 160vh;
+  }
 }
