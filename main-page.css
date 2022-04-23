@@ -54,10 +54,11 @@ img {
     flex-basis: 10%;
     font-size: 40px;
     font-family: "Montserrat";
+    transition: 1000ms;
 }
 
 .container {
-    height: 1000px;
+    height: 1100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,16 +99,7 @@ img {
     text-align: left;
     padding: 12px 24px;
     margin-bottom: 30px;
-}
-
-.us {
-    flex-basis: 10%;
-    font-size: 25px;
-    font-family: "Montserrat";
-    font-weight: lighter;
-    text-align: left;
-    padding: 12px 24px;
-    margin-bottom: 30px;
+    transition: 1000ms;
 }
 
 .innerContainer {
@@ -196,6 +188,12 @@ img {
         align-self: center;
         font-size: 25px;
     }
+    .name1 {
+        font-size: 40px;
+    }
+    .us1 {
+        font-size: 30px;
+    }
     .item {
         margin-right: 90px;
         margin-left: 90px;
@@ -236,6 +234,15 @@ img {
     .item {
         margin-right: 120px;
         margin-left: 120px;
+    }
+    .name1 {
+        font-size: 30px;
+    }
+    .us1 {
+        font-size: 20px;
+    }
+    .team-container {
+        width: 50%;
     }
 }
 
