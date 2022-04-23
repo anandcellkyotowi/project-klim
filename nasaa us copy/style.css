@@ -127,15 +127,6 @@ body {
   .top2 {
     flex-direction: column-reverse;
   }
-  .crnt {
-    width: 62%;
-  }
-  .gra {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 0;
-  }
   .info {
     width: 100%;
     font-size: 2.6vw;
@@ -154,13 +145,10 @@ body {
     position: absolute;
     width: 40%;
     height: 95.4%;
-    right: 17vw;
+    right: 25vw;
     top: 19vw;
     /* border: 1px solid black; */
     overflow: hidden;
-  }
-  .waters {
-    width: 90%;
   }
 }
 
