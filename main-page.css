@@ -5,9 +5,10 @@
 
 body {
     transition: 1500ms;
-    background-image: url('watercolor.jpg');
+    background-image: url('background.jpg');
     background-size: 100% 100%;
     cursor: none;
+    background-color: white;
 }
 
 a {
@@ -22,7 +23,14 @@ a {
     color: black;
 }
 
-a:after {
+.cover {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    cursor: none
+}
+
+.cover:after {
     background: none repeat scroll 0 0 transparent;
     bottom: 1;
     content: "";
@@ -35,7 +43,7 @@ a:after {
     width: 0;
 }
 
-a:hover:after {
+.cover:hover:after {
     width: 100%;
     left: 0;
 }
@@ -86,6 +94,7 @@ img {
 .menu-thing {
     display: flex;
     flex-direction: column;
+    z-index: 2000;
 }
 
 @keyframes slide-up {

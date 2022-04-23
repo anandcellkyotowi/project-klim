@@ -21,7 +21,8 @@ document.addEventListener('mousemove', function(e) {
 })
 
 function changeColorDark() {
-    document.body.style.backgroundImage = "url('watercolor1.jpg')";
+    document.body.style.backgroundImage = "url('background1.png')";
+    document.body.style.backgroundColor = 'black';
     document.getElementById('light-mode').style.display = 'none';
     document.getElementById('dark-mode').style.display = 'block';
     const kolor = document.getElementsByClassName('kolor');
@@ -29,16 +30,19 @@ function changeColorDark() {
         item.style.color = 'white';
     });
 
+
 }
 
 function changeColorLight() {
-    document.body.style.backgroundImage = "url('watercolor.jpg')";
+    document.body.style.backgroundImage = "url('background.jpg')";
+    document.body.style.backgroundColor = 'white';
     document.getElementById('dark-mode').style.display = 'none';
     document.getElementById('light-mode').style.display = 'block';
     const kolor = document.getElementsByClassName('kolor');
     Array.from(kolor).forEach(item => {
         item.style.color = 'black';
     });
+    document.getElementsByClassName('kolors').style.color = 'black';
 
 }
 
