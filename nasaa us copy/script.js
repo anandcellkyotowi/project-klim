@@ -1,4 +1,4 @@
 function myFunction() {
-  var element = document.getElementsById("dp");
-  element.classList.add("red");
+  var element = document.getElementById("dp");
+  element.classList.remove("drop");
 }

@@ -279,8 +279,3 @@ section .wave.wave4 {
     background-position-x: 1000px;
   }
 }
-.red {
-  background-color: red;
-  width: 50px;
-  height: 50px;
-}
