@@ -9,6 +9,7 @@ body {
     background-size: 100% 100%;
     cursor: none;
     background-color: white;
+    overflow-x: hidden;
 }
 
 a {
@@ -43,13 +44,20 @@ img {
 .name {
     flex-grow: 1;
     font-size: 50px;
-    font-family: "Nunito";
+    font-family: "Montserrat";
     text-align: center;
-    border: 1px solid black;
+}
+
+.name1 {
+    display: flex;
+    align-items: flex-end;
+    flex-basis: 10%;
+    font-size: 40px;
+    font-family: "Montserrat";
 }
 
 .container {
-    height: 100vh;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,8 +67,7 @@ img {
 .team-container {
     display: flex;
     flex-direction: column;
-    height: 800px;
-    border: 1px solid black;
+    height: 600px;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -68,30 +75,60 @@ img {
 }
 
 .about-us {
+    flex-basis: 10%;
     font-size: 25px;
-    font-family: "Nunito";
-    border: 1px solid black;
+    font-family: "Montserrat";
+    font-weight: lighter;
+    text-align: left;
+    padding: 12px 24px;
+}
+
+.number {
+    font-size: 20px;
+    padding-bottom: 6px;
+    font-family: "Montserrat";
+    margin-right: 10px;
+}
+
+.us1 {
+    flex-basis: 5%;
+    font-size: 25px;
+    font-family: "Montserrat";
+    font-weight: lighter;
+    text-align: left;
+    padding: 12px 24px;
+    margin-bottom: 30px;
+}
+
+.us {
+    flex-basis: 10%;
+    font-size: 25px;
+    font-family: "Montserrat";
+    font-weight: lighter;
+    text-align: left;
+    padding: 12px 24px;
+    margin-bottom: 30px;
 }
 
 .innerContainer {
-    height: 500px;
+    height: 750px;
     display: flex;
     flex-wrap: wrap;
+    overflow-x: auto;
     align-items: center;
     justify-content: space-around;
     padding: 16px;
 }
 
 .item {
-    width: 250px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     animation: appear 2000ms ease-in-out;
     transition: 0.5s;
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 50px;
-    background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -154,27 +191,14 @@ img {
 }
 
 @media only screen and (max-width: 1260px) {
-    #menu {
-        display: flex;
-        transition: 800ms;
-    }
-    .buttons {
-        display: none;
-    }
     .name {
         flex-basis: 80%;
         align-self: center;
         font-size: 25px;
     }
-    .menu-bar {
-        display: block;
-    }
     .item {
         margin-right: 90px;
         margin-left: 90px;
-    }
-    .mini-text {
-        font-size: 20px;
     }
 }
 
@@ -182,13 +206,10 @@ img {
     .top-bar {
         width: 70%;
     }
-    .buttons {
-        display: none;
-    }
     .name {
         flex-basis: 80%;
         align-self: center;
-        font-size: 30px;
+        font-size: 40px;
     }
     .menu-bar {
         display: block;
@@ -210,11 +231,7 @@ img {
     .name {
         flex-basis: 80%;
         align-self: center;
-        font-size: 25px;
-    }
-    .menu-bar {
-        display: block;
-        font-size: 25px;
+        font-size: 40px;
     }
     .item {
         margin-right: 120px;
@@ -226,22 +243,12 @@ img {
     .top-bar {
         width: 70%;
     }
-    .buttons {
-        display: none;
-    }
     .name {
         align-self: center;
-        font-size: 23px;
-    }
-    .menu-bar {
-        display: block;
-        font-size: 23px;
+        font-size: 40px;
     }
     .item {
         margin-right: 40px;
         margin-left: 40px;
-    }
-    .mini-text {
-        font-size: 10px;
     }
 }

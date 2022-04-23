@@ -20,41 +20,41 @@ document.addEventListener('mousemove', function(e) {
 })
 
 function growBox1() {
-    document.getElementById("first").style.width = 280 + 'px';
-    document.getElementById("first").style.height = 430 + 'px';
+    document.getElementById("first").style.width = 330 + 'px';
+    document.getElementById("first").style.height = 330 + 'px';
 }
 
 function noGrowBox1() {
-    document.getElementById("first").style.width = 250 + 'px';
-    document.getElementById("first").style.height = 400 + 'px';
+    document.getElementById("first").style.width = 300 + 'px';
+    document.getElementById("first").style.height = 300 + 'px';
 }
 
 function growBox2() {
-    document.getElementById("second").style.width = 280 + 'px';
-    document.getElementById("second").style.height = 430 + 'px';
+    document.getElementById("second").style.width = 330 + 'px';
+    document.getElementById("second").style.height = 330 + 'px';
 }
 
 function noGrowBox2() {
-    document.getElementById("second").style.width = 250 + 'px';
-    document.getElementById("second").style.height = 400 + 'px';
+    document.getElementById("second").style.width = 300 + 'px';
+    document.getElementById("second").style.height = 300 + 'px';
 }
 
 function growBox3() {
-    document.getElementById("third").style.width = 280 + 'px';
-    document.getElementById("third").style.height = 430 + 'px';
+    document.getElementById("third").style.width = 330 + 'px';
+    document.getElementById("third").style.height = 330 + 'px';
 }
 
 function noGrowBox3() {
-    document.getElementById("third").style.width = 250 + 'px';
-    document.getElementById("third").style.height = 400 + 'px';
+    document.getElementById("third").style.width = 300 + 'px';
+    document.getElementById("third").style.height = 300 + 'px';
 }
 
 function growBox4() {
-    document.getElementById("fourth").style.width = 280 + 'px';
-    document.getElementById("fourth").style.height = 430 + 'px';
+    document.getElementById("fourth").style.width = 330 + 'px';
+    document.getElementById("fourth").style.height = 330 + 'px';
 }
 
 function noGrowBox4() {
-    document.getElementById("fourth").style.width = 250 + 'px';
-    document.getElementById("fourth").style.height = 400 + 'px';
+    document.getElementById("fourth").style.width = 300 + 'px';
+    document.getElementById("fourth").style.height = 300 + 'px';
 }
