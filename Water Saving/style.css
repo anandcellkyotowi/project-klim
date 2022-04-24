@@ -5,7 +5,10 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 4px;
 }
-
+p{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 body {
   height: 100vh;
   display: flex;
@@ -25,7 +28,7 @@ body {
 }
 
 .title {
-  color: black;
+  color: rgb(33, 32, 86);
   margin: 15px;
   margin-left: 23px;
   font-size: 6vw;
@@ -65,7 +68,7 @@ body {
 
 .info {
   width: 50%;
-  color: black;
+  color: rgb(33, 32, 86);
   padding: 8%;
   padding-top: 5%;
   font-size: 2vw;
@@ -91,12 +94,14 @@ body {
 
 .waters {
   margin-top: 5px;
+  background-image: url(sw.jpg);
   margin: 2%;
-  width: 33vw;
-  height: 25vw;
+  width: 38vw;
+  height: 80vw;
   border-radius: 10px;
   border: 1px solid black;
   animation: title2 0.75s ease-out 0.8s forwards;
+  background-size: cover;
 }
 
 @keyframes title2 {
@@ -144,9 +149,16 @@ body {
     overflow: hidden;
   }
   .waters{
+    background-image: url(ws.jpg);
     width: 80%;
+    height: 40vw;
     margin-left: 10%;
     margin-right: 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container{
+    width: 92vw;
   }
 }
 
