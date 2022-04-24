@@ -15,13 +15,7 @@ body {
 
 .container {
   width: 87%;
-  background: rgb(4, 18, 20);
-  background: linear-gradient(
-    0deg,
-    rgba(4, 18, 20, 1) 0%,
-    rgba(33, 84, 157, 1) 58%,
-    rgba(12, 143, 199, 1) 100%
-  );
+  background-image: url(swcb.jpg);
   height: fit-content;
   position: relative;
   min-height: 300px;
@@ -96,13 +90,12 @@ body {
 }
 
 .waters {
-  width: 40%;
-  margin-left: 5%;
-  margin-right: 5%;
-  height: 24vw;
-  margin-top: 5vw;
-  border-radius: 5%;
-  opacity: 0;
+  margin-top: 5px;
+  margin: 2%;
+  width: 33vw;
+  height: 25vw;
+  border-radius: 10px;
+  border: 1px solid black;
   animation: title2 0.75s ease-out 0.8s forwards;
 }
 
@@ -149,6 +142,11 @@ body {
     top: 19vw;
     /* border: 1px solid black; */
     overflow: hidden;
+  }
+  .waters{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 
