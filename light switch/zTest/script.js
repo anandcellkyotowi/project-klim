@@ -3,7 +3,7 @@
 const lightBulb = document.querySelector('.axe')
 const backGround = document.querySelector('.container')
 const shit = document.querySelector('.infoish')
-var LightOn = false
+var LightOn = true
 
 lightBulb.addEventListener("click", () => {
     if (LightOn) {

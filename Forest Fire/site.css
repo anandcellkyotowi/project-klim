@@ -5,22 +5,21 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 4px;
 }
+p{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 div {
   transition: 250ms;
 }
 body {
-  background-color: black;
+  background-color: rgb(240, 126, 73);
 }
 .page {
   overflow: hidden;
   height: 100%;
   width: 80%;
-  background: rgb(164, 74, 63);
-  background: linear-gradient(
-    0deg,
-    rgba(164, 74, 63, 1) 11%,
-    rgba(245, 157, 0, 1) 100%
-  );
+  background-image: url('0090a.jpg');
   position: relative;
   margin: auto;
 }
