@@ -20,7 +20,7 @@ body {
   background-color: #3d463a;
   padding: 3%;
   width: 85%;
-  height: 2500px;
+  height: 3300px;
   transition: 300ms;
 }
 
@@ -32,7 +32,7 @@ body {
 .hidden1 {
   width: 33%;
   color: rgb(255, 255, 255);
-  top: 10vh;
+  top: 15vh;
   right: -50%;
   font-size: 2vh;
   font-weight: 100;
@@ -43,7 +43,7 @@ body {
 .hidden2 {
   width: 33%;
   color: rgb(255, 255, 255);
-  top: 48vh;
+  top: 58vh;
   left: -50%;
   font-size: 2vh;
   font-weight: 100;
@@ -76,7 +76,7 @@ body {
   position: absolute;
   background-color: black;
   color: white;
-  top: 100vh;
+  top: 46vh;
   left: 3%;
   font-size: 8vh;
   font-weight: 300;
@@ -86,8 +86,8 @@ body {
 .hidden3 {
   width: 33%;
   color: rgb(255, 255, 255);
-  top: 75vh;
-  left: 10%;
+  top: 90vh;
+  left: 7%;
   font-size: 2vh;
   font-weight: 100;
   position: absolute;
@@ -97,7 +97,7 @@ body {
 .hidden4 {
   width: 33%;
   color: rgb(255, 255, 255);
-  top: 75vh;
+  top: 90vh;
   right: 10%;
   font-size: 2vh;
   font-weight: 100;
@@ -110,7 +110,7 @@ body {
   padding: 20px;
   color: azure;
   display: flex;
-  top: 1100px;
+  top: 120vh;
   transition: 500ms;
   left: 13%;
   width: 30%;
@@ -293,7 +293,7 @@ body {
   transform: rotate(-90deg);
   align-content: flex-end;
 }
-@media only screen and (max-width: 1300px) {
+/* @media only screen and (max-width: 1300px) {
   element.style {
     top: 0vh;
   }
@@ -328,4 +328,4 @@ body {
     margin-left: 15%;
     top: 160vh;
   }
-}
+} */
