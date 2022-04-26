@@ -13,6 +13,7 @@ body {
     justify-content: center;
     background-image: url('0091.jpg');
     background-size: 100% 100%;
+    cursor: none;
 }
 
 .container {
@@ -34,8 +35,8 @@ body {
 }
 
 .imaj {
-    height: 4%;
-    width: 2.5%;
+    height: 5%;
+    width: 3%;
 }
 
 .axe {
@@ -146,4 +147,31 @@ body {
 .reveal.active {
     transform: translateY(0);
     opacity: 1;
+}
+
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(247, 255, 29);
+    border-radius: 50%;
+    transition: .1s;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+}
+
+.cursor2 {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(247, 255, 29);
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 999;
+    transform: translate(-50%, -50%);
 }
