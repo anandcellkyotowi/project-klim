@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    transition: 1500ms;
+    background-image: url('background.jpg');
+    background-size: 100% 100%;
+    cursor: none;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    cursor: none;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.top-bar {
+    display: flex;
+    width: 60%;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    animation: slide-up 3s;
+    position: relative;
+    animation-delay: 3500ms;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.name {
+    flex-grow: 1;
+    font-size: 50px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-align: center;
+}
+
+.name1 {
+    display: flex;
+    align-items: flex-end;
+    flex-basis: 10%;
+    font-size: 40px;
+    font-family: "Montserrat";
+    transition: 1000ms;
+}
+
+.container {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.about-us {
+    flex-basis: 10%;
+    font-size: 25px;
+    font-family: "Montserrat";
+    font-weight: lighter;
+    text-align: left;
+    padding: 12px 24px;
+}
+
+.number {
+    font-size: 20px;
+    padding-bottom: 6px;
+    font-family: "Montserrat";
+    margin-right: 10px;
+}
+
+.us1 {
+    flex-basis: 5%;
+    font-size: 25px;
+    font-family: "Montserrat";
+    font-weight: lighter;
+    text-align: left;
+    padding: 12px 24px;
+    margin-bottom: 30px;
+    transition: 1000ms;
+}
+
+.innerContainer {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px;
+}
+
+.item {
+    width: 300px;
+    height: 300px;
+    /* animation: appear 2000ms ease-in-out; */
+    transition: 0.5s;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.s1 {
+    animation-delay: 500ms;
+}
+
+.s2 {
+    animation-delay: 1000ms;
+}
+
+.s3 {
+    animation-delay: 1500ms;
+}
+
+.s4 {
+    animation-delay: 2000ms;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateX(100vw);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(18, 69, 41);
+    border-radius: 50%;
+    transition: .1s;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+}
+
+.cursor2 {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(18, 69, 41);
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 1260px) {
+    .name {
+        flex-basis: 80%;
+        align-self: center;
+        font-size: 25px;
+    }
+    .name1 {
+        font-size: 40px;
+    }
+    .us1 {
+        font-size: 30px;
+    }
+    .item {
+        margin-right: 90px;
+        margin-left: 90px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .top-bar {
+        width: 70%;
+    }
+    .name {
+        flex-basis: 80%;
+        align-self: center;
+        font-size: 40px;
+    }
+    .menu-bar {
+        display: block;
+        font-size: 30px;
+    }
+    .item {
+        margin-right: 90px;
+        margin-left: 90px;
+    }
+    .mini-text {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    .innerContainer {
+        height: 750px;
+    }
+    .top-bar {
+        width: 70%;
+    }
+    .name {
+        flex-basis: 80%;
+        align-self: center;
+        font-size: 40px;
+    }
+    .item {
+        margin-right: 120px;
+        margin-left: 120px;
+    }
+    .name1 {
+        font-size: 30px;
+    }
+    .us1 {
+        font-size: 20px;
+    }
+    .team-container {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .top-bar {
+        width: 70%;
+    }
+    .name {
+        align-self: center;
+        font-size: 40px;
+    }
+    .item {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    .cursor {
+        display: none;
+    }
+    .cursor2 {
+        display: none;
+    }
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}

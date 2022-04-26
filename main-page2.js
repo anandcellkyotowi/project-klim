@@ -1,15 +1,3 @@
-const items = document.getElementsByClassName('item');
-const topBar = document.getElementById('top-bar');
-topBar.addEventListener('animationstart', () => {
-    topBar.classList.remove('hidden');
-});
-
-Array.from(items).forEach(item => {
-    item.addEventListener('animationstart', () => {
-        item.classList.remove('hidden');
-    })
-});
-
 var cursor = document.querySelector('.cursor');
 var cursor2 = document.querySelector('.cursor2');
 document.addEventListener('mousemove', function(e) {
