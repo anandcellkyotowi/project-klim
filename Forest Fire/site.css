@@ -272,15 +272,10 @@ body {
   z-index: 111;
 }
 .cigarette:hover {
-  animation: low linear 60s;
+  animation: low linear 4s;
 }
 
-@keyframes low {
-  100% {
-    width: 0;
-    background: rgb(93, 93, 93);
-  }
-}
+
 
 @keyframes redu {
   0% {
@@ -318,11 +313,12 @@ body {
 }
 
 .bottom:hover {
-  animation: brow linear 60s;
+  animation: low linear 4s;
 }
-@keyframes brow {
-  100%{
-    width: 90%;
+@keyframes low {
+  100% {
+    width: 0;
+    background: rgb(93, 93, 93);
   }
 }
 
