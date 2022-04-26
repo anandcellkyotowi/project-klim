@@ -5,7 +5,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 4px;
 }
-p{
+p {
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -14,7 +14,7 @@ div {
 }
 body {
   background-size: 100%;
-  background-image: url('0090a.jpg');
+  background-image: url("0090a.jpg");
 }
 .page {
   overflow: hidden;
@@ -27,20 +27,22 @@ body {
 
 .title {
   color: white;
-  position: absolute;
-  top: 20px;
-  left: 50px;
+  display: flex;
+  justify-content: center;
   padding-bottom: 5vw;
   font-size: 6vw;
+  font-weight: bold;
 }
 .gra {
+  background-image: url("firess.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-top: 5px;
   margin: 2%;
   width: 33vw;
   height: 25vw;
   border-radius: 10px;
   opacity: 0;
-  border: 1px solid white;
   animation: ani4 0.75s ease-out 0.8s forwards;
 }
 
@@ -106,7 +108,6 @@ body {
   background-image: url("fire2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid white;
   animation: ani3 0.75s ease-out 0.8s forwards;
 }
 
@@ -120,7 +121,7 @@ body {
   background-image: url("fire1.png");
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid white;
+
   animation: ani3 0.75s ease-out 0.8s forwards;
 }
 
@@ -230,10 +231,10 @@ body {
 .cigarette {
   position: relative;
   width: 40%;
-  height: 60px;
+  height: 80px;
   background: rgb(255, 255, 255);
   border-right: 10px solid rgb(185, 31, 31);
-  margin-top: 22vh;
+
   animation: redu linear 3s infinite;
 }
 
@@ -311,7 +312,7 @@ body {
   }
   .cigarette {
     width: 50%;
-    margin-top: 15vh;
+    height: 65px;
   }
 }
 
@@ -323,7 +324,7 @@ body {
   }
   .cigarette {
     width: 50%;
-    margin-top: 12vh;
+    height: 60px;
   }
 }
 
@@ -334,6 +335,7 @@ body {
     margin-left: 2vw;
   }
   .cigarette {
+    height: 60px;
     width: 50%;
   }
 }
@@ -354,6 +356,7 @@ body {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
+    background-image: url("fireCover.jpeg");
   }
   .page {
     width: 90%;
@@ -384,8 +387,8 @@ body {
     margin-bottom: 17vh;
   }
   .cigarette {
+    height: 60px;
     width: 80%;
-    margin-top: 10vh;
   }
 
   .faya {
