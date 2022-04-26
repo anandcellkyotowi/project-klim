@@ -1,459 +1,493 @@
 * {
-    margin: 0%;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 4px;
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 4px;
 }
 
 p {
-    margin-top: 15px;
-    margin-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-
 
 /* div {
     transition: 250ms;
 } */
 
 body {
-    background-size: 100%;
-    background-image: url("0090a.jpg");
-    cursor: none;
+  background-size: 100%;
+  background-image: url("0090a.jpg");
+  cursor: none;
 }
 
 .page {
-    overflow: hidden;
-    height: 100%;
-    width: 80%;
-    background-color: rgb(240, 126, 73);
-    position: relative;
-    margin: auto;
+  overflow: hidden;
+  height: 100%;
+  width: 80%;
+  background-color: rgb(240, 126, 73);
+  position: relative;
+  margin: auto;
 }
 
 .title {
-    margin-top: 2%;
-    color: white;
-    display: flex;
-    gap: 13%;
-    padding-bottom: 5vw;
-    font-size: 6vw;
-    font-weight: bold;
+  margin-top: 2%;
+  color: white;
+  display: flex;
+  gap: 13%;
+  padding-bottom: 5vw;
+  font-size: 6vw;
+  font-weight: bold;
 }
 
 .gra {
-    background-image: url("firess.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 5px;
-    margin: 2%;
-    width: 33vw;
-    height: 25vw;
-    border-radius: 10px;
-    opacity: 0;
-    animation: ani4 0.75s ease-out 0.8s forwards;
+  opacity: 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 5px;
+  position: relative;
+  margin: 2%;
+  width: 33vw;
+  height: 23.3vw;
+  border-radius: 10px;
+  transition: 2500ms;
+  animation: ani4 0.75s ease-out 0.8s forwards;
 }
 
 .sizeCi {
-    margin-top: 100px;
-    width: 35%;
-    height: 15vh;
+  margin-top: 100px;
+  width: 35%;
+  height: 15vh;
 }
 
 .size {
-    position: absolute;
-    bottom: 0px;
-    width: 101%;
-    left: -0.5;
-    height: 34vw;
+  position: absolute;
+  bottom: 0px;
+  width: 101%;
+  left: -0.5;
+  height: 34vw;
 }
 
 .info {
-    width: 50%;
-    color: white;
-    padding: 8%;
-    padding-top: 5%;
-    font-size: 2vw;
-    opacity: 0;
-    animation: ani 0.75s ease-out 1.2s forwards;
+  width: 50%;
+  color: white;
+  padding: 8%;
+  padding-top: 5%;
+  font-size: 2vw;
+  opacity: 0;
+  animation: ani 0.75s ease-out 1.2s forwards;
 }
 
 .info2 {
-    width: 50%;
-    color: white;
-    padding: 8%;
-    padding-top: 1%;
-    font-size: 2vw;
-    opacity: 0;
-    animation: ani2 0.75s ease-out 1.2s forwards;
+  width: 50%;
+  color: white;
+  padding: 8%;
+  padding-top: 1%;
+  font-size: 2vw;
+  opacity: 0;
+  animation: ani2 0.75s ease-out 1.2s forwards;
+  z-index: 999;
 }
 
 #pushdashit {
-    text-align: center;
-    margin-bottom: 50vh;
-    margin-left: 2vw;
+  text-align: center;
+  margin-bottom: 50vh;
+  margin-left: 2vw;
 }
 
 .top {
-    position: relative;
-    display: flex;
-    flex-direction: row;
+  position: relative;
+  display: flex;
+  flex-direction: row;
 }
 
 .top2 {
-    position: relative;
-    display: flex;
-    flex-direction: row;
+  position: relative;
+  display: flex;
+  flex-direction: row;
 }
 
 .faya {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5vw;
-    border-radius: 15px;
-    opacity: 0;
-    width: 40%;
-    background-image: url("fire2.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: ani3 0.75s ease-out 0.8s forwards;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5vw;
+  border-radius: 15px;
+  opacity: 0;
+  width: 40%;
+  background-image: url("fire2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 2500ms;
+  animation: ani3 0.75s ease-out 0.8s forwards;
 }
 
 .faya2 {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5vw;
-    border-radius: 15px;
-    opacity: 0;
-    width: 40%;
-    background-image: url("fire1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: ani3 0.75s ease-out 0.8s forwards;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5vw;
+  border-radius: 15px;
+  opacity: 0;
+  width: 40%;
+  background-image: url("fire1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 2500ms;
+  animation: ani3 0.75s ease-out 0.8s forwards;
+}
+
+.faya:hover {
+  transition: 500ms;
+  transform: scale(1.1);
+}
+
+.faya2:hover {
+  transition: 500ms;
+  transform: scale(1.1);
 }
 
 .ground {
-    width: 100%;
-    height: 100px;
-    margin-top: 100px;
-    background-color: antiquewhite;
-    font-size: 10px;
+  width: 100%;
+  height: 100px;
+  margin-top: 100px;
+  background-color: antiquewhite;
+  font-size: 10px;
 }
 
 .mo-fire {
-    left: 0px;
-    bottom: 0px;
-    position: relative;
+  left: 0px;
+  bottom: 0px;
+  position: relative;
+  z-index: 600;
 }
 
 .mo-fire svg {
-    width: 100%;
-    position: absolute;
-    bottom: -70px;
-    margin-bottom: 10vh;
-    height: 45vw;
+  width: 100%;
+  position: absolute;
+  bottom: -70px;
+  margin-bottom: 10vh;
+  height: 45vw;
 }
 
 .flame {
-    animation-name: flameDisappear;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    opacity: 0.5;
-    transform-origin: 45% 45% 0;
+  animation-name: flameDisappear;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  opacity: 0.5;
+  transform-origin: 45% 45% 0;
 }
 
 .flame.one {
-    animation-delay: 1s;
-    animation-duration: 3s;
+  animation-delay: 1s;
+  animation-duration: 3s;
 }
 
 .flame.two {
-    animation-duration: 5s;
-    animation-delay: 1s;
+  animation-duration: 5s;
+  animation-delay: 1s;
 }
 
 .flame-main {
-    animation-name: flameMovement;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+  animation-name: flameMovement;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .flame-main.one {
-    animation-duration: 2.2s;
-    animation-delay: 1s;
+  animation-duration: 2.2s;
+  animation-delay: 1s;
 }
 
 .flame-main.two {
-    animation-duration: 2s;
-    animation-delay: 1s;
+  animation-duration: 2s;
+  animation-delay: 1s;
 }
 
 .flame-main.three {
-    animation-duration: 2.1s;
-    animation-delay: 3s;
+  animation-duration: 2.1s;
+  animation-delay: 3s;
 }
 
 .flame-main.four {
-    animation-duration: 3.2s;
-    animation-delay: 4s;
+  animation-duration: 3.2s;
+  animation-delay: 4s;
 }
 
 .flame-main.five {
-    animation-duration: 2.5s;
-    animation-delay: 5s;
+  animation-duration: 2.5s;
+  animation-delay: 5s;
 }
 
 @keyframes flameMovement {
-    50% {
-        transform: scale(0.98, 1) translate(0, 2px) rotate(-1deg);
-    }
+  50% {
+    transform: scale(0.98, 1) translate(0, 2px) rotate(-1deg);
+  }
 }
 
 @keyframes flameDisappear {
-    0% {
-        transform: translate(0) rotate(180deg);
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        transform: translate(-10px, -40px) rotate(180deg);
-        opacity: 0;
-    }
+  0% {
+    transform: translate(0) rotate(180deg);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-10px, -40px) rotate(180deg);
+    opacity: 0;
+  }
 }
 
 @keyframes ani {
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes ani2 {
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes ani3 {
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes ani4 {
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 .cigarette {
-    position: relative;
-    width: 40%;
-    height: 80px;
-    background: rgb(255, 255, 255);
-    border-right: 10px solid rgb(185, 31, 31);
-    animation: redu linear 3s infinite;
+  position: relative;
+  width: 40%;
+  height: 80px;
+  background: rgb(255, 255, 255);
+  border-right: 10px solid rgb(185, 31, 31);
+  animation: redu linear 3s infinite;
+  z-index: 111;
+}
+.cigarette:hover {
+  animation: low linear 60s;
+}
+
+@keyframes low {
+  100% {
+    width: 0;
+    background: rgb(93, 93, 93);
+  }
 }
 
 @keyframes redu {
-    0% {
-        border-right: 10px solid rgb(185, 31, 31);
-    }
-    20% {
-        border-right: 10px solid rgb(178, 55, 55);
-    }
-    40% {
-        border-right: 10px solid rgb(142, 59, 59);
-    }
-    60% {
-        border-right: 10px solid rgb(209, 19, 19);
-    }
-    80% {
-        border-right: 10px solid rgb(144, 29, 29);
-    }
-    100% {
-        border-right: 10px solid rgb(113, 22, 22);
-    }
+  0% {
+    border-right: 10px solid rgb(185, 31, 31);
+  }
+  20% {
+    border-right: 10px solid rgb(178, 55, 55);
+  }
+  40% {
+    border-right: 10px solid rgb(142, 59, 59);
+  }
+  60% {
+    border-right: 10px solid rgb(209, 19, 19);
+  }
+  80% {
+    border-right: 10px solid rgb(144, 29, 29);
+  }
+  100% {
+    border-right: 10px solid rgb(113, 22, 22);
+  }
 }
 
 .button {
-    height: 5%;
-    width: 3%;
-    margin-left: 50px;
-    cursor: pointer;
+  height: 5%;
+  width: 3%;
+  margin-left: 50px;
+  cursor: pointer;
 }
 
 .bottom {
-    width: 25%;
-    height: 100%;
-    background: rgb(180, 80, 13);
-    border-right: 7px solid grey;
+  width: 25%;
+  height: 100%;
+  background: rgb(180, 80, 13);
+  border-right: 7px solid grey;
+}
+
+.bottom:hover {
+  animation: brow linear 60s;
+}
+@keyframes brow {
+  100%{
+    width: 100%;
+  }
 }
 
 .vapour {
-    position: absolute;
-    top: 77%;
-    left: 100%;
-    display: flex;
+  position: absolute;
+  top: 77%;
+  left: 100%;
+  display: flex;
 }
 
 .vapour span {
-    position: relative;
-    bottom: 40px;
-    display: block;
-    margin-top: 20vh;
-    margin: 0 2px 50px;
-    min-width: 4px;
-    height: 80px;
-    border-right: 2px solid rgb(40, 40, 40);
-    border-radius: 50%;
-    animation: animate 5s linear infinite;
-    filter: blur(5px);
-    animation-delay: calc(var(--i) * -0.4s);
+  position: relative;
+  bottom: 40px;
+  display: block;
+  margin-top: 20vh;
+  margin: 0 2px 50px;
+  min-width: 4px;
+  height: 80px;
+  border-right: 2px solid rgb(40, 40, 40);
+  border-radius: 50%;
+  animation: animate 5s linear infinite;
+  filter: blur(5px);
+  animation-delay: calc(var(--i) * -0.4s);
 }
 
 @keyframes animate {
-    0% {
-        transform: translateY(0) scaleX(1);
-        opacity: 0;
-    }
-    15% {
-        opacity: 2;
-    }
-    50% {
-        transform: translateY(-150px) scaleX(5);
-    }
-    95% {
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(-300px) scaleX(10);
-    }
+  0% {
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+  }
+  15% {
+    opacity: 2;
+  }
+  50% {
+    transform: translateY(-150px) scaleX(5);
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-300px) scaleX(10);
+  }
 }
 
 @media only screen and (max-width: 1880px) {
-    #pushdashit {
-        text-align: center;
-        margin-bottom: 45vh;
-        margin-left: 2vw;
-    }
-    .cigarette {
-        width: 50%;
-        height: 65px;
-    }
+  #pushdashit {
+    text-align: center;
+    margin-bottom: 45vh;
+    margin-left: 2vw;
+  }
+  .cigarette {
+    width: 50%;
+    height: 65px;
+  }
 }
 
 @media only screen and (max-width: 1530px) {
-    #pushdashit {
-        text-align: center;
-        margin-bottom: 34vh;
-        margin-left: 2vw;
-    }
-    .cigarette {
-        width: 50%;
-        height: 60px;
-    }
+  #pushdashit {
+    text-align: center;
+    margin-bottom: 34vh;
+    margin-left: 2vw;
+  }
+  .cigarette {
+    width: 50%;
+    height: 60px;
+  }
 }
 
 @media only screen and (max-width: 1030px) {
-    #pushdashit {
-        text-align: center;
-        margin-bottom: 25vh;
-        margin-left: 2vw;
-    }
-    .cigarette {
-        height: 60px;
-        width: 50%;
-    }
+  #pushdashit {
+    text-align: center;
+    margin-bottom: 25vh;
+    margin-left: 2vw;
+  }
+  .cigarette {
+    height: 60px;
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 780px) {
-    /* For mobile phones: */
-    .top {
-        flex-direction: column;
-    }
-    .top2 {
-        flex-direction: column-reverse;
-    }
-    .sizeCi {
-        padding-top: 5%;
-        width: 60%;
-        height: 20vw;
-    }
-    .gra {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-        background-image: url("fireCover.jpeg");
-    }
-    .page {
-        width: 90%;
-    }
-    .info {
-        margin-top: 40px;
-        width: 100%;
-        font-size: 2.6vw;
-        padding-top: 5px;
-        text-align: center;
-    }
-    .info2 {
-        width: 100%;
-        font-size: 2.5vw;
-        padding-top: 5px;
-        text-align: center;
-    }
-    .faya {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    .title {
-        text-align: center;
-        font-size: 6vw;
-    }
-    #pushdashit {
-        margin-bottom: 17vh;
-    }
-    .cigarette {
-        height: 60px;
-        width: 80%;
-    }
-    .faya {
-        background-image: url("fire3.jpeg");
-        height: 25vh;
-    }
-    .faya2 {
-        background-image: url("fire3.jpeg");
-        width: 80vw;
-        height: 30vh;
-    }
+  /* For mobile phones: */
+  .top {
+    flex-direction: column;
+  }
+  .top2 {
+    flex-direction: column-reverse;
+  }
+  .sizeCi {
+    padding-top: 5%;
+    width: 60%;
+    height: 20vw;
+  }
+  .gra {
+    width: 80%;
+    height: 50vw;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .page {
+    width: 90%;
+  }
+  .info {
+    margin-top: 40px;
+    width: 100%;
+    font-size: 2.6vw;
+    padding-top: 5px;
+    text-align: center;
+  }
+  .info2 {
+    width: 100%;
+    font-size: 2.5vw;
+    padding-top: 5px;
+    text-align: center;
+  }
+  .faya {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .title {
+    text-align: center;
+    font-size: 6vw;
+  }
+  #pushdashit {
+    margin-bottom: 17vh;
+  }
+  .cigarette {
+    height: 60px;
+    width: 80%;
+  }
+  .faya {
+    background-image: url("fire3.jpeg");
+    height: 25vh;
+  }
+  .faya2 {
+    background-image: url("fire3.jpeg");
+    width: 80vw;
+    height: 30vh;
+  }
 }
 
 .cursor {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    border: 1px solid rgb(51, 255, 241);
-    border-radius: 50%;
-    transition: .1s;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    z-index: 999;
-    transform: translate(-50%, -50%);
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(51, 255, 241);
+  border-radius: 50%;
+  transition: 0.1s;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 999;
+  transform: translate(-50%, -50%);
 }
 
 .cursor2 {
-    position: fixed;
-    width: 8px;
-    height: 8px;
-    background-color: rgb(51, 255, 241);
-    border-radius: 50%;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    z-index: 999;
-    transform: translate(-50%, -50%);
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: rgb(51, 255, 241);
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 999;
+  transform: translate(-50%, -50%);
 }
