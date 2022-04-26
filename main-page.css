@@ -132,6 +132,7 @@ img {
 .s1 {
     animation-delay: 500ms;
 }
+
 .s2 {
     animation-delay: 1000ms;
 }
@@ -223,7 +224,7 @@ img {
 }
 
 @media only screen and (max-width: 725px) {
-    .innerContainer{
+    .innerContainer {
         height: 750px;
     }
     .top-bar {
@@ -268,13 +269,15 @@ img {
         display: none;
     }
 }
-.reveal{
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 2s all ease;
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
 }
-.reveal.active{
-  transform: translateY(0);
-  opacity: 1;
-}  
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
