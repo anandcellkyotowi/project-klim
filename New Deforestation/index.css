@@ -9,6 +9,8 @@ body {
     display: flex;
     justify-content: center;
     background-color: black;
+    background-image: url("192-comp.jpg");
+    background-size: cover;
 }
 p{
     margin-top: 15px;
@@ -16,10 +18,10 @@ p{
 }
 #container {
     min-height: 100vh;
-    padding-bottom: 50vh;
+    padding-bottom: 10vw;
     height: fit-content;
     background-color: rgb(92, 167, 92);
-    width: 92%;
+    width: 90%;
 }
 
 #top {
@@ -70,8 +72,8 @@ p{
     color: rgb(255, 255, 255);
     width: 50%;
     font-size: 1.7vw;
-    padding: 10%;
-    padding-top: 5%;
+    padding: 10%;    
+    padding-top: 14%;
 }
 
 .row {
