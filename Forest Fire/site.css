@@ -13,6 +13,7 @@ div {
   transition: 250ms;
 }
 body {
+  background-size: 100%;
   background-image: url('0090a.jpg');
 }
 .page {
@@ -29,8 +30,8 @@ body {
   position: absolute;
   top: 20px;
   left: 50px;
-  font-size: 36px;
-  font-weight: 400;
+  padding-bottom: 5vw;
+  font-size: 6vw;
 }
 .gra {
   margin-top: 5px;
@@ -228,11 +229,11 @@ body {
 
 .cigarette {
   position: relative;
-  width: 30%;
-  height: 50px;
+  width: 40%;
+  height: 60px;
   background: rgb(255, 255, 255);
   border-right: 10px solid rgb(185, 31, 31);
-  margin-top: 10vh;
+  margin-top: 22vh;
   animation: redu linear 3s infinite;
 }
 
@@ -310,6 +311,7 @@ body {
   }
   .cigarette {
     width: 50%;
+    margin-top: 15vh;
   }
 }
 
@@ -321,6 +323,7 @@ body {
   }
   .cigarette {
     width: 50%;
+    margin-top: 12vh;
   }
 }
 
@@ -382,6 +385,7 @@ body {
   }
   .cigarette {
     width: 80%;
+    margin-top: 10vh;
   }
 
   .faya {
