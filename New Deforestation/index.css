@@ -13,10 +13,12 @@ body {
     background-image: url("192-comp.jpg");
     background-size: 100%;
 }
-p{
+
+p {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
 #container {
     min-height: 100vh;
     padding-bottom: 10vw;
@@ -50,14 +52,15 @@ p{
 #head:hover {
     opacity: 100%;
 }
- .backButton{
-   width: 2.7vw;
-   height: 4.6vw;
-   cursor: pointer;
-   margin-left: 5vw;
-   animation: opaopa 1s linear;
-   margin-top: 1vw;
-} 
+
+.backButton {
+    width: 2.7vw;
+    height: 4.6vw;
+    cursor: pointer;
+    margin-left: 5vw;
+    animation: opaopa 1s linear;
+    margin-top: 1vw;
+}
 
 #title {
     display: flex;
@@ -69,7 +72,6 @@ p{
     width: 100%;
     font-size: 5vw;
     top: 2vw;
-
 }
 
 #title2 {
@@ -89,7 +91,7 @@ p{
     color: rgb(255, 255, 255);
     width: 50%;
     font-size: 1.7vw;
-    padding: 10%;    
+    padding: 10%;
     animation: opaopa 3s linear;
     padding-top: 14%;
 }
@@ -197,21 +199,60 @@ p{
         right: 8vw;
     }
 }
+
 @keyframes opaopa {
-    0%{
+    0% {
         opacity: 0%;
     }
-    100%{
+    100% {
         opacity: 100%;
     }
-    
 }
+
 @keyframes opaopa2 {
-    0%{
+    0% {
         opacity: 0%;
     }
-    100%{
+    100% {
         opacity: 80%;
     }
-    
+}
+
+.cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(19, 255, 50);
+    border-radius: 50%;
+    transition: .1s;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+}
+
+.cursor2 {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(19, 255, 50);
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 999;
+    transform: translate(-50%, -50%);
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
 }
