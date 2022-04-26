@@ -9,7 +9,7 @@ div {
   transition: 250ms;
 }
 body {
-  background-color: black;
+  background-color: rgb(133, 180, 151);
 }
 .page {
   overflow: hidden;
