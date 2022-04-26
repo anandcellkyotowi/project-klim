@@ -26,11 +26,12 @@ body {
 }
 
 .title {
+  margin-top: 2%;
   color: white;
   display: flex;
-  justify-content: center;
-  padding-bottom: 5vw;
-  font-size: 6vw;
+  gap: 13%;
+  padding-bottom: 5vw; 
+  font-size: 6vw; 
   font-weight: bold;
 }
 .gra {
@@ -258,6 +259,14 @@ body {
     border-right: 10px solid rgb(113, 22, 22);
   }
 }
+
+.button {
+  height: 5%;
+  width: 3%;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
 
 .bottom {
   width: 25%;
