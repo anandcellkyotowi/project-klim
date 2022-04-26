@@ -24,10 +24,18 @@ body {
 }
 
 .title {
+    display: flex;
+    width: 85%;
     color: white;
     margin: 15px;
     margin-left: 23px;
     font-size: 6vw;
+    justify-content: space-around;
+}
+
+.imaj {
+    height: 4%;
+    width: 2.5%;
 }
 
 .axe {
