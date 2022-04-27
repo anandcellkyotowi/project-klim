@@ -1,3 +1,7 @@
+//why the hell are you staring at my code :|
+//eat sh*t idiot 
+
+
 const img1 = document.getElementById('img1')
 const img2 = document.getElementById('img2')
 
