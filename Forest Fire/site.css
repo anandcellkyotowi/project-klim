@@ -16,8 +16,8 @@ p {
 } */
 
 body {
-  background-size: 20% 20%;
   background-image: url("0090a.jpg");
+  background-size: 30% 20%;
   cursor: none;
 }
 
@@ -262,21 +262,6 @@ body {
   }
 }
 
-.cigarette {
-  position: relative;
-  width: 40%;
-  height: 80px;
-  background: rgb(255, 255, 255);
-  border-right: 10px solid rgb(185, 31, 31);
-  animation: redu linear 3s infinite;
-  z-index: 111;
-}
-.cigarette:hover {
-  animation: low linear 4s;
-}
-
-
-
 @keyframes redu {
   0% {
     border-right: 10px solid rgb(185, 31, 31);
@@ -305,6 +290,19 @@ body {
   cursor: pointer;
 }
 
+.cigarette {
+  position: relative;
+  width: 40%;
+  height: 80px;
+  background: rgb(255, 255, 255);
+  border-right: 10px solid rgb(185, 31, 31);
+  animation: redu linear 3s infinite;
+  z-index: 111;
+}
+
+.bottom:active {
+  animation: low2 linear 4s forwards;
+}
 .bottom {
   width: 25%;
   height: 100%;
@@ -312,12 +310,19 @@ body {
   border-right: 7px solid grey;
 }
 
-.bottom:hover {
-  animation: low linear 4s;
+.cigarette:active {
+  animation: low linear 4s forwards;
 }
+
+@keyframes low2 {
+  100% {
+    width: 60%;
+  }
+}
+
 @keyframes low {
   100% {
-    width: 0;
+    width: 10%;
     background: rgb(93, 93, 93);
   }
 }
