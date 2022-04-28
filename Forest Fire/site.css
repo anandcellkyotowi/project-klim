@@ -89,6 +89,16 @@ body {
   z-index: 999;
 }
 
+.info3 {
+  width: 50%;
+  color: white;
+  padding: 8%;
+  padding-top: 10%;
+  font-size: 1vw;
+  opacity: 0;
+  animation: ani 0.75s ease-out 1.2s forwards;
+}
+
 #pushdashit {
   text-align: center;
   margin-bottom: 50vh;
@@ -113,10 +123,8 @@ body {
   margin-top: 5vw;
   border-radius: 15px;
   opacity: 0;
-  width: 40%;
-  background-image: url("fire2.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 35vw;
+  height: 35vw;
   transition: 2500ms;
   animation: ani3 0.75s ease-out 0.8s forwards;
 }
@@ -127,10 +135,8 @@ body {
   margin-top: 5vw;
   border-radius: 15px;
   opacity: 0;
-  width: 40%;
-  background-image: url("fire1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 35vw;
+  height: 34vw;
   transition: 2500ms;
   animation: ani3 0.75s ease-out 0.8s forwards;
 }
