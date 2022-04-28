@@ -17,11 +17,13 @@ body {
   padding: 5px;
   justify-content: center;
   cursor: none;
+  background-size: 40% 60%;
+  background-image: url(swcb.jpg);
 }
 
 .container {
+  background-color: white;
   width: 87%;
-  background-image: url(swcb.jpg);
   height: fit-content;
   position: relative;
   min-height: 300px;
