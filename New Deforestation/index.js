@@ -1,5 +1,14 @@
+<<<<<<< HEAD
 const img1 = document.getElementById("img1");
 const img2 = document.getElementById("img2");
+=======
+//why the hell are you staring at my code :|
+//eat sh*t idiot 
+
+
+const img1 = document.getElementById('img1')
+const img2 = document.getElementById('img2')
+>>>>>>> 6d0a65f83931b1dc37118b4a7cfd606d0f12e5f9
 
 const changeImage = () => {
   if (innerWidth <= 670) {
