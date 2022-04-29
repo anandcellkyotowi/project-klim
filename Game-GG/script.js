@@ -1,69 +1,78 @@
-var canvas = document.getElementById("canvas");
-var ctx = canvas.getContext("2d");
-canvas.width = 500
-canvas.height = 500
+const canvas = document.getElementById('canvas');
+const c = canvas.getContext("2d");
 
-var cx = canvas.width / 2;
-var cy = canvas.height / 2;
-var rectWidth = 50;
-var rectHeight = 60;
-var y = 250
-var x = 420
-var rotation = 0;
-var direction = 'none'
-var Ship = new Image()
-const enemies = []
-Ship.src = 'ship2.png'
+canvas.width = 600;
+canvas.height = 600;
 
-requestAnimationFrame(animate);
+let angle = 0;
+var current = 'none'
+var enemies = []
+var reloaded = 'true'
+const r = 200;
+const speed = 0.02
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   Animate                                  */
+/* -------------------------------------------------------------------------- */
+
+let animationId;
+
+function reload() {
+    setTimeout(() => {
+        reloaded = true
+    }, 150)
+}
 
 function spawnEnemies() {
-    const radius = 5
+    let x = player.x + player.dx
+    let y = player.y + player.dy
+    let color = 'magenta'
     const angle = Math.atan2(canvas.height / 2 - y, canvas.width / 2 - x)
     const velocity = {
-        x: Math.cos(angle) * 2,
-        y: Math.sin(angle) * 2
+        x: Math.cos(angle) * 10,
+        y: Math.sin(angle) * 10
     }
-    enemies.push(new Enemy(170, 0, radius, 'rgb(0, 94, 255)', velocity, rotation))
+    enemies.push(new Enemy(x, y, 5, color, velocity))
 }
 
 function animate() {
-    requestAnimationFrame(animate);
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.beginPath();
-    ctx.fillStyle = "blue"
-    ctx.arc(cx, cy, 75, 0, Math.PI * 2);
-    ctx.closePath();
-    ctx.fill();
-    ctx.save();
-    ctx.translate(cx, cy);
-    ctx.rotate(rotation);
-    ctx.drawImage(Ship, -rectWidth / 2 + 170, -rectHeight / 2, rectWidth, rectHeight)
-
+    player = new ViewFinder(canvas.width / 2, canvas.height / 2, 30, 'white', 50, 66);
+    earth = new Earth(canvas.width / 2, canvas.height / 2, 30, 'white', 50, 50);
+    animationId = requestAnimationFrame(animate);
+    c.fillStyle = 'rgba(0, 0, 0, 0.5)';
+    c.fillRect(0, 0, canvas.width, canvas.height);
+    // calculate velocity
+    if (current == 'left')
+        angle -= speed;
+    if (current == 'right')
+        angle += speed;
+    // c.translate(viewFinder.x + viewFinder.dx, viewFinder.y + viewFinder.dy)
+    // c.rotate(angle)
+    player.update();
+    earth.update();
+    // c.restore()
     enemies.forEach((enemy) => {
         enemy.update()
     })
-    ctx.restore();
-    if (direction == 'right')
-        rotation -= (Math.PI / 180);
-    if (direction == 'left')
-        rotation += (Math.PI / 180);
 }
+animate()
 
-addEventListener('keydown', (event) => {
-    if (event.key == 'a' || event.key == 'ArrowLeft') {
-        direction = 'right'
-    } else if (event.key == 'd' || event.key == 'ArrowRight') {
-        direction = 'left'
-    }
-    if (event.key == ' ') {
-        spawnEnemies()
-    }
-})
-addEventListener('keyup', (event) => {
-    if (event.key == 'a' || event.key == 'ArrowRight') {
-        direction = 'none'
-    } else if (event.key == 'd' || event.key == 'ArrowLeft') {
-        direction = 'none'
+addEventListener('keydown', (rrrr) => {
+    switch (rrrr.key) {
+        case 'ArrowLeft':
+            current = 'left'
+            break
+        case 'ArrowRight':
+            current = 'right'
+            break
+        case ' ':
+            if (reloaded) {
+                spawnEnemies()
+                reloaded = false
+                reload()
+            }
+            break
     }
 })
