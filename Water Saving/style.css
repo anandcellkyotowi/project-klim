@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  background-color: white;
+  background-color: rgb(203, 245, 255);
   width: 87%;
   height: fit-content;
   position: relative;

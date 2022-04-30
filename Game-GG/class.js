@@ -25,7 +25,7 @@ class ViewFinder {
         this.x = x;
         this.y = y;
         this.radius = radius + 30;
-        this.image = new Image()
+        this.image = new Image();
         this.image.src = 'ship2.png'
         this.radius2 = radius;
         this.color = color
