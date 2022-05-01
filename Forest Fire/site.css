@@ -15,7 +15,7 @@ p {
 } */
 
 body {
-  background-image: url("0090a.jpg");
+  background-image: url("0011.png");
   background-size: 30% 20%;
   cursor: none;
 }
@@ -24,28 +24,30 @@ body {
   overflow: hidden;
   height: 100%;
   width: 80%;
-  background: rgb(246, 145, 43);
+  background: #e7773b;
   position: relative;
   margin: auto;
+  z-index: 1;
 }
 
 .title {
-  margin-top: 2%;
   color: white;
   display: flex;
-  gap: 13%;
-  padding-bottom: 5vw;
-  font-size: 6vw;
-  font-weight: bold;
+  gap: 12%;
+  padding-bottom: 2%;
+  position: fixed;
+  width: 80%;
+  height: fit-content;
+  z-index: 999;
+  background-color: #fa7934;
+  box-shadow: 0 20px 30px 0 rgb(28 9 80 / 5%);
 }
-
 .gra {
   opacity: 0;
   background-repeat: no-repeat;
   background-size: 100%;
   margin-top: 5px;
   position: relative;
-  margin: 2%;
   width: 33vw;
   height: 23.3vw;
   border-radius: 10px;
@@ -53,10 +55,25 @@ body {
   animation: ani4 0.75s ease-out 0.8s forwards;
 }
 
+.gra:hover {
+  transition: 500ms;
+  transform: scale(1.1);
+}
+
+.sum {
+  width: 100%;
+  margin-top: 3vh;
+  height: 8vh;
+}
+
 .sizeCi {
   margin-top: 100px;
   width: 35%;
   height: 15vh;
+}
+
+.text {
+  font-size: 6vw;
 }
 
 .size {
@@ -81,26 +98,25 @@ body {
   width: 50%;
   color: white;
   padding: 8%;
-  padding-top: 1%;
-  font-size: 2vw;
-  opacity: 0;
-  animation: ani2 0.75s ease-out 1.2s forwards;
-  z-index: 999;
-}
-
-.info3 {
-  width: 50%;
-  color: white;
-  padding: 8%;
   padding-top: 10%;
   font-size: 1vw;
   opacity: 0;
   animation: ani 0.75s ease-out 1.2s forwards;
 }
 
+.info3 {
+  width: 50%;
+  color: white;
+  margin-bottom: 5%;
+  font-size: 2vw;
+  opacity: 0;
+  animation: ani 0.75s ease-out 1.2s forwards;
+  z-index: 9;
+}
+
 #pushdashit {
   text-align: center;
-  margin-bottom: 50vh;
+  margin-bottom: 70vh;
   margin-left: 2vw;
 }
 
@@ -114,6 +130,13 @@ body {
   position: relative;
   display: flex;
   flex-direction: row;
+}
+
+.top3 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding-top: 15%;
 }
 
 .faya {
@@ -162,7 +185,7 @@ body {
   left: 0px;
   bottom: 0px;
   position: relative;
-  z-index: 600;
+  z-index: -600;
 }
 
 .mo-fire svg {
@@ -289,9 +312,8 @@ body {
 }
 
 .button {
-  height: 5%;
-  width: 3%;
-  margin-left: 50px;
+  margin-top: 0.5%;
+  margin-left: 5%;
   cursor: pointer;
 }
 
@@ -383,6 +405,17 @@ body {
     width: 50%;
     height: 65px;
   }
+  .sum {
+    position: relative;
+    top: 3vh;
+    width: 6vh;
+    height: 50%;
+  }
+  .text {
+    text-align: center;
+    margin-top: 3vh;
+    font-size: 6vw;
+  }
 }
 
 @media only screen and (max-width: 1530px) {
@@ -395,6 +428,17 @@ body {
     width: 50%;
     height: 60px;
   }
+  .sum {
+    position: relative;
+    top: 2vh;
+    width: 6vh;
+    height: 50%;
+  }
+  .text {
+    text-align: center;
+    margin-top: 3vh;
+    font-size: 6vw;
+  }
 }
 
 @media only screen and (max-width: 1030px) {
@@ -406,6 +450,17 @@ body {
   .cigarette {
     height: 60px;
     width: 50%;
+  }
+  .sum {
+    position: relative;
+    top:5px;
+    width: 5vh;
+    height: 50%;
+  }
+  .text {
+    text-align: center;
+    margin-top: 3vh;
+    font-size: 6vw;
   }
 }
 
@@ -456,8 +511,10 @@ body {
     margin-right: 10%;
   }
   .title {
+    height: fit-content;
     text-align: center;
-    font-size: 6vw;
+    font-size: 5vw;
+    width: 90%;
   }
   #pushdashit {
     margin-bottom: 17vh;
@@ -472,6 +529,17 @@ body {
   .faya2 {
     width: 80vw;
     height: 30vh;
+  }
+  .sum {
+    position: relative;
+    top: 0;
+    width: 4vh;
+    height: 50%;
+  }
+  .text {
+    text-align: center;
+    margin-top: 3vh;
+    font-size: 7vw;
   }
 }
 
