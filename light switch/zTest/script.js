@@ -13,7 +13,7 @@ lightBulb.addEventListener("click", () => {
     } else {
         backGround.style.backgroundColor = "#3D463A";
         LightOn = true;
-        shit.style.marginLeft = '-100%'
+        shit.style.marginLeft = '100%'
         lightBulb.src = "lighton.png";
     }
 });
