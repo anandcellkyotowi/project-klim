@@ -10,6 +10,7 @@ body {
     background-image: url("background.jpg");
     background-size: cover;
     overflow-x: hidden;
+    cursor: none;
 }
 
 .teams {
@@ -166,7 +167,7 @@ body {
     height: 40px;
     border: 1px solid rgb(18, 69, 41);
     border-radius: 50%;
-    transition: 0.1s;
+    transition: .1s;
     left: 0;
     top: 0;
     pointer-events: none;
@@ -202,6 +203,12 @@ body {
 @media only screen and (max-width: 725px) {
     .card {
         margin-bottom: 20%;
+    }
+    .cursor{
+        display: none;
+    }
+    .cursor2{
+        display: none;
     }
 }
 
