@@ -49,11 +49,12 @@ body {
   opacity: 0;
   width: 70%;
   border-radius: 12px;
+  transition: 250ms;
   animation: ani4 0.75s ease-out 0.8s forwards;
 }
 
 .gra:hover {
-  transition: 500ms;
+  transition: 250ms;
   transform: scale(1.1);
 }
 
@@ -153,6 +154,7 @@ body {
   margin-right: 10%;
   height: 35vw;
   border-radius: 15px;
+  transition: 250ms;
   animation: ani3 0.75s ease-out 0.8s forwards;
 }
 
@@ -164,16 +166,17 @@ body {
   opacity: 0;
   width: 80%;
   height: 35vw;
+  transition: 250ms;
   animation: ani3 0.75s ease-out 0.8s forwards;
 }
 
 .faya:hover {
-  transition: 500ms;
+  transition: 250ms;
   transform: scale(1.1);
 }
 
 .faya2:hover {
-  transition: 500ms;
+  transition: 250ms;
   transform: scale(1.1);
 }
 
