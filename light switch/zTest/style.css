@@ -10,6 +10,7 @@ body {
     height: 100vh;
     display: flex;
     padding: 5px;
+    overflow-x: hidden;
     justify-content: center;
     background-image: url('0091.jpg');
     background-size: 60% 60%;
@@ -20,6 +21,7 @@ body {
     width: 70%;
     background-color: #3D463A;
     height: fit-content;
+    transition: 300ms;
     min-height: 300px;
     margin-bottom: 100px;
 }
@@ -63,8 +65,9 @@ body {
 
 .infoish {
     width: 50%;
-    margin-left: -100%;
-    transition: 1000ms;
+    margin-left: 100%;
+    min-width: 50%;
+    transition: 800ms;
     color: white;
     padding: 8%;
     padding-top: 5%;
@@ -135,6 +138,28 @@ body {
         margin-left: 2%;
         margin-right: 8%;
     }
+    .vapour span {
+        max-width: 20px;
+        min-width: 20px;
+    }
+    @keyframes animate {
+        0% {
+            transform: translateY(0) scaleX(10);
+            opacity: 0;
+        }
+        15% {
+            opacity: 1;
+        }
+        50% {
+            transform: translateY(-150px) scaleX(1);
+        }
+        95% {
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(-200px) scaleX(0);
+        }
+    }
 }
 
 .cursor {
@@ -162,4 +187,43 @@ body {
     pointer-events: none;
     z-index: 999;
     transform: translate(-50%, -50%);
+}
+.vapour {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    padding: 0 20px;
+}
+.vapour span {
+    position: relative;
+    bottom: -50px;
+    display: block;
+    margin: 0 2px 50px;
+    max-width: 100px;
+    min-width: 100px;
+    height: 120px;
+    background: rgb(113, 113, 113);
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+    opacity: 0;
+    filter: blur(20px);
+    animation-delay: calc(var(--i) * -0.5s);
+}
+@keyframes animate {
+    0% {
+        transform: translateY(0) scaleX(1);
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-150px) scaleX(5);
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-400px) scaleX(0);
+    }
 }
