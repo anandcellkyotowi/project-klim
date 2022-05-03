@@ -5,6 +5,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/* p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+} */
+
 /* div {
     transition: 250ms;
 } */
@@ -88,7 +93,7 @@ body {
 
 .info2 {
   width: 100%;
-  font-size: 1vw;
+  font-size: 1.5vw;
   padding-top: 3%;
   text-align: center;
   color: white;
@@ -473,7 +478,6 @@ body {
   }
   .info3 {
     font-size: 1.5vw;
-    margin-bottom: 2%;
     padding: 2%;
   }
   .info2 {
@@ -485,6 +489,9 @@ body {
 
 @media only screen and (max-width: 780px) {
   /* For mobile phones: */
+  .top4 {
+    flex-direction: column-reverse;
+  }
   .sizeCi {
     width: 60%;
     height: 20vw;
@@ -512,7 +519,7 @@ body {
   .info3 {
     width: 100%;
     font-size: 2.5vw;
-    padding-top: 5vw;
+    padding-top: 5px;
   }
   .title {
     height: fit-content;
