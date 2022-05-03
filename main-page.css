@@ -15,7 +15,6 @@ body {
 a {
     text-decoration: none;
     color: black;
-
     cursor: none;
 }
 
@@ -26,6 +25,7 @@ img {
 
 .top-bar {
     display: flex;
+    height: 100px;
     width: 60%;
     align-items: flex-end;
     margin-bottom: 30px;
@@ -49,6 +49,14 @@ img {
     font-family: "Montserrat";
     font-weight: bold;
     text-align: center;
+}
+
+.menu {
+    flex-grow: 1;
+    display: flex;
+    font-family: 'Montserrat';
+    gap: 100px;
+    font-size: 35px;
 }
 
 .name1 {
@@ -100,7 +108,7 @@ img {
     font-family: "Montserrat";
     font-weight: lighter;
     text-align: left;
-    padding: 12px 24px;
+    padding: 20px 24px;
     margin-bottom: 30px;
     transition: 1000ms;
 }
@@ -206,6 +214,11 @@ img {
 @media only screen and (max-width: 1300px) {
     .top-bar {
         width: 70%;
+        flex-direction: column;
+    }
+    .menu {
+        font-size: 30px;
+        align-self: center;
     }
     .name {
         flex-basis: 80%;
@@ -236,6 +249,10 @@ img {
         flex-basis: 80%;
         align-self: center;
         font-size: 40px;
+    }
+    .menu {
+        gap: 50px;
+        font-size: 20px;
     }
     .item {
         margin-right: 120px;
