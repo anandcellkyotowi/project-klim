@@ -47,12 +47,11 @@ body {
   color: rgb(33, 32, 86);
   font-size: 6vw;
   display: flex;
-  gap: 13%;
+  gap: 19%;
   font-weight: bold;
   top: 0;
   position: fixed;
   width: 79.6%;
-  height: 15%;
   z-index: 999;
   background-color: rgb(218, 248, 255);
   box-shadow: 0 20px 30px 0 rgb(28 9 80 / 5%);
@@ -70,9 +69,9 @@ body {
 
 .crnt {
   margin-top: 10px;
-  width: 50%;
+  width: 40%;
   margin-left: 0%;
-  height: 30vw;
+  height: 25vw;
   z-index: 600;
 }
 
@@ -106,11 +105,11 @@ body {
     opacity: 1;
   }
 }
-
 .top {
   display: flex;
   flex-direction: row;
   padding-top: 15%;
+  justify-content:space-between;
 }
 
 .top2 {
@@ -162,8 +161,9 @@ body {
     margin-right: 10%;
   }
   .title {
-    margin-left: 2%;
-    margin-right: 8%;
+    /* margin-left: 2%;
+    margin-right: 8%; */
+    width: 92%;
   }
   .drops {
     position: absolute;
@@ -171,6 +171,7 @@ body {
     height: 95.4%;
     right: 25vw;
     top: 19vw;
+    left: 29%;
     /* border: 1px solid black; */
     overflow: hidden;
   }
@@ -240,7 +241,7 @@ section .wave.wave2 {
   background-color: #4fc2ec;
   border-radius: 500%;
   position: absolute;
-  left: 11%;
+  left: 2%;
   animation: 3s drop linear infinite;
 }
 
