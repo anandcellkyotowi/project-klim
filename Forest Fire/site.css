@@ -5,11 +5,6 @@
   font-family: "Montserrat", sans-serif;
 }
 
-p {
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
 /* div {
     transition: 250ms;
 } */
@@ -23,7 +18,7 @@ body {
 .page {
   overflow: hidden;
   height: 100%;
-  width: 80%;
+  width: 65%;
   background: #e7773b;
   position: relative;
   margin: auto;
@@ -36,22 +31,19 @@ body {
   gap: 12%;
   padding-bottom: 2%;
   position: fixed;
-  width: 80%;
-  height: fit-content;
+  width: 65%;
+  height: 10%;
   z-index: 999;
   background-color: #fa7934;
   box-shadow: 0 20px 30px 0 rgb(28 9 80 / 5%);
 }
 .gra {
   opacity: 0;
-  background-repeat: no-repeat;
   background-size: 100%;
-  margin-top: 5px;
   position: relative;
-  width: 33vw;
-  height: 23.3vw;
-  border-radius: 10px;
-  transition: 2500ms;
+  opacity: 0;
+  width: 70%;
+  border-radius: 12px;
   animation: ani4 0.75s ease-out 0.8s forwards;
 }
 
@@ -62,8 +54,8 @@ body {
 
 .sum {
   width: 100%;
-  margin-top: 3vh;
-  height: 8vh;
+  margin-top: 1vh;
+  height: 6vh;
 }
 
 .sizeCi {
@@ -73,43 +65,44 @@ body {
 }
 
 .text {
-  font-size: 6vw;
+  margin-left: 8%;
+  font-size: 4vw;
 }
 
 .size {
   position: absolute;
   bottom: 0px;
-  width: 101%;
-  left: -0.5;
-  height: 34vw;
+  width: 100%;
+  height: 30vw;
 }
 
 .info {
-  width: 50%;
+  margin: 30px;
+  padding: 2%;
+  font-size: 1.5vw;
+  text-align: center;
   color: white;
-  padding: 8%;
-  padding-top: 5%;
-  font-size: 2vw;
   opacity: 0;
   animation: ani 0.75s ease-out 1.2s forwards;
 }
 
 .info2 {
-  width: 50%;
-  color: white;
-  padding: 8%;
-  padding-top: 10%;
+  width: 100%;
   font-size: 1vw;
+  padding-top: 3%;
+  text-align: center;
+  color: white;
   opacity: 0;
   animation: ani 0.75s ease-out 1.2s forwards;
 }
 
 .info3 {
-  width: 50%;
+  width: 100%;
   color: white;
-  margin-bottom: 5%;
-  font-size: 2vw;
+  font-size: 1.3vw;
   opacity: 0;
+  margin-top: 4%;
+  margin-left: 7%;
   animation: ani 0.75s ease-out 1.2s forwards;
   z-index: 9;
 }
@@ -117,49 +110,52 @@ body {
 #pushdashit {
   text-align: center;
   margin-bottom: 70vh;
-  margin-left: 2vw;
 }
 
 .top {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .top2 {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
 }
 
 .top3 {
   position: relative;
   display: flex;
-  flex-direction: row;
-  padding-top: 15%;
+  flex-direction: column;
+  padding-top: 13%;
+}
+
+.top4 {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  top: 50px;
 }
 
 .faya {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5vw;
-  border-radius: 15px;
   opacity: 0;
-  width: 35vw;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   height: 35vw;
-  transition: 2500ms;
+  border-radius: 15px;
   animation: ani3 0.75s ease-out 0.8s forwards;
 }
 
 .faya2 {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5vw;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2vw;
   border-radius: 15px;
   opacity: 0;
-  width: 38vw;
+  width: 80%;
   height: 35vw;
-  transition: 2500ms;
   animation: ani3 0.75s ease-out 0.8s forwards;
 }
 
@@ -325,6 +321,7 @@ body {
   border-right: 10px solid rgb(185, 31, 31);
   animation: redu linear 3s infinite;
   z-index: 111;
+  transition: 2500ms;
 }
 
 .bottom:active {
@@ -405,16 +402,22 @@ body {
     width: 50%;
     height: 65px;
   }
+  .title {
+    height: 12%;
+  }
   .sum {
     position: relative;
-    top: 3vh;
-    width: 6vh;
-    height: 50%;
+    top: -6px;
+    width: 3vh;
+    height: 60%;
   }
   .text {
-    text-align: center;
-    margin-top: 3vh;
-    font-size: 6vw;
+    margin-top: 1px;
+    margin-left: 2%;
+    font-size: 5vw;
+  }
+  .top3 {
+    padding-top: 15%;
   }
 }
 
@@ -428,16 +431,19 @@ body {
     width: 50%;
     height: 60px;
   }
+  .title {
+    height: 8.5%;
+  }
   .sum {
     position: relative;
-    top: 2vh;
-    width: 6vh;
-    height: 50%;
+    top: -5px;
+    width: 2vh;
+    height: 60%;
   }
   .text {
-    text-align: center;
-    margin-top: 3vh;
-    font-size: 6vw;
+    margin-top: 1px;
+    margin-left: 2%;
+    font-size: 5vw;
   }
 }
 
@@ -453,29 +459,38 @@ body {
   }
   .sum {
     position: relative;
-    top:5px;
-    width: 5vh;
-    height: 50%;
+    top: -10px;
+    width: 2.1vh;
+    height: 60%;
+  }
+  .title {
+    height: 7%;
   }
   .text {
-    text-align: center;
-    margin-top: 3vh;
-    font-size: 6vw;
+    margin-top: 1%;
+    margin-left: 3.4%;
+    font-size: 4.5vw;
+  }
+  .info3 {
+    font-size: 1.5vw;
+    margin-bottom: 2%;
+    padding: 2%;
+  }
+  .info2 {
+    margin-top: 3%;
+    padding: 2.2%;
+    font-size: 1.5vw;
   }
 }
 
 @media only screen and (max-width: 780px) {
   /* For mobile phones: */
-  .top {
-    flex-direction: column;
-  }
-  .top2 {
-    flex-direction: column-reverse;
-  }
   .sizeCi {
-    padding-top: 5%;
     width: 60%;
     height: 20vw;
+  }
+  .size {
+    height: 34vw;
   }
   .gra {
     width: 80%;
@@ -487,34 +502,24 @@ body {
     width: 90%;
   }
   .info {
-    margin-top: 40px;
-    width: 100%;
-    font-size: 2.6vw;
-    padding-top: 5px;
-    text-align: center;
+    font-size: 2.5vw;
   }
   .info2 {
     width: 100%;
     font-size: 2.5vw;
     padding-top: 5px;
-    text-align: center;
   }
   .info3 {
     width: 100%;
     font-size: 2.5vw;
     padding-top: 5vw;
-    text-align: center;
-  }
-  .faya {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
   }
   .title {
     height: fit-content;
     text-align: center;
     font-size: 5vw;
     width: 90%;
+    height: 7%;
   }
   #pushdashit {
     margin-bottom: 17vh;
@@ -527,19 +532,25 @@ body {
     height: 25vh;
   }
   .faya2 {
-    width: 80vw;
-    height: 30vh;
+    height: 25vh;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .sum {
-    position: relative;
-    top: 0;
-    width: 4vh;
+    margin-top: 30px;
+    width: 2vh;
     height: 50%;
   }
   .text {
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-top: 10px;
     text-align: center;
-    margin-top: 3vh;
-    font-size: 7vw;
+    font-size: 6vw;
+  }
+  .top3 {
+    padding-top: 10vh;
   }
 }
 
