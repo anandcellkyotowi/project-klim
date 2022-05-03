@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 4px;
+    font-weight: 3px;
 }
 
 body {
@@ -12,12 +12,12 @@ body {
     padding: 5px;
     justify-content: center;
     background-image: url('0091.jpg');
-    background-size: 100% 100%;
+    background-size: 60% 60%;
     /* cursor: none; */
 }
 
 .container {
-    width: 85%;
+    width: 70%;
     background-color: #3D463A;
     height: fit-content;
     min-height: 300px;
@@ -30,7 +30,7 @@ body {
     color: white;
     margin: 15px;
     margin-left: 23px;
-    font-size: 6vw;
+    font-size: 5vw;
     justify-content: space-around;
 }
 
@@ -57,8 +57,8 @@ body {
     width: 50%;
     color: white;
     padding: 8%;
-    padding-top: 5%;
-    font-size: 2vw;
+    padding-top: 11%;
+    font-size: 30px;
 }
 
 .infoish {
@@ -68,7 +68,7 @@ body {
     color: white;
     padding: 8%;
     padding-top: 5%;
-    font-size: 2vw;
+    font-size: 30px;
 }
 
 .top {
@@ -135,18 +135,6 @@ body {
         margin-left: 2%;
         margin-right: 8%;
     }
-}
-
-.reveal {
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 2s all ease;
-}
-
-.reveal.active {
-    transform: translateY(0);
-    opacity: 1;
 }
 
 .cursor {
