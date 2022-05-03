@@ -91,11 +91,12 @@ body {
 }
 
 .info {
-  width: 50%;
+  width: 100%;
   color: rgb(33, 32, 86);
-  padding: 8%;
+  padding: 7%;
   padding-top: 5%;
-  font-size: 2vw;
+  padding-bottom: 1%;
+  font-size: 1.5vw;
   opacity: 0;
   animation: title 0.75s ease-out 1.2s forwards;
 }
@@ -114,19 +115,33 @@ body {
 
 .top2 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .waters {
   margin-top: 5px;
-  background-image: url(sw.jpg);
+  background-image: url(unknown.png);
   margin: 2%;
-  width: 38vw;
-  height: 80vw;
+  width: 67vw;
+  height: 30vw;
+  margin-left: 0;
   border-radius: 10px;
   border: 1px solid black;
   animation: title2 0.75s ease-out 0.8s forwards;
   background-size: cover;
+}
+.bohir{
+  margin-top: 5px;
+  background-image: url(unknown.png);
+  margin: 2%;
+  width: 66.5vw;
+  height: 30vw;
+  margin-left: 7%;
+  border-radius: 10px;
+  border: 1px solid black;
+  animation: title2 0.75s ease-out 0.8s forwards;
+  background-size: cover;
+  margin-bottom: 70px;
 }
 
 @keyframes title2 {
@@ -176,13 +191,21 @@ body {
     overflow: hidden;
   }
   .waters {
-    background-image: url(ws.jpg);
-    width: 80%;
+    background-image: url(unknown.png);
+    width: 100%;
     height: 40vw;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-right: 5%;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .bohir{
+    width: 90%;
+    height: 40vw;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom:50px;
   }
   .container {
     width: 92vw;
