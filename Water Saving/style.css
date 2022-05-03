@@ -11,14 +11,14 @@ p {
 }
 
 .button {
-  height: 5vw;
+  height: 4vw;
   margin-left: 5%;
-  margin-top: 2%;
+  margin-top: 0.5%;
   cursor: pointer;
 }
 
 .back {
-  margin-bottom: 30%;
+ margin-bottom: 20%;
 }
 
 
@@ -45,9 +45,9 @@ body {
 
 .title {
   color: rgb(33, 32, 86);
-  font-size: 6vw;
+  font-size: 4vw;
   display: flex;
-  gap: 19%;
+  gap: 25%;
   font-weight: bold;
   top: 0;
   position: fixed;
@@ -134,7 +134,7 @@ body {
   margin-top: 5px;
   background-image: url(unknown.png);
   margin: 2%;
-  width: 66.5vw;
+  width: 66.7vw;
   height: 30vw;
   margin-left: 7%;
   border-radius: 10px;
@@ -199,9 +199,8 @@ body {
     background-size: cover;
   }
   .bohir{
-    width: 90%;
+    width: 85%;
     height: 40vw;
-    margin-left: 5%;
     margin-right: 5%;
     background-repeat: no-repeat;
     background-size: cover;
