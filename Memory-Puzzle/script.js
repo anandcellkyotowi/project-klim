@@ -10,6 +10,7 @@ document.getElementById('butt').onclick = function() {
         var levell = 0
         var cubeLimit = 5;
         var hits = 0
+        var sucked = 0
         cubes.forEach((cube, index) => {
             cube.addEventListener('click', () => {
                 checkWin(index)
@@ -17,6 +18,13 @@ document.getElementById('butt').onclick = function() {
                     levell++
                     reset()
                 }
+                if (sucked == 4) {
+                    cubeLimit = 5
+                    levell = 0
+                    alert('you suck ??')
+                    reset()
+                }
+                console.log(cubeLimit)
             })
         });
 
@@ -35,6 +43,7 @@ document.getElementById('butt').onclick = function() {
             randomIndexs = []
             cubeLimit++
             hideCubes()
+            sucked = 0
             randomizedWhiteCubes()
             score.innerHTML = '0'
             hits = 0
@@ -53,8 +62,11 @@ document.getElementById('butt').onclick = function() {
         function checkWin(index) {
             let found = false
             for (let a = 0; a < randomIndexs.length; a++) {
+
+                cubes[randomIndexs[a]].style.backgroundColor = 'green'
                 if (index == randomIndexs[a]) {
                     cubes[index].style.backgroundColor = 'white'
+                    randomIndexs.splice(a, 1)
                     found = true
                     hits++
                     score.innerHTML = '' + hits
@@ -62,7 +74,9 @@ document.getElementById('butt').onclick = function() {
             }
             if (!found) {
                 cubes[index].style.backgroundColor = 'red';
+                sucked++
             }
+
         }
 
         randomizedWhiteCubes()

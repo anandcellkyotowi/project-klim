@@ -15,11 +15,13 @@ body {
 
 button {
     font-size: 30px;
-    margin-top: 15%;
+    margin-top: 12%;
     align-self: center;
     justify-self: center;
-    color: white;
-    background-color: rgb(161, 161, 161);
+    padding: 1vw;
+    color: rgb(62, 62, 62);
+    font-size: 1vw;
+    background-color: rgb(255, 255, 255);
     border: 1px solid black;
     border-radius: 5px;
 }
