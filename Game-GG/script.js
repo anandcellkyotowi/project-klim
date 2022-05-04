@@ -13,7 +13,14 @@ var enemies = [];
 var reloaded = "true";
 const r = 200;
 const speed = Math.PI / 150;
-console.log(Math.cos(0));
+const scoreBoard = document.querySelector('#scoreBoard')
+var score = 0
+
+
+var targets = new Array()
+
+
+
 /* -------------------------------------------------------------------------- */
 /*                                   Animate                                  */
 /* -------------------------------------------------------------------------- */
@@ -37,7 +44,7 @@ const player = new ViewFinder(
     false
 );
 
-function spawnEnemies() {
+function shoot() {
     let x = player.x + player.dx / 1.19;
     let y = player.y + player.dy / 1.19;
     let color = "magenta";
@@ -50,17 +57,16 @@ function spawnEnemies() {
 }
 
 c2.translate(300, 300);
-console.log(speed);
+const earth = new Earth(
+    canvas.width / 2,
+    canvas.height / 2,
+    30,
+    "white",
+    50,
+    50
+);
 
 function animate() {
-    const earth = new Earth(
-        canvas.width / 2,
-        canvas.height / 2,
-        30,
-        "white",
-        50,
-        50
-    );
     animationId = requestAnimationFrame(animate);
     c.fillStyle = "rgba(50, 50, 50, 0.5)";
     c2.fillStyle = "rgba(0, 0, 0, 0.5)";
@@ -86,12 +92,17 @@ function animate() {
 
     //   c2.rotate(Math.PI / 3);
 
-    earth.draw();
     enemies.forEach((enemy) => {
         enemy.update();
     });
+    targets.forEach((target) => {
+        target.draw(c);
+    });
+    earth.draw();
+    checkDeath()
 }
 animate();
+spawnEnemies()
 
 addEventListener("keydown", (rrrr) => {
     switch (rrrr.key) {
@@ -103,11 +114,20 @@ addEventListener("keydown", (rrrr) => {
             break;
         case " ":
             if (reloaded) {
-                spawnEnemies();
+                shoot();
                 reloaded = false;
                 reload();
             }
             break;
     }
-    console.log(current);
+});
+addEventListener("keyup", (rrrr) => {
+    switch (rrrr.key) {
+        case "ArrowLeft":
+            current = "none";
+            break;
+        case "ArrowRight":
+            current = "none";
+            break;
+    }
 });

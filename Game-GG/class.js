@@ -59,7 +59,7 @@ class Earth {
     constructor(x, y, radius, color) {
         this.x = x;
         this.y = y;
-        this.radius = radius + 30;
+        this.radius = radius + 60;
         this.image = new Image();
         this.image.src = "R.jpg";
         this.radius2 = radius;
@@ -73,5 +73,25 @@ class Earth {
     }
     update() {
         this.draw();
+    }
+}
+
+class Target {
+    constructor(radius, angle, color) {
+        this.radius = radius
+        this.angle = angle
+        this.color = color
+        this.distance = 90
+        this.x = Math.cos(angle) * this.distance
+        this.y = Math.sin(angle) * this.distance
+        this.x += canvas.width / 2
+        this.y += canvas.height / 2
+        console.log(this.x, this.y)
+    }
+    draw(context) {
+        context.beginPath();
+        context.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+        context.fillStyle = this.color;
+        context.fill();
     }
 }
