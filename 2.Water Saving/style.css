@@ -33,7 +33,7 @@ body {
   justify-content: center;
   cursor: none;
   background-size: 40% 60%;
-  background-image: url(swcb.jpg);
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/savewaterpng.appspot.com/o/swcb.jpg?alt=media&token=ca181be1-e693-4c7d-8029-5639fb666bbd');
 }
 
 .container {
@@ -125,18 +125,17 @@ body {
 
 .waters {
   margin-top: 5px;
-  background-image: url(unknown.png);
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/savewaterpng.appspot.com/o/unknown.png?alt=media&token=c1bfe4a7-ee2a-4f34-ae3f-3dbd66202e43');
   margin: 2%;
   width: 54.7vw;
-  height: 30vw;
-  margin-left: 0;
+  height: 20vw;
   border-radius: 10px;
   animation: title2 0.75s ease-out 0.8s forwards;
   background-size: cover;
 }
 .bohir{
   margin-top: 5px;
-  background-image: url(unknown.png);
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/savewaterpng.appspot.com/o/bohirhooloi.png?alt=media&token=9684daea-03eb-44bb-a4f8-2ca7f1130ba5');
   margin: 2%;
   width: 54.7vw;
   height: 30vw;
@@ -196,7 +195,7 @@ body {
     overflow: hidden;
   }
   .waters {
-    background-image: url(unknown.png);
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/savewaterpng.appspot.com/o/unknown.png?alt=media&token=c1bfe4a7-ee2a-4f34-ae3f-3dbd66202e43');
     width: 100%;
     height: 40vw;
     margin-right: 5%;
@@ -236,7 +235,7 @@ section .wave {
   left: 0;
   width: 100%;
   height: 100px;
-  background: url(./wave.png);
+  background: url('https://firebasestorage.googleapis.com/v0/b/savewaterpng.appspot.com/o/wave.png?alt=media&token=d50bf6a3-fae9-48e8-abf2-1f958e30e600');
   background-size: 1000px 100px;
 }
 
