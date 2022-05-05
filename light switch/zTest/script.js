@@ -22,7 +22,7 @@ lightBulb.addEventListener("click", () => {
         shit.style.opacity = "0%"
         touch.style.opacity = "100%"
         title.style.backgroundColor = "#3D463A"
-        title.style.boxShadow = "0 20px 30px 0 #191919"
+        title.style.boxShadow = "0 20px 30px 0 rgba(45, 45, 45, 0.50)"
         lightBulb.src = "lighton.png";
     }
 });
