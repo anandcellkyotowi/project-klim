@@ -7,8 +7,8 @@ var LightOn = true
 lightBulb.addEventListener("click", () => {
     if (LightOn) {
         backGround.style.backgroundColor = "rgb( 40, 40, 40)";
-        shit.style.display = "block"
-        touch.style.display = "none"
+        shit.style.opacity = "100%"
+        touch.style.opacity = "0%"
         shit.style.marginLeft = '0'
         LightOn = false;
         lightBulb.src = "lightoff.png";
@@ -16,8 +16,8 @@ lightBulb.addEventListener("click", () => {
     } else {
         backGround.style.backgroundColor = "#3D463A";
         LightOn = true;
-        shit.style.display = "none"
-        touch.style.display = "block"
+        shit.style.opacity = "0%"
+        touch.style.opacity = "100%"
         lightBulb.src = "lighton.png";
     }
 });
