@@ -9,7 +9,6 @@
 body {
     height: 100vh;
     display: flex;
-    padding: 5px;
     overflow-x: hidden;
     justify-content: center;
     background-image: url('background.jpeg');
@@ -18,7 +17,7 @@ body {
 }
 
 .container {
-    width: 70%;
+    width: 65%;
     background-color: #3D463A;
     height: fit-content;
     transition: 500ms;
@@ -27,13 +26,24 @@ body {
 }
 
 .title {
+    font-size: 4vw;
     display: flex;
-    width: 85%;
     color: white;
-    margin: 15px;
-    margin-left: 23px;
-    font-size: 5vw;
-    justify-content: space-around;
+    gap: 12%;
+    justify-content: center;
+    align-items: center;
+    /* height: 10%; */
+    font-weight: bold;
+    top: 0;
+    position: fixed;
+    width: 65%;
+    z-index: 999;
+    background-color: #3D463A;
+    box-shadow: 0 20px 30px 0 #191919;
+}
+.sum {
+    margin-left: -12vh;
+    margin-top: 2vh;
 }
 
 .imaj {
@@ -42,7 +52,7 @@ body {
 }
 
 .axe {
-    margin-top: 10px;
+    margin-top: 200px;
     width: 30%;
     margin-left: 10%;
     margin-right: 10%;
@@ -65,7 +75,7 @@ body {
 }
 
 .infoish {
-    margin-top: 2%;
+    margin-top: 12%;
     width: 50%;
     max-width: 45%;
     right: 12%;
@@ -79,7 +89,7 @@ body {
     opacity: 0;
 }
 .touch {
-    margin-top: 15%;
+    margin-top: 32%;
     margin-left: 8%;
     width: 40%;
     height: 5%;
@@ -141,6 +151,7 @@ body {
     .axe {
         width: 30%;
         height: 25vw;
+        margin-top: 25%;
         margin-left: 35%;
         margin-right: 35%;
     }
@@ -177,8 +188,7 @@ body {
         margin-right: 10%;
     }
     .title {
-        margin-left: 2%;
-        margin-right: 8%;
+        margin-right: 15%;
     }
     .vapour span {
         max-width: 20px;
@@ -186,6 +196,10 @@ body {
     }
     .top {
         justify-content: center;
+    }
+    .sum {
+        margin-bottom: 1vh;
+        margin-left: -2vh;
     }
 }
 

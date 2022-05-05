@@ -2,6 +2,7 @@ const lightBulb = document.querySelector('.axe')
 const backGround = document.querySelector('.container')
 const shit = document.querySelector('.infoish')
 const touch = document.querySelector('.touch')
+const title = document.querySelector(".title")
 var LightOn = true
 
 lightBulb.addEventListener("click", () => {
@@ -10,6 +11,8 @@ lightBulb.addEventListener("click", () => {
         shit.style.opacity = "100%"
         touch.style.opacity = "0%"
         shit.style.marginLeft = '0'
+        title.style.backgroundColor = "rgb( 40, 40, 40)"
+        title.style.boxShadow = "0 20px 30px 0 #232325"
         LightOn = false;
         lightBulb.src = "lightoff.png";
 
@@ -18,6 +21,8 @@ lightBulb.addEventListener("click", () => {
         LightOn = true;
         shit.style.opacity = "0%"
         touch.style.opacity = "100%"
+        title.style.backgroundColor = "#3D463A"
+        title.style.boxShadow = "0 20px 30px 0 #191919"
         lightBulb.src = "lighton.png";
     }
 });
