@@ -64,15 +64,18 @@ p {
 }
 
 #title {
-    display: flex;
-    gap: 24%;
-    text-align: center;
-    color: white;
-    animation: opaopa 1s linear;
-    position: absolute;
-    width: 100%;
-    font-size: 5vw;
-    top: 2vw;
+  font-size: 4vw;
+  display: flex;
+  color: white;
+  gap: 20%;
+  /* height: 10%; */
+  font-weight: bold;
+  top: 0;
+  position: fixed;
+  width: 65%;
+  z-index: 999;
+  background-color: rgb(83, 187, 83);
+  box-shadow: 0 20px 30px 0 rgb(28 9 80 / 5%);
 }
 
 #title2 {
