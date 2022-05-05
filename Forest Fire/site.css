@@ -31,13 +31,15 @@ body {
 }
 
 .title {
-  color: white;
+  font-size: 4vw;
   display: flex;
+  color: white;
   gap: 12%;
-  padding-bottom: 2%;
+  /* height: 10%; */
+  font-weight: bold;
+  top: 0;
   position: fixed;
   width: 65%;
-  height: 10%;
   z-index: 999;
   background-color: #fa7934;
   box-shadow: 0 20px 30px 0 rgb(28 9 80 / 5%);
@@ -413,19 +415,14 @@ body {
     width: 50%;
     height: 65px;
   }
-  .title {
-    height: 12%;
-  }
   .sum {
-    position: relative;
-    top: 5px;
     width: 3vh;
     height: 60%;
+    margin-bottom: 20%;
   }
   .text {
     margin-top: 1px;
-    margin-left: 2%;
-    font-size: 5vw;
+    font-size: 4vw;
   }
   .top3 {
     padding-top: 15%;
@@ -454,14 +451,10 @@ body {
     width: 50%;
     height: 60px;
   }
-  .title {
-    height: 8.5%;
-  }
   .sum {
-    position: relative;
-    top: 5px;
     width: 2vh;
     height: 60%;
+    margin-bottom: 20%;
   }
   .text {
     margin-top: 1px;
@@ -493,14 +486,13 @@ body {
     width: 50%;
   }
   .sum {
-    position: relative;
-    top: 5px;
     width: 2.1vh;
     height: 60%;
+    margin-bottom: 20%;
   }
-  .title {
+  /* .title {
     height: 7%;
-  }
+  } */
   .text {
     margin-top: 1%;
     margin-left: 3.4%;
@@ -588,6 +580,7 @@ body {
     margin-top: 10px;
     width: 2vh;
     height: 50%;
+    margin-bottom: 20%;
   }
   .text {
     margin-top: 30px;
