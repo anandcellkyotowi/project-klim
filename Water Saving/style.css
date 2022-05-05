@@ -16,6 +16,13 @@ p {
   margin-top: 0.5%;
   cursor: pointer;
 }
+.ushaah{
+ position: absolute;
+ top: 7%;
+ left: 13.5%;
+ border-radius: 15%;
+ width: 9%;
+}
 
 .back {
  margin-bottom: 20%;
@@ -34,7 +41,7 @@ body {
 
 .container {
   background-color: rgb(203, 245, 255);
-  width: 80%;
+  width: 65%;
   height: fit-content;
   position: relative;
   min-height: 300px;
@@ -47,12 +54,12 @@ body {
   color: rgb(33, 32, 86);
   font-size: 4vw;
   display: flex;
-  gap: 28%;
+  gap: 23%;
   /* height: 10%; */
   font-weight: bold;
   top: 0;
   position: fixed;
-  width: 79.6%;
+  width: 64.7%;
   z-index: 999;
   background-color: rgb(218, 248, 255);
   box-shadow: 0 20px 30px 0 rgb(28 9 80 / 5%);
@@ -62,8 +69,8 @@ body {
   position: absolute;
   width: 40%;
   height: 95.4%;
-  right: 25vw;
-  top: 15.7vw;
+  right: 20.7vw;
+  top: 13.7vw;
   /* border: 1px solid black; */
   overflow: hidden;
 }
@@ -123,7 +130,7 @@ body {
   margin-top: 5px;
   background-image: url(unknown.png);
   margin: 2%;
-  width: 67vw;
+  width: 54.7vw;
   height: 30vw;
   margin-left: 0;
   border-radius: 10px;
@@ -134,7 +141,7 @@ body {
   margin-top: 5px;
   background-image: url(unknown.png);
   margin: 2%;
-  width: 66.7vw;
+  width: 54.7vw;
   height: 30vw;
   margin-left: 7%;
   border-radius: 10px;
@@ -187,7 +194,7 @@ body {
     height: 95.4%;
     right: 25vw;
     top: 19vw;
-    left: 29%;
+    left: 28.5%;
     /* border: 1px solid black; */
     overflow: hidden;
   }
