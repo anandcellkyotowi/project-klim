@@ -19,7 +19,6 @@ document.addEventListener('mousemove', function(e) {
 function growBox1() {
     document.getElementById("first").style.width = 330 + 'px';
     document.getElementById("first").style.height = 330 + 'px';
-    document.getElementById('first1').src = './Main Page img/air-hover.png';
 }
 
 function noGrowBox1() {

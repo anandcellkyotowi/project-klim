@@ -5,7 +5,7 @@
 
 body {
     transition: 1500ms;
-    background-image: url('background.jpg');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/js-messenger-874ab.appspot.com/o/background.jpg?alt=media&token=4b7174ef-4ca9-4d14-8cfa-6bf31269ab32');
     background-size: 100% 100%;
     cursor: none;
     background-color: white;
@@ -147,10 +147,6 @@ img {
     margin-top: 20px;
     margin-bottom: 50px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.hidden {
-    visibility: hidden;
 }
 
 .s1 {
