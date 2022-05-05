@@ -43,19 +43,30 @@ img {
     }
 }
 
+.kort {
+    background: linear-gradient(to right, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 40%, rgb(23, 147, 54) 60%, rgb(0, 0, 0) 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s linear infinite;
+    animation-delay: 3500ms;
+}
+
 .name {
     flex-grow: 1;
     font-size: 50px;
     font-family: "Montserrat";
     font-weight: bold;
     text-align: center;
-    background: linear-gradient(to right, rgb(0, 0, 0) 20%, rgb(24, 126, 17) 40%, rgb(23, 147, 54) 60%, rgb(0, 0, 0) 80%);
+    background: linear-gradient(to right, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 40%, rgb(23, 147, 54) 60%, rgb(0, 0, 0) 80%);
     background-size: 200% auto;
     color: #000;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: shine 3s linear infinite;
+    animation: shine 5s linear infinite;
     animation-delay: 3500ms;
 }
 

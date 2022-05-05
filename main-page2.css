@@ -29,6 +29,7 @@ img {
     width: 60%;
     align-items: flex-end;
     margin-bottom: 30px;
+    animation: slide-up 3s;
     position: relative;
     animation-delay: 3500ms;
 }
@@ -42,12 +43,37 @@ img {
     }
 }
 
+.kort {
+    background: linear-gradient(to right, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 40%, rgb(23, 147, 54) 60%, rgb(0, 0, 0) 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s linear infinite;
+    animation-delay: 3500ms;
+}
+
 .name {
     flex-grow: 1;
     font-size: 50px;
     font-family: "Montserrat";
     font-weight: bold;
     text-align: center;
+    background: linear-gradient(to right, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 40%, rgb(23, 147, 54) 60%, rgb(0, 0, 0) 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s linear infinite;
+    animation-delay: 3500ms;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
 }
 
 .menu {
@@ -125,6 +151,7 @@ img {
 .item {
     width: 300px;
     height: 300px;
+    animation: appear 2000ms ease-in-out;
     transition: 0.5s;
     margin-right: 20px;
     margin-left: 20px;
@@ -135,6 +162,22 @@ img {
 
 .hidden {
     visibility: hidden;
+}
+
+.s1 {
+    animation-delay: 500ms;
+}
+
+.s2 {
+    animation-delay: 1000ms;
+}
+
+.s3 {
+    animation-delay: 1500ms;
+}
+
+.s4 {
+    animation-delay: 2000ms;
 }
 
 @keyframes appear {
@@ -173,6 +216,33 @@ img {
     pointer-events: none;
     z-index: 999;
     transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 1450px) {
+    .top-bar {
+        width: 70%;
+        flex-direction: column;
+    }
+    .menu {
+        font-size: 30px;
+        align-self: center;
+    }
+    .name {
+        flex-basis: 80%;
+        align-self: center;
+        font-size: 40px;
+    }
+    .menu-bar {
+        display: block;
+        font-size: 30px;
+    }
+    .item {
+        margin-right: 90px;
+        margin-left: 90px;
+    }
+    .mini-text {
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 1260px) {
@@ -251,7 +321,7 @@ img {
     }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
     .top-bar {
         width: 70%;
     }
@@ -269,4 +339,16 @@ img {
     .cursor2 {
         display: none;
     }
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
 }
