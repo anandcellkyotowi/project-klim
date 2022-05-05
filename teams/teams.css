@@ -6,7 +6,7 @@
 }
 
 body {
-    transition: 1500ms;
+    transition: 250ms;
     background-image: url("background.jpg");
     background-size: cover;
     overflow-x: hidden;
