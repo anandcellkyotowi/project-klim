@@ -11,30 +11,45 @@ document.getElementById('butt').onclick = function() {
         var cubeLimit = 5;
         var hits = 0
         var sucked = 0
+        var playing = false
         cubes.forEach((cube, index) => {
             cube.addEventListener('click', () => {
-                checkWin(index)
-                if (hits == cubeLimit) {
-                    levell++
-                    reset()
+                if (playing) {
+
+                    checkWin(index)
+                    if (hits == jotaRO) {
+                        levell++
+                        reset()
+                    }
+                    if (sucked == 4) {
+                        cubeLimit = 4
+                        levell = 0
+                        console.log('BRUHHH HHA MY GRANDMA DOES BETTER THAN YOU')
+                        alert('Дахин оролдоно уу.')
+                        reset()
+                    }
                 }
-                if (sucked == 4) {
-                    cubeLimit = 5
-                    levell = 0
-                    alert('Дахин оролдох.')
-                    reset()
-                }
-                console.log(cubeLimit)
             })
         });
 
         var randomIndexs = new Array()
+        var jotaRO = 0
 
         function randomizedWhiteCubes() {
             for (let i = 0; i < cubeLimit; i++) {
                 let p = parseInt(Math.random() * 25)
                 randomIndexs.push(p)
-                cubes[p].style.backgroundColor = 'black'
+            }
+            for (let i = 0; i < randomIndexs.length; i++) {
+                for (let a = i + 1; a < randomIndexs.length; a++) {
+                    if (randomIndexs[i] == randomIndexs[a]) {
+                        randomIndexs.splice(i, 1)
+                    }
+                }
+            }
+            jotaRO = randomIndexs.length
+            for (let a = 0; a < randomIndexs.length; a++) {
+                cubes[randomIndexs[a]].style.backgroundColor = 'black'
             }
 
         }
@@ -49,12 +64,14 @@ document.getElementById('butt').onclick = function() {
             hits = 0
             setTimeout(hideCubes, 1500);
             level.innerHTML = '' + levell
+            playing = false
         }
 
         function hideCubes() {
             cubes.forEach((cube) => {
                 cube.style.backgroundColor = 'rgb(87, 202, 255)'
             }, );
+            playing = true
         }
 
         setTimeout(hideCubes, 1500);
