@@ -110,6 +110,8 @@ button {
     #butt{
         position: absolute;
         top: 60%;
+        width: 35vw;
+        height: 12vw;
     }
     /* .counter-container{
         width: 60%;
