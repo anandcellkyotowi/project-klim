@@ -21,7 +21,7 @@ document.getElementById('butt').onclick = function() {
                 if (sucked == 4) {
                     cubeLimit = 5
                     levell = 0
-                    alert('you suck ??')
+                    alert('Дахин оролдох.')
                     reset()
                 }
                 console.log(cubeLimit)
@@ -63,7 +63,6 @@ document.getElementById('butt').onclick = function() {
             let found = false
             for (let a = 0; a < randomIndexs.length; a++) {
 
-                cubes[randomIndexs[a]].style.backgroundColor = 'green'
                 if (index == randomIndexs[a]) {
                     cubes[index].style.backgroundColor = 'white'
                     randomIndexs.splice(a, 1)
