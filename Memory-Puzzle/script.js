@@ -16,6 +16,7 @@ document.getElementById('butt').onclick = function() {
             cube.addEventListener('click', () => {
                 if (playing) {
 
+
                     checkWin(index)
                     if (hits == jotaRO) {
                         levell++
@@ -28,6 +29,7 @@ document.getElementById('butt').onclick = function() {
                         alert('Дахин оролдоно уу.')
                         reset()
                     }
+
                 }
             })
         });
@@ -51,6 +53,7 @@ document.getElementById('butt').onclick = function() {
             for (let a = 0; a < randomIndexs.length; a++) {
                 cubes[randomIndexs[a]].style.backgroundColor = 'black'
             }
+            score.innerHTML = '' + hits + ' / ' + jotaRO
 
         }
 
@@ -60,11 +63,12 @@ document.getElementById('butt').onclick = function() {
             hideCubes()
             sucked = 0
             randomizedWhiteCubes()
-            score.innerHTML = '0'
             hits = 0
             setTimeout(hideCubes, 1500);
             level.innerHTML = '' + levell
             playing = false
+            score.innerHTML = '' + hits + ' / ' + jotaRO
+            gameEndCheck()
         }
 
         function hideCubes() {
@@ -85,7 +89,7 @@ document.getElementById('butt').onclick = function() {
                     randomIndexs.splice(a, 1)
                     found = true
                     hits++
-                    score.innerHTML = '' + hits
+                    score.innerHTML = '' + hits + ' / ' + jotaRO
                 }
             }
             if (!found) {
@@ -95,7 +99,21 @@ document.getElementById('butt').onclick = function() {
 
         }
 
+        function gameEndCheck() {
+            if (levell == 16) {
+                console.log(levell)
+                alert('Чи яллаа. Нүүб')
+                cubeLimit = 4
+                levell = 0
+                reset()
+            }
+
+        }
+
         randomizedWhiteCubes()
 
+
     }
+
+
 }
