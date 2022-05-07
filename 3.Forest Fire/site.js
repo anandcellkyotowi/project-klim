@@ -7,9 +7,11 @@ document.addEventListener("mousemove", function (e) {
 
 var ciggar = document.getElementById("ciggar");
 var button = document.getElementById("button");
+var text = document.getElementById("info");
 
 function myFunction() {
   ciggar.style.width = 150 + "px";
   button.style.opacity = 0;
+  text.style.opacity = 1;
   ciggar.style.backgroundColor = "rgb(92, 92, 92)";
 }
