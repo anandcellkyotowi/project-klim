@@ -117,6 +117,12 @@ body {
   z-index: 9;
 }
 
+.infor {
+  color: rgba(0, 0, 0, 0.553);
+  font-size: 1vw;
+  text-align: center;
+}
+
 #pushdashit {
   text-align: center;
   margin-bottom: 70vh;
@@ -540,7 +546,11 @@ body {
   .info3 {
     width: 90%;
     font-size: 2.5vw;
-    padding-bottom: 5vh;
+    /* padding-bottom: 5vh; */
+  }
+  .infor {
+    width: 90%;
+    font-size: 2vw;
   }
   .title {
     height: fit-content;
@@ -553,7 +563,7 @@ body {
     margin-bottom: 29vh;
   }
   .cigarette {
-    height: 60px;
+    height: 40px;
     width: 80%;
   }
   .faya {
