@@ -44,7 +44,7 @@ body {
     box-shadow: 0 20px 30px 0 rgba(45, 45, 45, 0.50);
 }
 .sum {
-    margin-left: -12vh;
+    margin-left: -3vh;
     margin-top: 2vh;
 }
 
@@ -54,8 +54,8 @@ body {
 }
 
 .axe {
-    margin-top: 200px;
-    width: 30%;
+    margin-top: 12vw;
+    width: 31%;
     margin-left: 10%;
     margin-right: 10%;
     height: 25vw;
@@ -94,7 +94,7 @@ body {
     color: white;
     padding: 8%;
     padding-top: 5%;
-    font-size: 30px;
+    font-size: 1.5vw;
     position: absolute;
     opacity: 0;
 }
@@ -164,6 +164,9 @@ body {
 
 @media only screen and (max-width: 780px) {
     /* For mobile phones: */
+    .container {
+        width: 90%;
+    }
     .top {
         flex-direction: column;
     }
@@ -172,7 +175,7 @@ body {
     }
     .axe {
         width: 30%;
-        height: 25vw;
+        height: 33vw;
         margin-top: 25%;
         margin-left: 35%;
         margin-right: 35%;
@@ -180,8 +183,8 @@ body {
     .touch {
         width: 50vw;
         font-size: 2.6vw;
-        margin-left: 30%;
-        margin-right: 50%;
+        margin-left: 35%;
+        margin-right: 45%;
         margin-top: 35vw;
     }
     .gra {
@@ -199,7 +202,7 @@ body {
     .infoish {
         max-width: 100vw;
         width: 75vw;
-        margin-top: 40%;
+        margin-top: 55%;
         font-size: 2.6vw;
         padding-top: 5px;
         text-align: center;
@@ -210,6 +213,7 @@ body {
         margin-right: 10%;
     }
     .title {
+        width: 90%;
         margin-right: 15%;
     }
     .vapour span {
@@ -221,7 +225,7 @@ body {
     }
     .sum {
         margin-bottom: 1vh;
-        margin-left: -2vh;
+        margin-left: -8vh;
     }
 }
 
