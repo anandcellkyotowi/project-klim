@@ -24,7 +24,7 @@ body {
     width: 65%;
     background-color: #3D463A;
     height: fit-content;
-    transition: 500ms;
+    /* transition: 500ms; */
     min-height: 300px;
     margin-bottom: 100px;
 }
@@ -47,8 +47,9 @@ body {
 }
 
 .sum {
-    margin-left: -5vh;
-    margin-top: 2vh;
+    margin-left: -10vw;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
 }
 
 .imaj {
@@ -247,8 +248,9 @@ body {
         justify-content: center;
     }
     .sum {
-        margin-bottom: 1vh;
-        margin-left: -3vh;
+        margin-top: 2vw;
+        margin-bottom: 1vw;
+        margin-left: -16vw;
     }
     .cursor {
         display: none;
