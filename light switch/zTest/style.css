@@ -70,6 +70,16 @@ body {
 .info {
     color: white;
     padding: 2%;
+    max-width: 75%;
+    text-align: center;
+    padding-top: 10%;
+    font-size: 1.5vw;
+    transition: 1000ms;
+}
+.infoo {
+    color: white;
+    padding: 2%;
+    max-width: 75%;
     text-align: center;
     padding-top: 10%;
     font-size: 1.5vw;
@@ -182,10 +192,10 @@ body {
     }
     .touch {
         width: 50vw;
-        font-size: 2.6vw;
+        font-size: 2.7vw;
         margin-left: 35%;
         margin-right: 45%;
-        margin-top: 35vw;
+        margin-top: -38vw;
     }
     .gra {
         width: 80%;
@@ -193,17 +203,26 @@ body {
         margin-right: 10%;
     }
     .info {
-        width: 100%;
+        text-align: start;
         margin-top: 10%;
-        font-size: 2.6vw;
+        font-size: 2.7vw;
         padding-top: 5px;
         top: 10vw;
+        margin-left: 15%;
+    }
+    .infoo {
+        text-align: start;
+        margin-top: 80%;
+        font-size: 2.7vw;
+        padding-top: 5px;
+        top: 10vw;
+        margin-left: 15%;
     }
     .infoish {
         max-width: 100vw;
         width: 75vw;
-        margin-top: 55%;
-        font-size: 2.6vw;
+        margin-top: 130%;
+        font-size: 2.7vw;
         padding-top: 5px;
         text-align: center;
     }
