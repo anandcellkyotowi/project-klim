@@ -85,8 +85,7 @@ body {
 }
 
 .info {
-  margin: 30px;
-  padding: 2%;
+  margin: 5%;
   font-size: 1.5vw;
   text-align: center;
   color: white;
@@ -99,7 +98,7 @@ body {
   font-size: 1.5vw;
   padding-top: 3%;
   text-align: center;
-  padding-right: 7%;
+  padding-right: 10%;
   padding-left: 12%;
   color: white;
   opacity: 0;
@@ -326,6 +325,12 @@ body {
   cursor: pointer;
 }
 
+.off {
+  width: 10vh;
+  margin-left: 23%;
+  margin-bottom: 2.5%;
+}
+
 .cigarette {
   position: relative;
   width: 40%;
@@ -336,32 +341,11 @@ body {
   z-index: 111;
   transition: 2500ms;
 }
-
-.bottom:active {
-  animation: low2 linear 4s forwards;
-}
 .bottom {
   width: 25%;
   height: 100%;
   background: rgb(180, 80, 13);
   border-right: 7px solid grey;
-}
-
-.cigarette:active {
-  animation: low linear 4s forwards;
-}
-
-@keyframes low2 {
-  100% {
-    width: 60%;
-  }
-}
-
-@keyframes low {
-  100% {
-    width: 10%;
-    background: rgb(93, 93, 93);
-  }
 }
 
 .vapour {
@@ -452,7 +436,7 @@ body {
     height: 60px;
   }
   .sum {
-    width: 2vh;
+    width: 3.5vh;
     height: 60%;
     margin-bottom: 20%;
   }
@@ -533,7 +517,7 @@ body {
   }
   .gra {
     width: 80%;
-    height: 50vw;
+    height: 25vh;
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -544,7 +528,7 @@ body {
     font-size: 2.5vw;
   }
   .info2 {
-    width: 90%;
+    width: 80%;
     font-size: 2.5vw;
     padding-top: 5px;
   }
@@ -558,7 +542,7 @@ body {
     text-align: center;
     font-size: 5vw;
     width: 90%;
-    height:6%;
+    height: 6%;
   }
   #pushdashit {
     margin-bottom: 29vh;
@@ -569,6 +553,7 @@ body {
   }
   .faya {
     height: 25vh;
+    width: 80%;
   }
   .faya2 {
     height: 25vh;
@@ -591,6 +576,9 @@ body {
   }
   .top3 {
     padding-top: 10vh;
+  }
+  .mo-fire svg {
+    bottom: -15px;
   }
 }
 
