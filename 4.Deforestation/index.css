@@ -81,7 +81,6 @@ p {
 #title2 {
     text-align: center;
     color: rgb(254, 254, 254);
-    font-weight: 1000;
     padding: 5vw;
     width: 90%;
     font-size: 1.5vw;
@@ -89,14 +88,14 @@ p {
     animation: opaopa 1s linear;
 }
 
-#title3 {
+/* #title3 {
     color: rgb(255, 255, 255);
     width: 100%;
-    font-size: 1.7vw;
-    padding: 10%;
+    font-size: 1.5vw;
+    padding: 5vw;
     animation: opaopa 3s linear;
     padding-top: 14%;
-}
+} */
 
 .row {
     width: 100%;
@@ -205,7 +204,6 @@ p {
     #title2 {
         text-align: center;
         color: rgb(254, 254, 254);
-        font-weight: 1000;
         padding: 2vw;
         width: 95%;
         font-size: 1.6vw;

@@ -67,7 +67,7 @@ body {
   width: 40%;
   height: 95.4%;
   right: 20.7vw;
-  top: 13.7vw;
+  top: 8.7vw;
   /* border: 1px solid black; */
   overflow: hidden;
 }
@@ -76,7 +76,7 @@ body {
   margin-top: 10px;
   width: 40%;
   margin-left: 0%;
-  height: 25vw;
+  height: 20vw;
   z-index: 600;
 }
 
@@ -126,9 +126,9 @@ body {
 .waters {
   margin-top: 5px;
   background-image: url('https://firebasestorage.googleapis.com/v0/b/savewaterpng.appspot.com/o/unknown.png?alt=media&token=c1bfe4a7-ee2a-4f34-ae3f-3dbd66202e43');
-  margin: 2%;
+  margin-right:0%;
   width: 54.7vw;
-  height: 20vw;
+  height: 25vw;
   border-radius: 10px;
   animation: title2 0.75s ease-out 0.8s forwards;
   background-size: cover;
@@ -189,7 +189,7 @@ body {
     width: 40%;
     height: 95.4%;
     right: 25vw;
-    top: 19vw;
+    top: 14vw;
     left: 28.5%;
     /* border: 1px solid black; */
     overflow: hidden;
@@ -215,13 +215,18 @@ body {
   }
   .off{
     position: absolute;
-    left: 7%;
+    left: 9%;
     top: 4%;
+    font-size: 1.9vw;
   }
   .button{
-    height: 5vw;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    height: 4vw;
+  }
+  .cursor{
+    display: none;
+  }
+  .cursor2{
+    display: none;
   }
 }
 
@@ -369,4 +374,9 @@ section .wave.wave4 {
   pointer-events: none;
   z-index: 999;
   transform: translate(-50%, -50%);
+}
+.text{
+  padding-top: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
