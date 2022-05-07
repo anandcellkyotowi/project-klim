@@ -55,7 +55,7 @@ img {
 }
 
 .name {
-    flex-grow: 1;
+    flex-grow: 3;
     font-size: 50px;
     font-family: "Montserrat";
     font-weight: bold;
@@ -80,7 +80,7 @@ img {
     flex-grow: 1;
     display: flex;
     font-family: 'Montserrat';
-    gap: 100px;
+    gap: 80px;
     font-size: 35px;
 }
 
@@ -218,6 +218,33 @@ img {
     transform: translate(-50%, -50%);
 }
 
+@media only screen and (max-width: 1700px) {
+    .top-bar {
+        width: 70%;
+        flex-direction: column;
+    }
+    .menu {
+        font-size: 30px;
+        align-self: center;
+    }
+    .name {
+        flex-basis: 80%;
+        align-self: center;
+        font-size: 40px;
+    }
+    .menu-bar {
+        display: block;
+        font-size: 30px;
+    }
+    .item {
+        margin-right: 90px;
+        margin-left: 90px;
+    }
+    .mini-text {
+        font-size: 20px;
+    }
+}
+
 @media only screen and (max-width: 1450px) {
     .top-bar {
         width: 70%;
@@ -269,6 +296,7 @@ img {
         flex-direction: column;
     }
     .menu {
+        gap: 20px;
         font-size: 30px;
         align-self: center;
     }
@@ -290,7 +318,7 @@ img {
     }
 }
 
-@media only screen and (max-width: 725px) {
+@media only screen and (max-width: 955px) {
     .innerContainer {
         height: 750px;
     }
@@ -303,7 +331,7 @@ img {
         font-size: 40px;
     }
     .menu {
-        gap: 50px;
+        gap: 15px;
         font-size: 20px;
     }
     .item {
@@ -321,9 +349,14 @@ img {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     .top-bar {
         width: 70%;
+    }
+    .menu {
+        padding-top: 50px;
+        gap: 12px;
+        font-size: 14px;
     }
     .name {
         align-self: center;
