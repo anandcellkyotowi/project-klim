@@ -61,8 +61,8 @@ function selectAnswer(e) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide')
     } else {
-        resultElement.innerHTML = 'Thank you for taking our quiz!'
-        startButton.innerText = 'Retake'
+        resultElement.innerHTML = 'Манай асуулт хариултын тоглоомыг тоглосонд танд баярлалаа!'
+        startButton.innerText = 'Ахин тоглох'
         startButton.classList.remove('hide')
 
     }
