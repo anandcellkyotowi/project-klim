@@ -49,6 +49,23 @@ body.wrong {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
+.progress-bar {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    width: 80%;
+    height: 10px;
+    background-color: rgb(199, 199, 199);
+}
+
+.green {
+    width: 10%;
+    height: 10px;
+    background-color: rgb(113, 195, 113);
+}
+
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
