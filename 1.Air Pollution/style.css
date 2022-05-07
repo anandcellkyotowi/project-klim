@@ -5,9 +5,11 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 3px;
 }
-p{
+
+p {
     margin-bottom: 10px;
 }
+
 body {
     height: 100vh;
     display: flex;
@@ -15,7 +17,7 @@ body {
     justify-content: center;
     background-image: url('background.jpeg');
     background-size: 60% 60%;
-    /* cursor: none; */
+    cursor: none;
 }
 
 .container {
@@ -43,6 +45,7 @@ body {
     background-color: #3D463A;
     box-shadow: 0 20px 30px 0 rgba(45, 45, 45, 0.50);
 }
+
 .sum {
     margin-left: -3vh;
     margin-top: 2vh;
@@ -76,6 +79,7 @@ body {
     font-size: 1.5vw;
     transition: 1000ms;
 }
+
 .infoo {
     color: white;
     padding: 2%;
@@ -85,6 +89,7 @@ body {
     font-size: 1.5vw;
     transition: 1000ms;
 }
+
 .infos {
     color: white;
     padding: 2%;
@@ -108,15 +113,17 @@ body {
     position: absolute;
     opacity: 0;
 }
+
 .touch {
     margin-top: 32%;
     margin-left: 8%;
     width: 40%;
     height: 5%;
     font-size: 2vw;
-    color: white;   
+    color: white;
     transition: 800ms;
 }
+
 .img1 {
     width: 70%;
     height: 40%;
@@ -124,10 +131,12 @@ body {
     margin-top: 2%;
     transition: 500ms;
 }
+
 .img1:hover {
     transition: 500ms;
     transform: scale(1.1);
 }
+
 .img2 {
     width: 70%;
     height: 40%;
@@ -136,10 +145,12 @@ body {
     margin-bottom: 5%;
     transition: 500ms;
 }
+
 .img2:hover {
     transition: 500ms;
     transform: scale(1.1);
 }
+
 .top {
     display: flex;
     flex-direction: row;
@@ -150,6 +161,7 @@ body {
     justify-content: center;
     flex-direction: row;
 }
+
 .top3 {
     display: flex;
     justify-content: center;
@@ -246,6 +258,12 @@ body {
         margin-bottom: 1vh;
         margin-left: -8vh;
     }
+    .cursor {
+        display: none;
+    }
+    .cursor2 {
+        display: none;
+    }
 }
 
 .cursor {
@@ -274,6 +292,8 @@ body {
     z-index: 999;
     transform: translate(-50%, -50%);
 }
+
+
 /* .vapour {
     position: relative;
     display: flex;
