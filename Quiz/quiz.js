@@ -22,9 +22,6 @@ function startGame() {
 }
 
 function setNextQuestion() {
-    // if (CountQuestion > 4) {
-    //     endGame();
-    // }
     resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
@@ -82,11 +79,6 @@ function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
 }
-
-// function endGame() {
-//     questionContainerElement.classList.add('hide');
-//     resultElement.style.display = 'flex';
-// }
 
 const questions = [{
         question: 'Дэлхийн дулаарлын гол хүчин зүйл юу вэ?',
