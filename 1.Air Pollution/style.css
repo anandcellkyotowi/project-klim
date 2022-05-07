@@ -73,7 +73,7 @@ body {
 .info {
     color: white;
     padding: 2%;
-    max-width: 75%;
+    max-width: 85%;
     text-align: center;
     padding-top: 10%;
     font-size: 1.5vw;
@@ -83,20 +83,10 @@ body {
 .infoo {
     color: white;
     padding: 2%;
-    max-width: 75%;
+    max-width: 85%;
     text-align: center;
     padding-top: 10%;
     font-size: 1.5vw;
-    transition: 1000ms;
-}
-
-.infos {
-    color: white;
-    padding: 2%;
-    text-align: center;
-    padding-top: 10%;
-    font-size: 1.5vw;
-    margin-top: 10%;
     transition: 1000ms;
 }
 
@@ -125,7 +115,7 @@ body {
 }
 
 .img1 {
-    width: 70%;
+    width: 80%;
     height: 40%;
     border-radius: 12px;
     margin-top: 2%;
@@ -138,7 +128,7 @@ body {
 }
 
 .img2 {
-    width: 70%;
+    width: 80%;
     height: 40%;
     border-radius: 12px;
     margin-top: 2%;
@@ -216,26 +206,28 @@ body {
     }
     .info {
         text-align: start;
+        max-width: 85%;
         margin-top: 10%;
         font-size: 2.7vw;
         padding-top: 5px;
         top: 10vw;
-        margin-left: 15%;
+        margin-left: 9%;
     }
     .infoo {
+        max-width: 85%;
         text-align: start;
         margin-top: 80%;
         font-size: 2.7vw;
         padding-top: 5px;
         top: 10vw;
-        margin-left: 15%;
+        margin-left: 9%;
     }
     .infoish {
         max-width: 100vw;
-        width: 75vw;
+        width: 80%;
         margin-top: 130%;
         font-size: 2.7vw;
-        padding-top: 5px;
+        margin-right: -2%;
         text-align: center;
     }
     .woods {
@@ -244,8 +236,8 @@ body {
         margin-right: 10%;
     }
     .title {
+        font-size: 5vw;
         width: 90%;
-        margin-right: 15%;
     }
     .vapour span {
         max-width: 20px;
@@ -256,7 +248,7 @@ body {
     }
     .sum {
         margin-bottom: 1vh;
-        margin-left: -8vh;
+        margin-left: -3vh;
     }
     .cursor {
         display: none;

@@ -10,7 +10,6 @@ lightBulb.addEventListener("click", () => {
         backGround.style.backgroundColor = "rgb( 40, 40, 40)";
         shit.style.opacity = "100%"
         touch.style.opacity = "0%"
-        shit.style.marginLeft = '0'
         title.style.backgroundColor = "rgb( 40, 40, 40)"
         title.style.boxShadow = "0 20px 30px 0 #232325"
         LightOn = false;
