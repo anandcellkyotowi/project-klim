@@ -36,6 +36,7 @@ button {
     color: white;
     display: flex;
     flex-direction: column;
+    padding-bottom: 5vh;
 }
 
 .title {
@@ -100,16 +101,20 @@ button {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    transition: 100ms;
 }
-@media only screen and (max-width: 780px) {
+
+@media only screen and (max-width: 912px) {
     .info-text {
         width: 100%;
-        font-size: 5vw;
-        margin-top: 10px;
-    }
-    #butt{
+        font-size: 4vw;
+        margin-top: 10vh;
         position: absolute;
-        top: 60%;
+        bottom: 70vh;
+    }
+    #butt {
+        position: absolute;
+        top: 40vh;
         width: 35vw;
         height: 12vw;
     }
@@ -126,20 +131,26 @@ button {
         background-color: rgb(87, 202, 255);
         transition: 100ms;
     }
-    .row{
+    .row {
         height: 18vw;
         gap: 4vw;
     }
-     #gameContainer{
+    #gameContainer {
         margin-top: 6vh;
     }
-    button{
+    button {
         height: 10vw;
+    }
+    .titles {
+        font: optional;
+        font-size: 4vw;
+    }
+    .title {
+        font-size: 6vw;
     }
 }
 
-
-#butt{
-    font-size:200%;
+#butt {
+    font-size: 200%;
     border: none;
 }
