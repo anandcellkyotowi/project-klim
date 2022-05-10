@@ -3,7 +3,7 @@
 *::after {
     box-sizing: border-box;
     font-family: 'Montserrat';
-    font-size: 20px;
+    font-size: 25px;
 }
 
  :root {
@@ -13,6 +13,8 @@
 }
 
 body {
+    background-image: url('wall.jpg');
+    background-size: 100% 100%;
     --hue: var(--hue-neutral);
     padding: 0;
     margin: 0;
@@ -37,13 +39,26 @@ body.wrong {
     color: white;
     font-size: 30px;
     margin-bottom: 5%;
+    background: linear-gradient(to right, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 40%, rgb(156, 194, 255) 60%, rgb(0, 0, 0) 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
 }
 
 .container {
     text-align: center;
     width: 900px;
     max-width: 80%;
-    background-color: white;
+    background-color: rgba(233, 225, 255, 0.382);
     border-radius: 5px;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -130,6 +145,12 @@ body.wrong {
 @media only screen and (max-width: 720px) {
     * {
         font-size: 15px;
+    }
+    .title {
+        background: linear-gradient(to right, rgb(255, 255, 255)rgb(255, 255, 255) 0, 0) 40%, rgb(156, 194, 255) 60%, rgb(255, 255, 255) 80%;
+    }
+    body {
+        background-image: url('utas1.jpeg');
     }
     .title {
         font-size: 25px;
