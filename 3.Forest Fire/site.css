@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  caret-color: transparent;
+
 }
 
 p {
@@ -332,7 +334,7 @@ body {
 .off {
   border: none;
   background-color: rgb(251, 150, 78);
-  width: 10vh;
+  width: 15vh;
   margin-left: 12%;
   margin-bottom: 2.5%;
 }
@@ -591,6 +593,7 @@ body {
     bottom: -15px;
   }
   .off {
+    margin-top: 5%;
     margin-left: 18%;
   }
   .cursor{
@@ -605,7 +608,7 @@ body {
   position: fixed;
   width: 40px;
   height: 40px;
-  border: 1px solid rgb(51, 255, 241);
+  border: 1px solid rgb(255, 69, 69);
   border-radius: 50%;
   transition: 0.1s;
   left: 0;
@@ -619,7 +622,7 @@ body {
   position: fixed;
   width: 8px;
   height: 8px;
-  background-color: rgb(51, 255, 241);
+  background-color: rgb(255, 69, 69);
   border-radius: 50%;
   left: 0;
   top: 0;
