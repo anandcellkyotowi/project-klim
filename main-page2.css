@@ -127,6 +127,7 @@ img {
     padding: 20px 24px;
     margin-bottom: 30px;
     transition: 1000ms;
+    line-height: 42px;
 }
 
 .innerContainer {
@@ -331,6 +332,10 @@ img {
     }
     .cursor2 {
         display: none;
+    }
+    .us1 {
+        font-size: 13px;
+        line-height: 25px;
     }
 }
 
