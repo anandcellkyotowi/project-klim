@@ -12,6 +12,17 @@
     --hue-correct: 145;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.kort {
+    background-color: transparent;
+    border: none;
+    margin-top: 3%;
+}
+
 body {
     background-image: url('wall.jpg');
     background-size: 100% 100%;
@@ -39,9 +50,8 @@ body.wrong {
     color: white;
     font-size: 30px;
     margin-bottom: 5%;
-    background: linear-gradient(to right, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 40%, rgb(156, 194, 255) 60%, rgb(0, 0, 0) 80%);
+    background: linear-gradient(to right, rgb(0, 0, 0) 20%, rgb(156, 194, 255) 40%, rgb(156, 194, 255) 60%, rgb(0, 0, 0) 80%);
     background-size: 200% auto;
-    color: #000;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -144,7 +154,7 @@ body.wrong {
 
 @media only screen and (max-width: 720px) {
     * {
-        font-size: 15px;
+        font-size: 20px;
     }
     .title {
         background: linear-gradient(to right, rgb(255, 255, 255)rgb(255, 255, 255) 0, 0) 40%, rgb(156, 194, 255) 60%, rgb(255, 255, 255) 80%;
