@@ -36,7 +36,7 @@ body {
     gap: 4%;
     justify-content: center;
     align-items: center;
-    /* height: 10%; */
+    height: 10%;
     font-weight: bold;
     top: 0;
     position: fixed;
@@ -47,9 +47,11 @@ body {
 }
 
 .sum {
+    height: 7vh;
+
     margin-left: -10vw;
-    margin-top: 2vw;
-    margin-bottom: 1vw;
+    position: fixed;
+    top: 11px;
 }
 
 .imaj {
@@ -239,7 +241,7 @@ body {
         margin-right: 10%;
     }
     .title {
-        font-size: 5vw;
+        font-size: 7vw;
         width: 90%;
     }
     .vapour span {
@@ -250,9 +252,10 @@ body {
         justify-content: center;
     }
     .sum {
+        height: 6vh;
         margin-top: 2vw;
         margin-bottom: 1vw;
-        margin-left: -16vw;
+        margin-left: -8vw;
     }
     .cursor {
         display: none;
