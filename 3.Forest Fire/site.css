@@ -555,7 +555,7 @@ body {
     text-align: center;
     font-size: 5vw;
     width: 90%;
-    height: 6%;
+    height: 10%;
   }
   #pushdashit {
     margin-bottom: 29vh;
@@ -575,17 +575,14 @@ body {
     margin-right: 10%;
   }
   .sum {
-    margin-top: 10px;
-    width: 2vh;
+    margin-top: 12px;
+    width: 3vh;
     height: 50%;
-    margin-bottom: 20%;
   }
   .text {
-    margin-top: 30px;
-    margin-left: 5%;
-    margin-top: 10px;
+    margin-top: 15px;
     text-align: center;
-    font-size: 6vw;
+    font-size: 7vw;
   }
   .top3 {
     padding-top: 10vh;
