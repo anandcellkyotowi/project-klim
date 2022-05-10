@@ -4,6 +4,9 @@
   font-family: "Montserrat", sans-serif;
   caret-color: transparent;
 }
+a {
+  text-decoration: none;
+}
 
 body {
   transition: 250ms;
@@ -34,6 +37,23 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 5s linear infinite;
+}
+
+.pos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sum {
+  position: relative;
+  top: -8vh;
+  margin-left: 5%;
+  height: 7vh;
+}
+
+.tovch {
+  opacity: 0;
 }
 
 @keyframes shine {
@@ -242,5 +262,19 @@ body {
   }
   .cursor2 {
     display: none;
+  }
+  .tovch {
+    position: relative;
+    margin-top: 25%;
+    opacity: 1;
+    background-color: rgb(167, 229, 167);
+    border: none;
+    padding: 2%;
+    text-decoration: none;
+    
+    border-radius: 10%;
+  }
+  .sum {
+    opacity: 0;
   }
 }
