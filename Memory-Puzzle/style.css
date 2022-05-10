@@ -111,6 +111,7 @@ button {
         margin-top: 10vh;
         position: absolute;
         bottom: 70vh;
+        display: none;
     }
     #butt {
         position: absolute;
