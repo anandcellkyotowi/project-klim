@@ -1,9 +1,11 @@
 var game = false;
+
 document.getElementById('butt').onclick = function() {
     game = true;
     if (game) {
         document.getElementById('gameContainer').style.display = 'flex';
         document.getElementById('butt').style.display = 'none';
+        document.querySelector('.info-text').style.bottom = '20vh';
         const cubes = document.querySelectorAll('.cube')
         var score = document.querySelector('#score')
         var level = document.querySelector('#level')
