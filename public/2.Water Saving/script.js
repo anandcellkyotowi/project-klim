@@ -1,6 +1,10 @@
+var button = document.getElementById("button");
+
 function myFunction() {
     var element = document.getElementById("dp");
     element.classList.remove("drop");
+    button.style.backgroundColor = "rgb(48, 224, 101)";
+    button.innerText = "Та усаа хэмнэлээ!";
 }
 
 function reveal() {
