@@ -50,7 +50,7 @@ body {
 }
 .gra {
   opacity: 0;
-  width: 70%;
+  width: 80%;
   margin-right: 8vh;
   border-radius: 12px;
   transition: 250ms;
@@ -101,8 +101,7 @@ body {
   font-size: 1.5vw;
   padding-top: 3%;
   text-align: center;
-  padding-right: 12%;
-  padding-left: 11%;
+  padding-left: 9.5%;
   color: white;
   opacity: 0;
   text-align: start;
@@ -114,7 +113,6 @@ body {
   font-size: 1.3vw;
   opacity: 0;
   margin-top: 4%;
-  margin-left: 12%;
   animation: ani 0.75s ease-out 1.2s forwards;
   z-index: 9;
 }
@@ -122,7 +120,7 @@ body {
 .infor {
   color: rgba(0, 0, 0, 0.553);
   font-size: 1vw;
-  text-align: center;
+  text-align: start;
 }
 
 #pushdashit {
