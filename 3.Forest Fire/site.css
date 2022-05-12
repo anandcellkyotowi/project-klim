@@ -26,13 +26,12 @@ body {
   height: 100%;
   width: 65%;
   /* background: #ff4000; */
+  animation: pag linear 5s infinite;
   position: relative;
   margin: auto;
   z-index: 1;
 }
-.pageani {
-  animation: pag linear 5s infinite;
-}
+
 
 .title {
   font-size: 4vw;
@@ -376,8 +375,8 @@ body {
   transition: 2500ms;
 }
 
-.burn{
-    animation: redu linear 3s infinite;
+.burn {
+  animation: redu linear 3s infinite;
 }
 .bottom {
   width: 25%;
