@@ -120,7 +120,7 @@ body {
 }
 
 .img1 {
-    width: 80%;
+    width: 88%;
     height: 40%;
     border-radius: 12px;
     margin-top: 2%;
@@ -134,7 +134,7 @@ body {
 }
 
 .img2 {
-    width: 80%;
+    width: 88%;
     height: 40%;
     border-radius: 12px;
     margin-top: 2%;
@@ -212,21 +212,21 @@ body {
     }
     .info {
         text-align: start;
-        max-width: 85%;
+        max-width: 95%;
         margin-top: 10%;
         font-size: 2.7vw;
         padding-top: 5px;
         top: 10vw;
-        margin-left: 9%;
+        margin-left: 4%;
     }
     .infoo {
-        max-width: 85%;
+        max-width: 95%;
         text-align: start;
         margin-top: 80%;
         font-size: 2.7vw;
         padding-top: 5px;
         top: 10vw;
-        margin-left: 9%;
+        margin-left: 4%;
     }
     .infoish {
         max-width: 100vw;
