@@ -25,13 +25,11 @@ body {
   overflow: hidden;
   height: 100%;
   width: 65%;
-  /* background: #ff4000; */
-  animation: pag linear 5s infinite;
+  background: #ff1500;
   position: relative;
   margin: auto;
   z-index: 1;
 }
-
 
 .title {
   font-size: 4vw;
@@ -326,27 +324,6 @@ body {
   }
   100% {
     border-right: 10px solid rgb(113, 22, 22);
-  }
-}
-
-@keyframes pag {
-  0% {
-    background-color: rgb(185, 31, 31);
-  }
-  20% {
-    background-color: rgb(178, 55, 55);
-  }
-  40% {
-    background-color: rgb(142, 59, 59);
-  }
-  60% {
-    background-color: rgb(209, 19, 19);
-  }
-  80% {
-    background-color: rgb(144, 29, 29);
-  }
-  100% {
-    background-color: rgb(113, 22, 22);
   }
 }
 
