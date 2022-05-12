@@ -265,13 +265,12 @@ body {
   }
   .tovch {
     position: relative;
-    margin-top: 25%;
+    margin-top: 19%;
     opacity: 1;
     background-color: rgb(167, 229, 167);
     border: none;
     padding: 2%;
     text-decoration: none;
-    
     border-radius: 10%;
   }
   .sum {
