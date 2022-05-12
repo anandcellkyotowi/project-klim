@@ -37,7 +37,7 @@ body {
     gap: 4%;
     justify-content: center;
     align-items: center;
-    height: 10%;
+    height: 6vw;
     font-weight: bold;
     top: 0;
     position: fixed;
@@ -48,8 +48,8 @@ body {
 }
 
 .sum {
-    height: 7vh;
-
+    height: 3vw;
+    margin-top: 1vw;
     margin-left: -10vw;
     position: fixed;
     top: 11px;
@@ -203,7 +203,7 @@ body {
         font-size: 2.7vw;
         margin-left: 35%;
         margin-right: 45%;
-        margin-top: -38vw;
+        margin-top: -40vw;
     }
     .gra {
         width: 80%;
@@ -242,6 +242,7 @@ body {
         margin-right: 10%;
     }
     .title {
+        height: 10vw;
         font-size: 7vw;
         width: 90%;
     }
@@ -253,9 +254,8 @@ body {
         justify-content: center;
     }
     .sum {
-        height: 6vh;
-        margin-top: 2vw;
-        margin-bottom: 1vw;
+        height: 5vw;
+        margin-top: 1vw;
         margin-left: -8vw;
     }
     .cursor {
