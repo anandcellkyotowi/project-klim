@@ -1,299 +1,303 @@
 * {
-  margin: 0%;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  caret-color: transparent;
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    caret-color: transparent;
 }
 
 p {
-  margin-top: 15px;
-  margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
+
 .button {
-  height: 3vw;
-  margin-left: 5%;
-  margin-top: 0.5%;
-  cursor: pointer;
-}
-.off{
-  position: absolute;
-  top: 6%;
-  left: 13%;
-}
-.back {
- margin-bottom: 20%;
-}
-.text{
-  padding-top: 3%;
-  padding-left: 3%;
-  padding-right: 3%;
-  font-size: 1.5vw;
+    height: 3vw;
+    margin-left: 5%;
+    margin-top: 0.5%;
+    cursor: pointer;
 }
 
-body {
-  height: 100vh;
-  display: flex;
-  padding: 5px;
-  justify-content: center;
-  cursor: none;
-  background-size: 40% 60%;
-  background-image: url('background.jpg');
-}
-
-.container {
-  background-color: rgb(92, 167, 92);
-  width: 65%;
-  height: fit-content;
-  position: relative;
-  min-height: 300px;
-  margin-bottom: 100px;
-  padding-bottom: 10vh;
-  overflow: hidden;
-}
-
-.title {
-  font-size: 4vw;
-  display: flex;
-  color: white;
-  gap: 20%;
-  /* height: 10%; */
-  font-weight: bold;
-  top: 0;
-  position: fixed;
-  width: 64.7%;
-  z-index: 999;
-  background-color: rgb(83, 187, 83);
-  box-shadow: 0 20px 30px 0 rgb(28 9 80 / 5%);
-}
-
-.crnt {
-  margin-top: 10px;
-  width: 40%;
-  margin-left: 0%;
-  height: 20vw;
-  z-index: 600;
-}
-
-.gra {
-  margin-top: 5%;
-  width: 40%;
-  height: 20%;
-  opacity: 0;
-  padding-left: 55px;
-  animation: title3 0.75s ease-out 0.8s forwards;
-}
-
-@keyframes title3 {
-  100% {
-    opacity: 1;
-  }
-}
-
-.info {
-  width: 100%;
-  color: white;
-  padding: 7%;
-  padding-top:5%;
-  padding-bottom: 1%;
-  font-size: 1.5vw;
-  opacity: 0;
-  animation: title 0.75s ease-out 1.2s forwards;
-}
-.info2{
-  width: 100%;
-  color: white;
-  padding: 7%;
-  padding-top:5%;
-  padding-bottom: 1%;
-  font-size: 1.5vw;
-  opacity: 0;
-  animation: title 0.75s ease-out 1.2s forwards;
-}
-
-@keyframes title {
-  100% {
-    opacity: 1;
-  }
-}
-.top {
-  display: flex;
-  flex-direction: column;
-  padding-top: 15%;
-}
-
-.top2 {
-  display: flex;
-  flex-direction: column;
-}
-
-.waters {
-  margin-top: 5px;
-  background-image: url('zurag2.png');
-  margin-right:0%;
-  width: 54.7vw;
-  height: 25vw;
-  border-radius: 10px;
-  background-size: cover;
-  box-shadow: 0px 0px 29px -4px rgb(0 0 0 / 89%);
-  
-}
-.bohir{
-  margin-top: 5px;
-  background-image: url('https://firebasestorage.googleapis.com/v0/b/savewaterpng.appspot.com/o/bohirhooloi.png?alt=media&token=9684daea-03eb-44bb-a4f8-2ca7f1130ba5');
-  width: 54.7vw;
-  height: 30vw;
-  margin-right: 2%;
-  border-radius: 10px;
-  animation: title2 0.75s ease-out 0.8s forwards;
-  background-size: cover;
-  margin-bottom: 20px;
-  box-shadow: 0px 0px 29px -4px rgb(0 0 0 / 89%);
-
-}
-.bohir1{
-  margin-top: 5px;
-  background-image: url('https://firebasestorage.googleapis.com/v0/b/savewaterpng.appspot.com/o/bohirhooloi.png?alt=media&token=9684daea-03eb-44bb-a4f8-2ca7f1130ba5');
-  width: 54.7vw;
-  height: 30vw;
-  /* margin: 2%; */
-  margin-bottom: 0;
-  margin-left: 7%;
-  border-radius: 10px;
-  animation: title2 0.75s ease-out 0.8s forwards;
-  background-size: cover;
-  box-shadow: 0px 0px 29px -4px rgb(0 0 0 / 89%);
-}
-
-@keyframes title2 {
-  100% {
-    opacity: 1;
-  }
-}
-
-.ground {
-  width: 100%;
-  height: 100px;
-  margin-top: 100px;
-  background-color: antiquewhite;
-  font-size: 10px;
-}
-
-@media only screen and (max-width: 780px) {
-  .top {
-    flex-direction: column;
-  }
-  .top2 {
-    flex-direction: column;
-  }
-  .info {
-    width: 100%;
-    font-size: 2.6vw;
-    padding-top: 5px;
-    
-  }
-  .woods {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-  .title {
-    width: 92%;
-    height: 10%;
-    font-size: 6vw;
-    font-size: 8.4vw;
-    display: flex;
-    align-items: center;
-    padding-right: 10vw;
-  }
-  .waters {
-    /* background-image: url('zurag.png'); */
-    width: 100%;
-    height: 40vw;
-    margin-right: 5%;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .bohir{
-    width: 100%;
-    height: 40vw;
-    margin-right: 5%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom:30px;
-    background-image: url('zurag2.png');
-  }
-  .bohir1{
-    width: 87%;
-    height: 40vw;
-    margin-right: 5%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom:30px;
-    margin-bottom: 2%;
-    margin-top: 14%;
-  }
-  .container {
-    width: 92vw;
-  }
-  .off{
+.off {
     position: absolute;
-    left: 9%;
-    top: 4%;
-    font-size: 1.9vw;
-  }
-  .button{
-    height: 4vw;
-  }
-  .cursor{
-    display: none;
-  }
-  .cursor2{
-    display: none;
-  }
-  .text{
+    top: 6%;
+    left: 13%;
+}
+
+.back {
+    margin-bottom: 20%;
+}
+
+.text {
     padding-top: 3%;
     padding-left: 3%;
     padding-right: 3%;
-    font-size: 2.6vw;
-  }
-  .back{
-    height: 4.5vh;
-    width: 4.5vw;
-    top: 2.6vh;
-    position: fixed;
-
-  }
+    font-size: 1.5vw;
 }
 
+body {
+    height: 100vh;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    cursor: none;
+    background-size: 40% 60%;
+    background-image: url('background.jpg');
+}
 
+.container {
+    background-color: rgb(92, 167, 92);
+    width: 65%;
+    height: fit-content;
+    position: relative;
+    min-height: 300px;
+    margin-bottom: 100px;
+    padding-bottom: 10vh;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 4vw;
+    display: flex;
+    color: white;
+    gap: 20%;
+    /* height: 10%; */
+    font-weight: bold;
+    top: 0;
+    position: fixed;
+    width: 64.7%;
+    z-index: 999;
+    background-color: rgb(83, 187, 83);
+    box-shadow: 0 20px 30px 0 rgb(28 9 80 / 5%);
+}
+
+.crnt {
+    margin-top: 10px;
+    width: 40%;
+    margin-left: 0%;
+    height: 20vw;
+    z-index: 600;
+}
+
+.gra {
+    margin-top: 5%;
+    width: 40%;
+    height: 20%;
+    opacity: 0;
+    padding-left: 55px;
+    animation: title3 0.75s ease-out 0.8s forwards;
+}
+
+@keyframes title3 {
+    100% {
+        opacity: 1;
+    }
+}
+
+.info {
+    width: 100%;
+    color: white;
+    padding: 7%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    font-size: 1.5vw;
+    opacity: 0;
+    animation: title 0.75s ease-out 1.2s forwards;
+}
+
+.info2 {
+    width: 100%;
+    color: white;
+    padding: 7%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    font-size: 1.5vw;
+    opacity: 0;
+    animation: title 0.75s ease-out 1.2s forwards;
+}
+
+@keyframes title {
+    100% {
+        opacity: 1;
+    }
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15%;
+}
+
+.top2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.waters {
+    margin-top: 5px;
+    background-image: url('zurag2.png');
+    margin-right: 0%;
+    width: 54.7vw;
+    height: 25vw;
+    border-radius: 10px;
+    background-size: cover;
+    box-shadow: 0px 0px 29px -4px rgb(0 0 0 / 89%);
+}
+
+.bohir {
+    margin-top: 5px;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/savewaterpng.appspot.com/o/bohirhooloi.png?alt=media&token=9684daea-03eb-44bb-a4f8-2ca7f1130ba5');
+    width: 54.7vw;
+    height: 30vw;
+    margin-right: 2%;
+    border-radius: 10px;
+    animation: title2 0.75s ease-out 0.8s forwards;
+    background-size: cover;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 29px -4px rgb(0 0 0 / 89%);
+}
+
+.bohir1 {
+    margin-top: 5px;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/savewaterpng.appspot.com/o/bohirhooloi.png?alt=media&token=9684daea-03eb-44bb-a4f8-2ca7f1130ba5');
+    width: 54.7vw;
+    height: 30vw;
+    /* margin: 2%; */
+    margin-bottom: 0;
+    margin-left: 7%;
+    border-radius: 10px;
+    animation: title2 0.75s ease-out 0.8s forwards;
+    background-size: cover;
+    box-shadow: 0px 0px 29px -4px rgb(0 0 0 / 89%);
+}
+
+@keyframes title2 {
+    100% {
+        opacity: 1;
+    }
+}
+
+.ground {
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    background-color: antiquewhite;
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 780px) {
+    .top {
+        flex-direction: column;
+    }
+    .top2 {
+        flex-direction: column;
+    }
+    .info {
+        width: 100%;
+        font-size: 3.5vw;
+        padding-top: 5px;
+    }
+    .woods {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .title {
+        width: 92%;
+        height: 10%;
+        font-size: 6vw;
+        font-size: 8.4vw;
+        display: flex;
+        align-items: center;
+        padding-right: 10vw;
+    }
+    .waters {
+        /* background-image: url('zurag.png'); */
+        width: 100%;
+        height: 40vw;
+        margin-right: 5%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bohir {
+        width: 100%;
+        height: 40vw;
+        margin-right: 5%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 30px;
+        background-image: url('zurag2.png');
+    }
+    .bohir1 {
+        width: 87%;
+        height: 40vw;
+        margin-right: 5%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 30px;
+        margin-bottom: 2%;
+        margin-top: 14%;
+    }
+    .container {
+        width: 92vw;
+    }
+    .off {
+        position: absolute;
+        left: 9%;
+        top: 4%;
+        font-size: 1.9vw;
+    }
+    .button {
+        height: 4vw;
+    }
+    .cursor {
+        display: none;
+    }
+    .cursor2 {
+        display: none;
+    }
+    .text {
+        padding-top: 3%;
+        padding-left: 3%;
+        padding-right: 3%;
+        font-size: 3.5vw;
+        line-height: 20px;
+    }
+    .back {
+        height: 4.5vh;
+        width: 4.5vw;
+        top: 2.6vh;
+        position: fixed;
+    }
+}
 
 .cursor {
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  border: 1px solid rgb(49, 78, 243);
-  border-radius: 50%;
-  transition: 0.1s;
-  left: 0;
-  top: 0;
-  pointer-events: none;
-  z-index: 999;
-  transform: translate(-50%, -50%);
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(49, 78, 243);
+    border-radius: 50%;
+    transition: 0.1s;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 999;
+    transform: translate(-50%, -50%);
 }
 
 .cursor2 {
-  position: fixed;
-  width: 8px;
-  height: 8px;
-  background-color: rgb(49, 78, 243);
-  border-radius: 50%;
-  left: 0;
-  top: 0;
-  pointer-events: none;
-  z-index: 999;
-  transform: translate(-50%, -50%);
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(49, 78, 243);
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 999;
+    transform: translate(-50%, -50%);
 }
-.marginb{
-  margin-bottom: 3%;
+
+.marginb {
+    margin-bottom: 3%;
 }
