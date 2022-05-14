@@ -91,7 +91,7 @@ document.getElementById("butt").onclick = function() {
             }
             for (let a = 0; a < randomIndexs.length; a++) {
                 if (randomIndexs[a] == index) {
-                    randomIndexs.splice(a, 1);
+                    randomIndexs.splice(a, 2);
                 }
             }
             if (!found) {
@@ -101,7 +101,7 @@ document.getElementById("butt").onclick = function() {
         }
 
         function gameEndCheck() {
-            if (levell == 16) {
+            if (levell == 10) {
                 console.log(levell);
                 alert("Чи яллаа.");
                 cubeLimit = 4;
