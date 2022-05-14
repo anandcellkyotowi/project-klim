@@ -48,6 +48,13 @@ document.getElementById("butt").onclick = function() {
                     }
                 }
             }
+            for (let i = 0; i < randomIndexs.length; i++) {
+                for (let a = i + 1; a < randomIndexs.length; a++) {
+                    if (randomIndexs[i] == randomIndexs[a]) {
+                        randomIndexs.splice(i, 1);
+                    }
+                }
+            }
             jotaRO = randomIndexs.length;
             for (let a = 0; a < randomIndexs.length; a++) {
                 cubes[randomIndexs[a]].style.backgroundColor = "black";
@@ -101,7 +108,7 @@ document.getElementById("butt").onclick = function() {
         }
 
         function gameEndCheck() {
-            if (levell == 10) {
+            if (levell == 11) {
                 console.log(levell);
                 alert("Чи яллаа.");
                 cubeLimit = 4;
