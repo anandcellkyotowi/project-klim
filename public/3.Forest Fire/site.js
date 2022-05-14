@@ -15,6 +15,8 @@ var texT = document.getElementById("text2");
 function myFunction() {
   // ciggar.style.width = 150 + "px";
   // ciggar.style.backgroundColor = "rgb(92, 92, 92)";
+  button.innerHTML="Тамхи унтарлаа";
+  button.style.backgroundColor = "rgb(255, 195, 55)";
   texT.style.display = "grid";
   text.innerHTML = "";
   text.style.opacity = 1;

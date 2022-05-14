@@ -11,10 +11,6 @@ p {
   margin-bottom: 15px;
 }
 
-/* div {
-    transition: 250ms;
-} */
-
 body {
   background-image: url("https://firebasestorage.googleapis.com/v0/b/golobalwoorning.appspot.com/o/0011.png?alt=media&token=8528b6fc-5c95-45f2-b2d2-e1b7c7e072c3");
   background-size: 30% 20%;
@@ -45,9 +41,6 @@ body {
   box-shadow: 0 20px 30px 0 rgb(28 9 80 / 5%);
 }
 
-.color {
-  color: rgb(255, 124, 48);
-}
 .gra {
   opacity: 0;
   width: 70%;
@@ -351,10 +344,6 @@ body {
   z-index: 111;
   transition: 2500ms;
 }
-
-.burn {
-  animation: redu linear 3s infinite;
-}
 .bottom {
   width: 25%;
   height: 100%;
@@ -390,7 +379,7 @@ body {
     opacity: 0;
   }
   15% {
-    opacity: 2;
+    opacity: 10;
   }
   50% {
     transform: translateY(-150px) scaleX(5);
@@ -426,8 +415,7 @@ body {
     padding-top: 15%;
   }
   .info2 {
-    margin-left: 3%;
-    width: 100%;
+    width: 90%;
   }
   .info3 {
     width: 150%;
@@ -460,8 +448,7 @@ body {
     font-size: 5vw;
   }
   .info2 {
-    margin-left: 1%;
-    width: 100%;
+    width: 90%;
   }
   .info3 {
     width: 150%;
@@ -501,11 +488,10 @@ body {
     margin-top: -1%;
   }
   .info2 {
-    width: 80%;
-    margin-left: 10%;
+    width: 84%;
+    margin-left: 8%;
     margin-top: 3%;
     padding: 2.2%;
-    font-size: 1.5vw;
   }
   .info3 {
     width: 250%;
