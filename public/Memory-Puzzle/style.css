@@ -113,13 +113,12 @@ button {
     top: 6%;
 }
 
-@media only screen and (max-width: 912px) {
+@media only screen and (max-width: 1000px) {
     .info-text {
         width: 100%;
-        font-size: 4vw;
-        margin-top: 20vh;
+        font-size: 3.7vw;
         position: relative;
-        bottom: 70vh;
+        top: 14.5vh;
     }
     #butt {
         position: absolute;
@@ -168,6 +167,6 @@ button {
 }
 
 #butt {
-    font-size: 200%;
+    font-size: 150%;
     border: none;
 }
