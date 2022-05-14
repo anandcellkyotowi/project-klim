@@ -78,7 +78,6 @@ img {
 }
 
 .menu {
-    flex-wrap: wrap;
     flex-grow: 1;
     display: flex;
     font-family: 'Montserrat';
@@ -357,9 +356,9 @@ img {
         width: 70%;
     }
     .menu {
-        justify-content: center;
+        /* justify-content: center; */
         padding-top: 50px;
-        gap: 14px;
+        gap: 5px;
         font-size: 14px;
     }
     .name {
