@@ -39,6 +39,7 @@ nextButton.addEventListener('click', () => {
 })
 
 function startGame() {
+    questionContainerElement.style.display = 'block';
     resultElement.innerHTML = ''
     startButton.classList.add('hide')
     shuffledQuestions = questions.sort(() => Math.random() - .5)
@@ -84,10 +85,10 @@ function selectAnswer(e) {
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide')
     } else {
+        questionContainerElement.style.display = 'none';
         resultElement.innerHTML = 'Манай асуулт хариултын тоглоомыг тоглосонд танд баярлалаа!'
         startButton.innerText = 'Ахин тоглох'
         startButton.classList.remove('hide')
-
     }
 }
 
