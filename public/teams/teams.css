@@ -254,8 +254,12 @@ body {
 }
 
 @media only screen and (max-width: 780px) {
+  .teams {
+    font-size: 4.6vh;
+  }
   .card {
-    margin-bottom: 20%;
+    margin-bottom: 50%;
+    margin-top: -20%;
   }
   .cursor {
     display: none;
@@ -264,8 +268,7 @@ body {
     display: none;
   }
   .tovch {
-    position: relative;
-    margin-top: 19%;
+    margin-top: 10%;
     opacity: 1;
     background-color: rgb(167, 229, 167);
     border: none;
