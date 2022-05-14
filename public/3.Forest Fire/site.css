@@ -27,6 +27,12 @@ body {
   z-index: 1;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  background-color: black;
+}
+
 .title {
   font-size: 4vw;
   display: flex;
