@@ -89,6 +89,11 @@ document.getElementById("butt").onclick = function() {
                     score.innerHTML = "" + hits + " / " + jotaRO;
                 }
             }
+            for (let a = 0; a < randomIndexs.length; a++) {
+                if (randomIndexs[a] == index) {
+                    randomIndexs.splice(a, 1);
+                }
+            }
             if (!found) {
                 cubes[index].style.backgroundColor = "red";
                 sucked++;
