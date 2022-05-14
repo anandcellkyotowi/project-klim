@@ -336,11 +336,17 @@ img {
         display: none;
     }
     .us1 {
-        font-size: 13px;
-        line-height: 30px;
+        font-size: 20px;
+        line-height: 35px;
     }
     .team-container {
         width: 80%;
+    }
+    .innerContainer {
+        height: 1600px;
+    }
+    .container {
+        height: 2000px;
     }
 }
 
