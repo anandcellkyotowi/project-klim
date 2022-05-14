@@ -23,7 +23,7 @@ document.getElementById("butt").onclick = function() {
                         levell++;
                         reset();
                     }
-                    if (sucked == 4) {
+                    if (sucked == 1) {
                         cubeLimit = 4;
                         levell = 0;
                         alert("Дахин оролдоно уу.");
