@@ -81,8 +81,8 @@ button {
 }
 
 .cube {
-    width: 5vw;
-    height: 5vw;
+    width: 4vw;
+    height: 4vw;
     border-radius: 5%;
     background-color: rgb(87, 202, 255);
     transition: 100ms;
@@ -104,10 +104,11 @@ button {
     margin-right: auto;
     transition: 100ms;
 }
-.back{
-     width: 2.5%;
-     height: 4vw;
-    margin-left: 4%;  
+
+.back {
+    width: 2.5%;
+    height: 4vw;
+    margin-left: 4%;
     position: absolute;
     top: 6%;
 }
@@ -133,14 +134,14 @@ button {
         display: flex;
     } */
     .cube {
-        width: 15vw;
-        height: 15vw;
+        width: 12vw;
+        height: 12vw;
         border-radius: 5%;
         background-color: rgb(87, 202, 255);
         transition: 100ms;
     }
     .row {
-        height: 18vw;
+        height: 15vw;
         gap: 4vw;
     }
     #gameContainer {
@@ -156,8 +157,8 @@ button {
     .title {
         font-size: 6vw;
     }
-    .back{
-        width:5vw;
+    .back {
+        width: 5vw;
         height: 7vw;
         /* margin-top: 2%;
         margin-left: 4%; */
