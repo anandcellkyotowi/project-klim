@@ -21,10 +21,10 @@ p {
 .off {
     position: absolute;
     top: 6%;
-    left: 13%;
+    left: 11%;
     border: none;
     background-color: rgb(71, 211, 243);
-    width: 7%;
+    width: 10%;
     font-size: 16px;
 }
 
@@ -170,10 +170,10 @@ body {
 
 @media only screen and (max-width: 780px) {
     .text {
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
     p {
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
     .top {
         flex-direction: column;
@@ -233,10 +233,10 @@ body {
     }
     .off {
         position: absolute;
-        left: 11%;
+        left: 9%;
         top: 3%;
-        font-size: 2.5vw;
-        width: 10%;
+        font-size: 3vw;
+        width: 16%;
         margin-top: 10%;
     }
     .button {

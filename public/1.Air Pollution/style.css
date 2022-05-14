@@ -162,6 +162,7 @@ body {
     transition: 500ms;
     transform: scale(1.1);
 }
+
 .img3 {
     width: 80%;
     height: 40%;
@@ -170,6 +171,7 @@ body {
     margin-bottom: 5%;
     transition: 500ms;
 }
+
 .img3:hover {
     transition: 500ms;
     transform: scale(1.1);
@@ -210,7 +212,7 @@ body {
 
 @media only screen and (max-width: 780px) {
     p {
-        font-size: 3.5vw;
+        font-size: 4vw;
         line-height: 21px;
     }
     /* For mobile phones: */
@@ -232,8 +234,8 @@ body {
     }
     .touch {
         width: 50vw;
-        font-size: 2.7vw;
-        margin-left: 35%;
+        font-size: 4vw;
+        margin-left: 27%;
         margin-right: 45%;
         margin-top: -40vw;
     }
@@ -261,7 +263,7 @@ body {
     .infooo {
         max-width: 85%;
         margin-top: 1%;
-        font-size: 3vw;
+        font-size: 4vw;
         padding-top: 5px;
         top: 10vw;
         margin-left: 8%;
