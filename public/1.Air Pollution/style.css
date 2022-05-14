@@ -25,7 +25,7 @@ body {
     width: 65%;
     background-color: #3D463A;
     height: fit-content;
-    /* transition: 500ms; */
+    transition: 500ms;
     min-height: 300px;
     margin-bottom: 100px;
 }
@@ -75,27 +75,38 @@ body {
 }
 
 .info {
+    text-align: start;
     color: white;
     padding: 2%;
-    max-width: 95%;
-    text-align: center;
+    max-width: 75%;
     padding-top: 10%;
+    margin-left: 6%;
     font-size: 1.5vw;
     transition: 1000ms;
 }
 
 .infoo {
+    text-align: start;
     color: white;
     padding: 2%;
-    max-width: 95%;
-    text-align: center;
+    max-width: 75%;
     padding-top: 10%;
+    margin-left: 6%;
+    font-size: 1.5vw;
+    transition: 1000ms;
+}
+.infooo {
+    text-align: start;
+    color: white;
+    padding: 2%;
+    max-width: 75%;
+    margin-left: 6%;
     font-size: 1.5vw;
     transition: 1000ms;
 }
 
 .infoish {
-    text-align: center;
+    text-align: start;
     margin-top: 12%;
     width: 50%;
     max-width: 45%;
@@ -120,7 +131,7 @@ body {
 }
 
 .img1 {
-    width: 88%;
+    width: 65%;
     height: 40%;
     border-radius: 12px;
     margin-top: 2%;
@@ -134,7 +145,7 @@ body {
 }
 
 .img2 {
-    width: 88%;
+    width: 65%;
     height: 40%;
     border-radius: 12px;
     margin-top: 2%;
@@ -211,7 +222,6 @@ body {
         margin-right: 10%;
     }
     .info {
-        text-align: start;
         max-width: 95%;
         margin-top: 10%;
         font-size: 2.7vw;
@@ -221,7 +231,6 @@ body {
     }
     .infoo {
         max-width: 95%;
-        text-align: start;
         margin-top: 80%;
         font-size: 2.7vw;
         padding-top: 5px;
@@ -233,8 +242,7 @@ body {
         width: 80%;
         margin-top: 130%;
         font-size: 2.7vw;
-        margin-right: -2%;
-        text-align: center;
+        margin-right: -5%;
     }
     .woods {
         width: 80%;
