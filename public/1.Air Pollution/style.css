@@ -78,9 +78,9 @@ body {
     text-align: start;
     color: white;
     padding: 2%;
-    max-width: 90%;
+    max-width: 85%;
     padding-top: 10%;
-    margin-left: 6%;
+    margin-left: 1%;
     margin-bottom: -3%;
     font-size: 1.5vw;
     transition: 1000ms;
@@ -90,10 +90,10 @@ body {
     text-align: start;
     color: white;
     padding: 2%;
-    max-width: 90%;
+    max-width: 84.5%;
     padding-top: 10%;
     margin-bottom: -3%;
-    margin-left: 6%;
+    margin-left: 1%;
     font-size: 1.5vw;
     transition: 1000ms;
 }
@@ -102,10 +102,10 @@ body {
     text-align: start;
     color: white;
     padding: 2%;
-    max-width: 90%;
+    max-width: 85%;
     margin-top: -2%;
     margin-bottom: -3%;
-    margin-left: 6%;
+    margin-left: 1%;
     font-size: 1.5vw;
     transition: 1000ms;
 }
