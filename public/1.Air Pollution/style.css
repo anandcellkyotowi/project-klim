@@ -9,6 +9,7 @@
 
 p {
     margin-bottom: 10px;
+    line-height: 40px;
 }
 
 body {
@@ -86,6 +87,7 @@ body {
 }
 
 .infoo {
+    line-height: 40px;
     text-align: start;
     color: white;
     padding: 2%;
@@ -95,6 +97,7 @@ body {
     font-size: 1.5vw;
     transition: 1000ms;
 }
+
 .infooo {
     text-align: start;
     color: white;
@@ -192,6 +195,10 @@ body {
 }
 
 @media only screen and (max-width: 780px) {
+    p {
+        font-size: 3.5vw;
+        line-height: 21px;
+    }
     /* For mobile phones: */
     .container {
         width: 90%;
@@ -230,18 +237,20 @@ body {
         margin-left: 4%;
     }
     .infoo {
+        line-height: 21px;
         max-width: 95%;
         margin-top: 80%;
-        font-size: 2.7vw;
+        font-size: 3.5vw;
         padding-top: 5px;
         top: 10vw;
         margin-left: 4%;
     }
     .infoish {
+        text-align: center;
         max-width: 100vw;
         width: 80%;
         margin-top: 130%;
-        font-size: 2.7vw;
+        font-size: 3vw;
         margin-right: -5%;
     }
     .woods {
