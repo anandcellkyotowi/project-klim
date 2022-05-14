@@ -337,7 +337,10 @@ img {
     }
     .us1 {
         font-size: 13px;
-        line-height: 25px;
+        line-height: 30px;
+    }
+    .team-container {
+        width: 80%;
     }
 }
 
