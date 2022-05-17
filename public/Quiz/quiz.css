@@ -155,7 +155,7 @@ body.wrong {
 
 @media only screen and (max-width: 720px) {
     * {
-        font-size: 20px;
+        font-size: 17px;
     }
     .title {
         background: linear-gradient(to right, rgb(255, 255, 255)rgb(255, 255, 255) 0, 0) 40%, rgb(156, 194, 255) 60%, rgb(255, 255, 255) 80%;
