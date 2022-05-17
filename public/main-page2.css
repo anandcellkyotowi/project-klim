@@ -97,7 +97,7 @@ img {
     display: flex;
     flex-direction: column;
     height: 600px;
-    width: 60%;
+    width: 53%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -125,7 +125,7 @@ img {
     font-family: "Montserrat";
     font-weight: lighter;
     text-align: left;
-    padding: 20px 24px;
+    padding: 20px 34px;
     margin-bottom: 30px;
     transition: 1000ms;
     line-height: 42px;
