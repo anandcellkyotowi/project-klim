@@ -8,7 +8,7 @@
 }
 
 p {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 body {
@@ -81,7 +81,7 @@ body {
     max-width: 85%;
     padding-top: 10%;
     margin-left: 1%;
-    margin-bottom: -3%;
+    margin-bottom: 0%;
     font-size: 1.5vw;
     transition: 1000ms;
 }
@@ -104,7 +104,7 @@ body {
     padding: 2%;
     max-width: 85%;
     margin-top: -2%;
-    margin-bottom: -3%;
+    margin-bottom: 0%;
     margin-left: 1%;
     font-size: 1.5vw;
     transition: 1000ms;
@@ -144,10 +144,11 @@ body {
     transition: 500ms;
 }
 
-.img1:hover {
+
+/* .img1:hover {
     transition: 500ms;
     transform: scale(1.1);
-}
+} */
 
 .img2 {
     width: 80%;
@@ -158,10 +159,11 @@ body {
     transition: 500ms;
 }
 
-.img2:hover {
+
+/* .img2:hover {
     transition: 500ms;
     transform: scale(1.1);
-}
+} */
 
 .img3 {
     width: 80%;
@@ -172,10 +174,11 @@ body {
     transition: 500ms;
 }
 
-.img3:hover {
+
+/* .img3:hover {
     transition: 500ms;
     transform: scale(1.1);
-}
+} */
 
 .top {
     display: flex;
