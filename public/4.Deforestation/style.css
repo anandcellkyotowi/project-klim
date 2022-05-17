@@ -51,8 +51,6 @@ body {
     height: fit-content;
     position: relative;
     min-height: 300px;
-    margin-bottom: 100px;
-    padding-bottom: 10vh;
     overflow: hidden;
 }
 
