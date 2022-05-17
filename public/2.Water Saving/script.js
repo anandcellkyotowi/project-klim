@@ -3,8 +3,8 @@ var button = document.getElementById("button");
 function myFunction() {
     var element = document.getElementById("dp");
     element.classList.remove("drop");
-    button.style.left = 9 + '%';
-    button.style.width = 15 + '%';
+    button.style.left = 7 + '%';
+    button.style.width = 18 + '%';
     button.style.backgroundColor = "rgb(48, 224, 101)";
     button.innerText = "Та усаа хэмнэлээ!";
 }
