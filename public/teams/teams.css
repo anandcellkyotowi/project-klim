@@ -40,8 +40,9 @@ body {
 }
 
 .pos {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sum {
@@ -228,12 +229,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-@keyframes shine1 {
-  to {
-    background-position: 200% center;
-  }
-}
-
 @media only screen and (max-width: 1300px) {
   .card {
     margin-bottom: 20%;
@@ -247,15 +242,27 @@ body {
 }
 
 @media only screen and (max-width: 725px) {
+  .card {
+    margin-bottom: 20%;
+  }
+  .cursor {
+    display: none;
+  }
+  .cursor2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 780px) {
   button {
-    margin: -3.9vh;
-    margin-top: 1vh;
+    margin: -2.5vh;
+    margin-top: 2vh;
   }
   .card {
-    margin: 6vh;
+    margin: 4.6vh;
   }
   .teams {
-    font-size: 3.6vh;
+    font-size: 4.6vh;
   }
   .card {
     margin-bottom: 43%;
@@ -267,25 +274,17 @@ body {
   .cursor2 {
     display: none;
   }
+  .tovch {
+    position: relative;
+    top: -120px;
+    opacity: 1;
+    background-color: rgb(167, 229, 167);
+    border: none;
+    padding: 2vw;
+    text-decoration: none;
+    border-radius: 10%;
+  }
   .sum {
     opacity: 0;
-  }
-  .tovch {
-    text-align: center;
-    margin-top: 20px;
-    background: linear-gradient(
-      to right,
-      rgb(0, 0, 0) 20%,
-      rgb(0, 0, 0) 40%,
-      rgb(23, 147, 54) 60%,
-      rgb(0, 0, 0) 80%
-    );
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 2.7vh;
-    animation: shine1 5s linear infinite;
-    opacity: 1;
   }
 }
