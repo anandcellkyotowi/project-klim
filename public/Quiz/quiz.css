@@ -101,8 +101,8 @@ body.wrong {
 
 .btn {
     --hue: var(--hue-neutral);
-    border: 1px solid hsl(var(--hue), 100%, 30%);
-    background-color: hsl(var(--hue), 100%, 50%);
+    border: 3px solid hsl(var(--hue), 100%, 30%);
+    background-color: #a69caca4;
     border-radius: 5px;
     padding: 5px 10px;
     color: white;
