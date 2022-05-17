@@ -205,14 +205,54 @@ img {
     .mini-text {
         font-size: 20px;
     }
+    .container {
+        height: 1300px;
+    }
+    .innerContainer {
+        height: 900px;
+    }
 }
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 1500px) {
     .top-bar {
         width: 70%;
         flex-direction: column;
     }
     .menu {
+        font-size: 30px;
+        align-self: center;
+    }
+    .name {
+        flex-basis: 80%;
+        align-self: center;
+        font-size: 40px;
+    }
+    .menu-bar {
+        display: block;
+        font-size: 30px;
+    }
+    .item {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+    .mini-text {
+        font-size: 20px;
+    }
+    .container {
+        height: 1400px;
+    }
+    .innerContainer {
+        height: 1000px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .top-bar {
+        width: 70%;
+        flex-direction: column;
+    }
+    .menu {
+        gap: 20px;
         font-size: 30px;
         align-self: center;
     }
@@ -252,34 +292,6 @@ img {
     }
 }
 
-@media only screen and (max-width: 1300px) {
-    .top-bar {
-        width: 70%;
-        flex-direction: column;
-    }
-    .menu {
-        gap: 20px;
-        font-size: 30px;
-        align-self: center;
-    }
-    .name {
-        flex-basis: 80%;
-        align-self: center;
-        font-size: 40px;
-    }
-    .menu-bar {
-        display: block;
-        font-size: 30px;
-    }
-    .item {
-        margin-right: 90px;
-        margin-left: 90px;
-    }
-    .mini-text {
-        font-size: 20px;
-    }
-}
-
 @media only screen and (max-width: 955px) {
     .innerContainer {
         height: 750px;
@@ -297,8 +309,8 @@ img {
         font-size: 20px;
     }
     .item {
-        margin-right: 120px;
-        margin-left: 120px;
+        margin-right: 130px;
+        margin-left: 130px;
     }
     .name1 {
         font-size: 30px;

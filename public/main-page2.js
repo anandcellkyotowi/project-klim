@@ -17,8 +17,8 @@ document.addEventListener('mousemove', function(e) {
 })
 
 function growBox1() {
-    document.getElementById("first").style.width = 330 + 'px';
-    document.getElementById("first").style.height = 330 + 'px';
+    document.getElementById("first").style.width = 320 + 'px';
+    document.getElementById("first").style.height = 320 + 'px';
 }
 
 function noGrowBox1() {
@@ -27,8 +27,8 @@ function noGrowBox1() {
 }
 
 function growBox2() {
-    document.getElementById("second").style.width = 330 + 'px';
-    document.getElementById("second").style.height = 330 + 'px';
+    document.getElementById("second").style.width = 320 + 'px';
+    document.getElementById("second").style.height = 320 + 'px';
 }
 
 function noGrowBox2() {
@@ -37,8 +37,8 @@ function noGrowBox2() {
 }
 
 function growBox3() {
-    document.getElementById("third").style.width = 330 + 'px';
-    document.getElementById("third").style.height = 330 + 'px';
+    document.getElementById("third").style.width = 320 + 'px';
+    document.getElementById("third").style.height = 320 + 'px';
 }
 
 function noGrowBox3() {
@@ -47,8 +47,8 @@ function noGrowBox3() {
 }
 
 function growBox4() {
-    document.getElementById("fourth").style.width = 330 + 'px';
-    document.getElementById("fourth").style.height = 330 + 'px';
+    document.getElementById("fourth").style.width = 320 + 'px';
+    document.getElementById("fourth").style.height = 320 + 'px';
 }
 
 function noGrowBox4() {

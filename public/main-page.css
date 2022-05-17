@@ -245,9 +245,15 @@ img {
     .mini-text {
         font-size: 20px;
     }
+    .container {
+        height: 1300px;
+    }
+    .innerContainer {
+        height: 900px;
+    }
 }
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 1500px) {
     .top-bar {
         width: 70%;
         flex-direction: column;
@@ -266,29 +272,17 @@ img {
         font-size: 30px;
     }
     .item {
-        margin-right: 90px;
-        margin-left: 90px;
+        margin-right: 100px;
+        margin-left: 100px;
     }
     .mini-text {
         font-size: 20px;
     }
-}
-
-@media only screen and (max-width: 1260px) {
-    .name {
-        flex-basis: 80%;
-        align-self: center;
-        font-size: 25px;
+    .container {
+        height: 1400px;
     }
-    .name1 {
-        font-size: 40px;
-    }
-    .us1 {
-        font-size: 30px;
-    }
-    .item {
-        margin-right: 90px;
-        margin-left: 90px;
+    .innerContainer {
+        height: 1000px;
     }
 }
 
@@ -312,11 +306,29 @@ img {
         font-size: 30px;
     }
     .item {
-        margin-right: 90px;
-        margin-left: 90px;
+        margin-right: 100px;
+        margin-left: 100px;
     }
     .mini-text {
         font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    .name {
+        flex-basis: 80%;
+        align-self: center;
+        font-size: 25px;
+    }
+    .name1 {
+        font-size: 40px;
+    }
+    .us1 {
+        font-size: 30px;
+    }
+    .item {
+        margin-right: 100px;
+        margin-left: 100px;
     }
 }
 
@@ -337,8 +349,8 @@ img {
         font-size: 20px;
     }
     .item {
-        margin-right: 120px;
-        margin-left: 120px;
+        margin-right: 130px;
+        margin-left: 130px;
     }
     .name1 {
         font-size: 30px;
