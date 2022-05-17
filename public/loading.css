@@ -1,73 +1,72 @@
 * {
-  caret-color: transparent;
-  font-family: "Montserrat", sans-serif;
+    caret-color: transparent;
+    font-family: "Montserrat", sans-serif;
 }
 
 body {
-  display: grid;
-  place-items: center;
-  background: #000;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-  background-image: url("https://firebasestorage.googleapis.com/v0/b/js-messenger-874ab.appspot.com/o/background.jpg?alt=media&token=4b7174ef-4ca9-4d14-8cfa-6bf31269ab32");
-  background-size: 100% 100%;
+    display: grid;
+    place-items: center;
+    background: #000;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/js-messenger-874ab.appspot.com/o/background.jpg?alt=media&token=4b7174ef-4ca9-4d14-8cfa-6bf31269ab32");
+    background-size: 100% 100%;
 }
 
 div {
-  text-align: center;
-  position: absolute;
-  display: grid;
-  place-items: center;
-  height: 100vh;
+    text-align: center;
+    position: absolute;
+    display: grid;
+    place-items: center;
 }
 
 span {
-  font-weight: bold;
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: 50px;
-  --delay: 0s;
-  animation: arrows 1s var(--delay) infinite ease-in;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 50px;
+    --delay: 0s;
+    animation: arrows 1s var(--delay) infinite ease-in;
 }
 
 @media only screen and (max-width: 1880px) {
-  span {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
+    span {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
 @media only screen and (max-width: 1530px) {
-  span {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
+    span {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
 @media only screen and (max-width: 1030px) {
-  span {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
+    span {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
 @media only screen and (max-width: 780px) {
-  span {
-      font-size: 5vw;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
+    span {
+        font-size: 5vw;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
 @keyframes arrows {
-  0%,
-  100% {
-    color: black;
-    transform: translateY(0);
-  }
-  50% {
-    color: #0d9308;
-    transform: translateY(5px);
-  }
+    0%,
+    100% {
+        color: black;
+        transform: translateY(0);
+    }
+    50% {
+        color: #0d9308;
+        transform: translateY(5px);
+    }
 }
