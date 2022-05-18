@@ -15,7 +15,6 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
     cursor: none;
 }
 
@@ -27,27 +26,29 @@ img {
 .top-bar {
     display: flex;
     height: 100px;
-    width: 60%;
-    align-items: flex-end;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
     margin-bottom: 30px;
-    animation: slide-up 3s;
     position: relative;
     animation-delay: 3500ms;
 }
 
 .kort {
-    background: linear-gradient(to right, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 40%, rgb(23, 147, 54) 60%, rgb(0, 0, 0) 80%);
-    background-size: 200% auto;
-    color: #000;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 5s linear infinite;
+    font-family: 'Montserrat';
+    box-shadow: inset 0 0 0 0 #539f63;
+    color: #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     animation-delay: 3500ms;
 }
-
+.kort:hover {
+    box-shadow: inset 160px 0 0 0 #448551;
+    color: white;
+}
 .name {
-    flex-grow: 3;
     font-size: 50px;
     font-family: "Montserrat";
     font-weight: bold;
@@ -66,14 +67,6 @@ img {
     to {
         background-position: 200% center;
     }
-}
-
-.menu {
-    flex-grow: 1;
-    display: flex;
-    font-family: 'Montserrat';
-    gap: 80px;
-    font-size: 35px;
 }
 
 .name1 {
@@ -101,15 +94,6 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-}
-
-.about-us {
-    flex-basis: 10%;
-    font-size: 25px;
-    font-family: "Montserrat";
-    font-weight: lighter;
-    text-align: left;
-    padding: 12px 24px;
 }
 
 .number {
@@ -153,6 +137,46 @@ img {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.item:hover {
+    transform: scale(1.1);
+}
+
+.first {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/js-messenger-874ab.appspot.com/o/air-main.png?alt=media&token=45f4a61d-43f2-4b74-b4a0-8645360cd1fa');
+    background-size: 100% 100%;
+}
+
+.first:hover {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/js-messenger-874ab.appspot.com/o/air-hover.png?alt=media&token=d544e78d-c12f-4ba7-bc32-11bdfcdd9bd3');
+}
+
+.second {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/js-messenger-874ab.appspot.com/o/water-main.png?alt=media&token=627aa7a1-b97b-449f-83c3-158d39db13f7');
+    background-size: 100% 100%;
+}
+
+.second:hover {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/js-messenger-874ab.appspot.com/o/water-hover.png?alt=media&token=3d223dbf-27b4-48c3-80ae-509048b22ab3');
+}
+
+.third {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/js-messenger-874ab.appspot.com/o/forest-main.png?alt=media&token=24733c16-2254-4153-9087-b766b791670d');
+    background-size: 100% 100%;
+}
+
+.third:hover {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/js-messenger-874ab.appspot.com/o/forest-hover.png?alt=media&token=e235898d-cc89-4566-9af3-b7b393a83421');
+}
+
+.fourth {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/js-messenger-874ab.appspot.com/o/axe.png?alt=media&token=67250dcf-9571-4b0d-abbb-325c8698b47c');
+    background-size: 100% 100%;
+}
+
+.fourth:hover {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/comment-test-b61eb.appspot.com/o/oper.png?alt=media&token=d3108ada-8315-440e-bcd0-9d873f8d9e07');
+}
+
 .cursor {
     position: fixed;
     width: 40px;
@@ -179,24 +203,60 @@ img {
     z-index: 999;
     transform: translate(-50%, -50%);
 }
+.dropbtn {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 40px;
+    border: none;
+    background: linear-gradient(to right, rgb(0, 0, 0) 20%, rgb(0, 0, 0) 40%, rgb(23, 147, 54) 60%, rgb(0, 0, 0) 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s linear infinite;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a0c6a0a0;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+      font-size: 25px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #a0c6a0a0;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #00000052;}
 
 @media only screen and (max-width: 1700px) {
     .top-bar {
         width: 70%;
-        flex-direction: column;
     }
     .menu {
         font-size: 30px;
         align-self: center;
     }
     .name {
-        flex-basis: 80%;
         align-self: center;
         font-size: 40px;
-    }
-    .menu-bar {
-        display: block;
-        font-size: 30px;
     }
     .item {
         margin-right: 90px;
@@ -216,20 +276,6 @@ img {
 @media only screen and (max-width: 1500px) {
     .top-bar {
         width: 70%;
-        flex-direction: column;
-    }
-    .menu {
-        font-size: 30px;
-        align-self: center;
-    }
-    .name {
-        flex-basis: 80%;
-        align-self: center;
-        font-size: 40px;
-    }
-    .menu-bar {
-        display: block;
-        font-size: 30px;
     }
     .item {
         margin-right: 100px;
@@ -249,25 +295,15 @@ img {
 @media only screen and (max-width: 1300px) {
     .top-bar {
         width: 70%;
-        flex-direction: column;
     }
     .menu {
         gap: 20px;
         font-size: 30px;
         align-self: center;
     }
-    .name {
-        flex-basis: 80%;
-        align-self: center;
-        font-size: 40px;
-    }
-    .menu-bar {
-        display: block;
-        font-size: 30px;
-    }
     .item {
-        margin-right: 90px;
-        margin-left: 90px;
+        margin-right: 100px;
+        margin-left: 100px;
     }
     .mini-text {
         font-size: 20px;
@@ -276,7 +312,6 @@ img {
 
 @media only screen and (max-width: 1260px) {
     .name {
-        flex-basis: 80%;
         align-self: center;
         font-size: 25px;
     }
@@ -287,39 +322,8 @@ img {
         font-size: 30px;
     }
     .item {
-        margin-right: 90px;
-        margin-left: 90px;
-    }
-}
-
-@media only screen and (max-width: 955px) {
-    .innerContainer {
-        height: 750px;
-    }
-    .top-bar {
-        width: 70%;
-    }
-    .name {
-        flex-basis: 80%;
-        align-self: center;
-        font-size: 40px;
-    }
-    .menu {
-        gap: 15px;
-        font-size: 20px;
-    }
-    .item {
-        margin-right: 130px;
-        margin-left: 130px;
-    }
-    .name1 {
-        font-size: 30px;
-    }
-    .us1 {
-        font-size: 20px;
-    }
-    .team-container {
-        width: 50%;
+        margin-right: 100px;
+        margin-left: 100px;
     }
 }
 
@@ -328,7 +332,7 @@ img {
         width: 70%;
     }
     .menu {
-        justify-content: center;
+        /* justify-content: center; */
         padding-top: 50px;
         gap: 5px;
         font-size: 14px;
@@ -360,16 +364,4 @@ img {
     .container {
         height: 2000px;
     }
-}
-
-.reveal {
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 2s all ease;
-}
-
-.reveal.active {
-    transform: translateY(0);
-    opacity: 1;
 }
