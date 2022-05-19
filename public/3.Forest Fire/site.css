@@ -460,7 +460,7 @@ a {
     .info3 {
         width: 150%;
         color: white;
-        font-size: 1.3vw;
+        font-size: 1.7vw;
         margin-left: 11%;
         position: relative;
         bottom: 30px;
@@ -499,9 +499,9 @@ a {
     .info3 {
         font-size: 1.2vw;
         margin-top: -1%;
-        width: 250%;
+        width: 50%;
         color: white;
-        font-size: 5vh;
+        font-size: 1.8vw;
         margin-left: 11%;
         position: relative;
         bottom: 8px;
@@ -535,11 +535,11 @@ a {
     .info {
         padding-left: 6%;
         padding-right: 6%;
-        line-height: 17px;
+        line-height: 25px;
         font-size: 3.5vw;
     }
     .info2 {
-        line-height: 17px;
+        line-height: 25px;
         width: 80%;
         font-size: 3.5vw;
         padding-top: 5px;
@@ -547,7 +547,7 @@ a {
         padding-right: 4.8%;
     }
     .info3 {
-        line-height: 17px;
+        line-height: 25px;
         width: 80%;
         font-size: 3.5vw;
         padding-bottom: 5vh;

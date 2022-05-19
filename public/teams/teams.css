@@ -276,13 +276,22 @@ body {
   }
   .tovch {
     position: relative;
-    top: -120px;
+    top: 20px;
     opacity: 1;
-    background-color: rgb(167, 229, 167);
-    border: none;
-    padding: 2vw;
+    background: linear-gradient(
+    to right,
+    rgb(0, 0, 0) 20%,
+    rgb(0, 0, 0) 40%,
+    rgb(23, 147, 54) 60%,
+    rgb(0, 0, 0) 80%
+  );
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 5s linear infinite;
     text-decoration: none;
-    border-radius: 10%;
   }
   .sum {
     opacity: 0;
