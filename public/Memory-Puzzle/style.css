@@ -159,11 +159,11 @@ button {
     }
     .back {
         width: 5vw;
-        height: 7vw;
+        height: 9vw;
         /* margin-top: 2%;
         margin-left: 4%; */
         position: absolute;
-        top: 2%;
+        top: 3%;
     }
 }
 
