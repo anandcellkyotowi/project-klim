@@ -1,3 +1,5 @@
+//hi programmer go away or ill fuck your wife and kill your dog .|.
+
 var game = false;
 
 document.getElementById("butt").onclick = function() {
@@ -14,10 +16,16 @@ document.getElementById("butt").onclick = function() {
         var cubeLimit = 5;
         var hits = 0;
         var sucked = 0;
+        var witched = new Array()
         var playing = false;
         cubes.forEach((cube, index) => {
             cube.addEventListener("click", () => {
                 if (playing) {
+                    for (let x = 0; x < witched.length; x++) {
+                        if (index == witched[x]) {
+                            return 0
+                        }
+                    }
                     checkWin(index);
                     if (hits == jotaRO) {
                         levell++;
@@ -69,6 +77,7 @@ document.getElementById("butt").onclick = function() {
             sucked = 0;
             randomizedWhiteCubes();
             hits = 0;
+            witched = []
             setTimeout(hideCubes, 1500);
             level.innerHTML = "" + levell;
             playing = false;
@@ -93,6 +102,7 @@ document.getElementById("butt").onclick = function() {
                     randomIndexs.splice(a, 1);
                     found = true;
                     hits++;
+                    witched.push(index);
                     score.innerHTML = "" + hits + " / " + jotaRO;
                 }
             }
