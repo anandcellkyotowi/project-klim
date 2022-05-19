@@ -162,7 +162,7 @@ img {
 }
 
 .first:hover {
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/js-messenger-874ab.appspot.com/o/air-hover.png?alt=media&token=d544e78d-c12f-4ba7-bc32-11bdfcdd9bd3');
+    background-image: url('./Main/air.png');
 }
 
 .second {
@@ -171,7 +171,7 @@ img {
 }
 
 .second:hover {
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/js-messenger-874ab.appspot.com/o/water-hover.png?alt=media&token=3d223dbf-27b4-48c3-80ae-509048b22ab3');
+    background-image: url('./Main/us.png');
 }
 
 .third {
@@ -180,7 +180,7 @@ img {
 }
 
 .third:hover {
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/js-messenger-874ab.appspot.com/o/forest-hover.png?alt=media&token=e235898d-cc89-4566-9af3-b7b393a83421');
+    background-image: url('./Main/fire.png');
 }
 
 .fourth {
@@ -189,7 +189,7 @@ img {
 }
 
 .fourth:hover {
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/comment-test-b61eb.appspot.com/o/oper.png?alt=media&token=d3108ada-8315-440e-bcd0-9d873f8d9e07');
+    background-image: url('./Main/forest.png');
 }
 
 .s1 {
@@ -405,8 +405,8 @@ img {
         display: none;
     }
     .us1 {
-        font-size: 20px;
-        line-height: 35px;
+        font-size: 17px;
+        line-height: 30px;
     }
     .team-container {
         width: 80%;
