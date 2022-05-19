@@ -53,10 +53,12 @@ img {
     padding: 0 .25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
+
 .kort:hover {
     box-shadow: inset 160px 0 0 0 #448551;
     color: white;
 }
+
 .name {
     font-size: 50px;
     font-family: "Montserrat";
@@ -243,6 +245,7 @@ img {
     z-index: 999;
     transform: translate(-50%, -50%);
 }
+
 .dropbtn {
     font-family: 'Montserrat';
     font-weight: bold;
@@ -257,35 +260,41 @@ img {
     -webkit-text-fill-color: transparent;
     animation: shine 5s linear infinite;
     animation-delay: 3500ms;
-  }
-  
-  .dropdown {
+}
+
+.dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #a0c6a0a0;
     min-width: 150px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  .dropdown-content a {
-      font-size: 25px;
+}
+
+.dropdown-content a {
+    font-size: 25px;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #a0c6a0a0;}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {background-color: #00000052;}
+}
+
+.dropdown-content a:hover {
+    background-color: #a0c6a0a0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #00000052;
+}
 
 @media only screen and (max-width: 1700px) {
     .top-bar {
@@ -371,6 +380,8 @@ img {
 @media only screen and (max-width: 700px) {
     .top-bar {
         width: 70%;
+        flex-direction: column;
+        gap: 20px;
     }
     .menu {
         /* justify-content: center; */
