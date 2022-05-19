@@ -116,13 +116,14 @@ button {
 @media only screen and (max-width: 1000px) {
     .info-text {
         width: 100%;
-        font-size: 3.7vw;
+        font-size: 5vw;
         position: relative;
         top: 14.5vh;
+        padding: 15px;
     }
     #butt {
         position: absolute;
-        top: 40vh;
+        top: 60vh;
         width: 35vw;
         height: 12vw;
     }
