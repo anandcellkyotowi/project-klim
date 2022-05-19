@@ -555,7 +555,7 @@ a {
   }
   .title {
     height: fit-content;
-    text-align: center;
+    /* text-align: center; */
     font-size: 5vw;
     width: 90%;
     height: 10%;
@@ -583,9 +583,9 @@ a {
     height: 50%;
   }
   .text {
-    margin-top: 15px;
+    margin-top: 25px;
     text-align: center;
-    font-size: 7vw;
+    font-size: 6vw;
   }
   .top3 {
     padding-top: 10vh;
