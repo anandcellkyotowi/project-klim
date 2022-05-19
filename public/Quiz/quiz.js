@@ -12,6 +12,7 @@ const firebaseConfig = {
 let questions = []
 let cnt = 0;
 let score = 0;
+let clickable = true
 
 initializeApp(firebaseConfig)
 const db = getFirestore()
@@ -59,6 +60,7 @@ function setNextQuestion() {
 
 function showQuestion(question) {
     questionElement.innerText = question.question
+    clickable = true
     question.answers.forEach(answer => {
         const button = document.createElement('button')
         button.innerText = answer.text
@@ -82,9 +84,10 @@ function resetState() {
 
 function selectAnswer(e) {
     const selectedButton = e.target
-    const correct = selectedButton.dataset.correct
-    if (correct) {
+    let correct = selectedButton.dataset.correct
+    if (correct && clickable) {
         score++;
+        clickable = false;
     }
     setStatusClass(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
@@ -100,11 +103,14 @@ function selectAnswer(e) {
         resultElement.innerHTML = 'Манай асуулт хариултын тоглоомыг тоглосонд танд баярлалаа!'
         startButton.innerText = 'Ахин тоглох'
         startButton.classList.remove('hide')
-        endScore.innerHTML = 'Score: ' + score + ' / 9'
+        endScore.style.color = 'black';
+        endScore.innerHTML = 'Оноо: ' + score + ' / 9'
         endScore.style.display = 'flex';
+        clickable = true
         score = 0
 
     }
+    clickable = false
 }
 
 function setStatusClass(element, correct) {

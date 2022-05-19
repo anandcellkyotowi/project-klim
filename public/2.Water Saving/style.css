@@ -15,7 +15,11 @@ p {
     height: 3vw;
     margin-left: 5%;
     margin-top: 0.5%;
-    cursor: pointer;
+    cursor: none;
+}
+
+.button:hover {
+    opacity: 0.5;
 }
 
 .off {
