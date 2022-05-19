@@ -11,6 +11,8 @@ const firebaseConfig = {
 };
 let questions = []
 let cnt = 0;
+let score = 0;
+
 initializeApp(firebaseConfig)
 const db = getFirestore()
 const colRef = collection(db, 'questions')
@@ -31,6 +33,7 @@ const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 const resultElement = document.getElementById('result')
+const endScore = document.querySelector('.end-score')
 var CountQuestion = 0;
 let shuffledQuestions, currentQuestionIndex
 startButton.addEventListener('click', startGame)
@@ -70,6 +73,7 @@ function showQuestion(question) {
 
 function resetState() {
     clearStatusClass(document.body)
+    endScore.style.display = 'none';
     nextButton.classList.add('hide')
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
@@ -77,9 +81,11 @@ function resetState() {
 }
 
 function selectAnswer(e) {
-    console.log(e);
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
+    if (correct) {
+        score++;
+    }
     setStatusClass(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
@@ -87,14 +93,17 @@ function selectAnswer(e) {
 
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide')
-            // } else if (selectedButton = ) {
+
 
     } else {
         questionContainerElement.style.display = 'none';
-        console.log(cnt);
         resultElement.innerHTML = 'Манай асуулт хариултын тоглоомыг тоглосонд танд баярлалаа!'
         startButton.innerText = 'Ахин тоглох'
         startButton.classList.remove('hide')
+        endScore.innerHTML = 'Score: ' + score + ' / 9'
+        endScore.style.display = 'flex';
+        score = 0
+
     }
 }
 

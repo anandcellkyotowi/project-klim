@@ -59,6 +59,11 @@ body.wrong {
     animation: shine 5s linear infinite;
 }
 
+.end-score {
+    color: white;
+    display: none;
+}
+
 @keyframes shine {
     to {
         background-position: 200% center;
@@ -133,6 +138,7 @@ body.wrong {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .hide {
