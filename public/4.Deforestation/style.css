@@ -132,7 +132,7 @@ body {
 
 .waters {
     margin-top: 5px;
-    background-image: url('un.png');
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/comment-test-b61eb.appspot.com/o/un.png?alt=media&token=93cdcb04-aa53-494e-8eb3-8e4034c341d2');
     margin-right: 0%;
     width: 54.7vw;
     height: 35vw;
@@ -142,8 +142,8 @@ body {
 }
 
 .bohir {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/comment-test-b61eb.appspot.com/o/zurag.png?alt=media&token=a63dfbcc-ef1e-41d6-8b87-97bfe51d6b79');
     margin-top: 5%;
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/savewaterpng.appspot.com/o/bohirhooloi.png?alt=media&token=9684daea-03eb-44bb-a4f8-2ca7f1130ba5');
     width: 54.7vw;
     height: 30vw;
     margin-right: 2%;
@@ -156,7 +156,6 @@ body {
 
 .bohir1 {
     margin-top: 5px;
-    background-image: url('https://firebasestorage.googleapis.com/v0/b/savewaterpng.appspot.com/o/bohirhooloi.png?alt=media&token=9684daea-03eb-44bb-a4f8-2ca7f1130ba5');
     width: 54.7vw;
     height: 30vw;
     /* margin: 2%; */
@@ -224,7 +223,6 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         margin-bottom: 30px;
-        background-image: url('zurag2.png');
     }
     .bohir1 {
         width: 87%;
